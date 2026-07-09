@@ -1,0 +1,29 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ErrorBoundary } from "./components/ErrorBoundary";
+import { CookieConsent } from "./components/CookieConsent";
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
+import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
+import { TermsPage } from "./pages/TermsPage";
+import { SecurityOverviewPage } from "./pages/SecurityOverviewPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
+
+export default function App() {
+  return (
+    <ErrorBoundary>
+      <BrowserRouter>
+        <div className="min-h-screen bg-paper">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/security" element={<SecurityOverviewPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </div>
+        <CookieConsent />
+      </BrowserRouter>
+    </ErrorBoundary>
+  );
+}

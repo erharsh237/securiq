@@ -1,0 +1,238 @@
+import type { Incident, Plan, AuditEvent } from "../types";
+
+export const mockIncidents: Incident[] = [
+  {
+    id: "inc_01",
+    provider: "aws",
+    resourceType: "s3_bucket",
+    findingType: "public_bucket",
+    severity: "critical",
+    status: "pending_approval",
+    resourceId: "arn:aws:s3:::prod-user-uploads",
+    title: "S3 bucket publicly readable",
+    description:
+      "Bucket prod-user-uploads allows public read access via bucket ACL. Contains user-uploaded files including profile images and documents.",
+    detectedAt: "2026-07-07T14:12:00Z",
+    updatedAt: "2026-07-08T09:03:00Z",
+    context: {
+      bucketPolicy: "public-read",
+      objectCount: 48213,
+      region: "us-east-1",
+    },
+    dedupeKey: "aws:s3_bucket:public_bucket:prod-user-uploads",
+  },
+  {
+    id: "inc_02",
+    provider: "github",
+    resourceType: "secret",
+    findingType: "leaked_secret",
+    severity: "critical",
+    status: "plan_ready",
+    resourceId: "securiq/api-backend#a1b2c3d",
+    title: "AWS access key committed to repository",
+    description:
+      "GitHub secret scanning detected an AWS access key ID and secret pair committed in api-backend, commit a1b2c3d, file config/dev.env.",
+    detectedAt: "2026-07-08T06:40:00Z",
+    updatedAt: "2026-07-08T06:55:00Z",
+    context: {
+      repo: "securiq/api-backend",
+      commit: "a1b2c3d",
+      file: "config/dev.env",
+      secretType: "aws_access_key",
+    },
+    dedupeKey: "github:secret:leaked_secret:securiq/api-backend#a1b2c3d",
+  },
+  {
+    id: "inc_03",
+    provider: "aws",
+    resourceType: "security_group",
+    findingType: "overly_permissive_sg",
+    severity: "high",
+    status: "executing",
+    resourceId: "sg-0a1b2c3d4e5f6g7h8",
+    title: "Security group allows SSH from 0.0.0.0/0",
+    description:
+      "Security group web-tier-sg permits inbound TCP 22 from any IP address. Attached to 3 running EC2 instances.",
+    detectedAt: "2026-07-06T22:18:00Z",
+    updatedAt: "2026-07-08T10:20:00Z",
+    context: {
+      groupName: "web-tier-sg",
+      port: 22,
+      cidr: "0.0.0.0/0",
+      attachedInstances: 3,
+    },
+    dedupeKey: "aws:security_group:overly_permissive_sg:sg-0a1b2c3d4e5f6g7h8",
+  },
+  {
+    id: "inc_04",
+    provider: "aws",
+    resourceType: "iam_role",
+    findingType: "excessive_permissions",
+    severity: "medium",
+    status: "verified",
+    resourceId: "arn:aws:iam::123456789012:role/lambda-exec-role",
+    title: "IAM role has unused admin permissions",
+    description:
+      "Role lambda-exec-role has AdministratorAccess attached but only uses 4 distinct actions based on 90-day CloudTrail analysis.",
+    detectedAt: "2026-07-05T11:00:00Z",
+    updatedAt: "2026-07-06T08:15:00Z",
+    context: {
+      roleName: "lambda-exec-role",
+      attachedPolicy: "AdministratorAccess",
+      actionsUsed: 4,
+      lookbackDays: 90,
+    },
+    dedupeKey: "aws:iam_role:excessive_permissions:lambda-exec-role",
+  },
+  {
+    id: "inc_05",
+    provider: "github",
+    resourceType: "secret",
+    findingType: "leaked_secret",
+    severity: "high",
+    status: "failed",
+    resourceId: "securiq/data-pipeline#f9e8d7c",
+    title: "Database connection string exposed",
+    description:
+      "A PostgreSQL connection string with embedded credentials was found in a test fixture file, still active in commit history.",
+    detectedAt: "2026-07-04T16:30:00Z",
+    updatedAt: "2026-07-04T17:02:00Z",
+    context: {
+      repo: "securiq/data-pipeline",
+      commit: "f9e8d7c",
+      file: "tests/fixtures/db_config.py",
+      secretType: "postgres_connection_string",
+    },
+    dedupeKey: "github:secret:leaked_secret:securiq/data-pipeline#f9e8d7c",
+  },
+  {
+    id: "inc_06",
+    provider: "aws",
+    resourceType: "secrets_manager",
+    findingType: "stale_secret",
+    severity: "low",
+    status: "new",
+    resourceId: "arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/db-password",
+    title: "Secret not rotated in 180+ days",
+    description:
+      "prod/db-password has not been rotated since creation. No rotation schedule is configured.",
+    detectedAt: "2026-07-08T08:00:00Z",
+    updatedAt: "2026-07-08T08:00:00Z",
+    context: { secretName: "prod/db-password", lastRotated: null, ageDays: 214 },
+    dedupeKey: "aws:secrets_manager:stale_secret:prod/db-password",
+  },
+];
+
+export const mockPlans: Record<string, Plan> = {
+  inc_02: {
+    id: "plan_02",
+    incidentId: "inc_02",
+    explanation:
+      "An AWS access key pair was hard-coded in a config file and pushed to a public path in commit history. Even though the file may be removed later, the key remains readable in git history and must be treated as compromised. The safest remediation is to deactivate the exposed key in IAM immediately, issue a new key, and update the deployment secret store — rather than attempting to scrub git history, which does not reliably remove access for anyone who already cloned the repo.",
+    actions: [
+      {
+        actionType: "deactivate_iam_key",
+        provider: "aws",
+        description: "Deactivate the exposed access key in IAM",
+        before: { keyId: "AKIA****************", status: "Active" },
+        after: { keyId: "AKIA****************", status: "Inactive" },
+      },
+      {
+        actionType: "rotate_secret",
+        provider: "aws",
+        description: "Generate a new access key pair to replace the deactivated one",
+        before: { keyCount: 1 },
+        after: { keyCount: 2, note: "new key issued, old key marked for deletion in 7 days" },
+      },
+      {
+        actionType: "update_secrets_manager",
+        provider: "aws",
+        description: "Push the new key pair into Secrets Manager for the backend deployment",
+        before: { secretVersion: "v12" },
+        after: { secretVersion: "v13" },
+      },
+    ],
+    riskLevel: "high",
+    createdAt: "2026-07-08T06:50:00Z",
+  },
+  inc_01: {
+    id: "plan_01",
+    incidentId: "inc_01",
+    explanation:
+      "The bucket ACL currently grants public-read to the 'AllUsers' group, meaning anyone on the internet can list and download objects. Since this bucket holds user-uploaded files, this is a direct data exposure risk. The plan removes public grants from the ACL and applies a bucket policy that blocks all public access while preserving access for the application's existing IAM role.",
+    actions: [
+      {
+        actionType: "restrict_s3_policy",
+        provider: "aws",
+        description: "Remove public-read ACL grant and enable Block Public Access",
+        before: { acl: "public-read", blockPublicAccess: false },
+        after: { acl: "private", blockPublicAccess: true },
+      },
+    ],
+    riskLevel: "critical",
+    createdAt: "2026-07-08T09:00:00Z",
+  },
+};
+
+export const mockAuditEvents: Record<string, AuditEvent[]> = {
+  inc_02: [
+    {
+      id: "ev_1",
+      incidentId: "inc_02",
+      eventType: "detected",
+      timestamp: "2026-07-08T06:40:00Z",
+      actor: "system",
+      detail: "GitHub secret scanning alert received via webhook",
+    },
+    {
+      id: "ev_2",
+      incidentId: "inc_02",
+      eventType: "context_gathered",
+      timestamp: "2026-07-08T06:42:00Z",
+      actor: "system",
+      detail: "Fetched commit metadata and confirmed key is still active in IAM",
+    },
+    {
+      id: "ev_3",
+      incidentId: "inc_02",
+      eventType: "plan_generated",
+      timestamp: "2026-07-08T06:55:00Z",
+      actor: "system",
+      detail: "Remediation plan drafted: deactivate key, rotate, update secrets store",
+    },
+  ],
+  inc_03: [
+    {
+      id: "ev_4",
+      incidentId: "inc_03",
+      eventType: "detected",
+      timestamp: "2026-07-06T22:18:00Z",
+      actor: "system",
+      detail: "AWS Security Hub finding ingested via EventBridge",
+    },
+    {
+      id: "ev_5",
+      incidentId: "inc_03",
+      eventType: "plan_generated",
+      timestamp: "2026-07-06T22:25:00Z",
+      actor: "system",
+      detail: "Plan drafted: restrict inbound SSH rule to office CIDR range",
+    },
+    {
+      id: "ev_6",
+      incidentId: "inc_03",
+      eventType: "approved",
+      timestamp: "2026-07-08T10:15:00Z",
+      actor: "harsh@securiq.co",
+      detail: "Plan approved",
+    },
+    {
+      id: "ev_7",
+      incidentId: "inc_03",
+      eventType: "execution_started",
+      timestamp: "2026-07-08T10:20:00Z",
+      actor: "system",
+      detail: "Applying security group rule change",
+    },
+  ],
+};
