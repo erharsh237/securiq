@@ -8,16 +8,27 @@ declare global {
   }
 }
 
+/**
+ * True only on Vercel's Production environment (i.e. deploys from the
+ * `main` branch to securiq.co). Preview deploys — staging, PR previews,
+ * `vercel dev` — all read "preview" or "development" here and are excluded,
+ * so test traffic never reaches the real GA property. Falls back to `false`
+ * for local dev (`npm run dev`), where VITE_VERCEL_ENV is unset entirely.
+ */
+export const isProductionEnvironment = import.meta.env.VITE_VERCEL_ENV === "production";
+
 let initialized = false;
 
 /**
  * Loads and initializes Google Analytics 4. Must only be called after the
  * user has explicitly granted cookie consent — this function performs no
- * checks of its own and will load GA unconditionally when called, so all
- * consent logic lives in the caller (see CookieConsent.tsx).
+ * consent checks of its own, only an environment check, so consent logic
+ * stays owned by the caller (see CookieConsent.tsx). On any non-production
+ * deploy (staging, previews, local dev), this is a deliberate no-op even if
+ * consent was granted, so test traffic never pollutes real GA data.
  */
 export function loadGoogleAnalytics() {
-  if (initialized || typeof window === "undefined") return;
+  if (initialized || typeof window === "undefined" || !isProductionEnvironment) return;
   initialized = true;
 
   const script = document.createElement("script");

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { disableGoogleAnalytics, loadGoogleAnalytics } from "../lib/analytics";
+import { disableGoogleAnalytics, isProductionEnvironment, loadGoogleAnalytics } from "../lib/analytics";
 
 type ConsentChoice = "accepted" | "declined";
 
@@ -52,8 +52,10 @@ export function CookieConsent() {
   }
 
   // Wait for the localStorage read before deciding whether to render, so we
-  // don't flash the banner for returning visitors who already chose.
-  if (!hydrated || choice !== null) return null;
+  // don't flash the banner for returning visitors who already chose. Also
+  // skip entirely on non-production deploys (staging, previews, local dev)
+  // — GA never loads there regardless of the answer, so asking is misleading.
+  if (!hydrated || choice !== null || !isProductionEnvironment) return null;
 
   return (
     <div
