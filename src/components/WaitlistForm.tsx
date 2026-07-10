@@ -37,7 +37,7 @@ export function WaitlistForm({ variant = "default" }: { variant?: "default" | "c
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="flex flex-shrink-0 items-center gap-1.5 rounded-full bg-coral px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-coral/90 disabled:opacity-60"
+          className="flex flex-shrink-0 items-center gap-1.5 rounded-full bg-ink px-5 py-3 text-sm font-semibold text-paper transition-colors hover:bg-pine-dark disabled:opacity-60"
         >
           {status === "submitting" ? "Joining…" : "Join waitlist"}
           {status !== "submitting" && <ArrowRight size={15} strokeWidth={2.5} />}
