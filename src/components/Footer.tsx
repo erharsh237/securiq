@@ -32,9 +32,9 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/#faq" className="text-ink/60 hover:text-ink">
+                  <Link to="/faq" className="text-ink/60 hover:text-ink">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -50,9 +50,9 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="/#team" className="text-ink/60 hover:text-ink">
+                  <Link to="/about#team" className="text-ink/60 hover:text-ink">
                     Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

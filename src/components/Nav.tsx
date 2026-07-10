@@ -17,9 +17,9 @@ export function Nav() {
           <a href="#trust" className="hover:text-ink">
             Safety
           </a>
-          <a href="#faq" className="hover:text-ink">
+          <Link to="/faq" className="hover:text-ink">
             FAQ
-          </a>
+          </Link>
           <a href="#waitlist" className="hover:text-ink">
             Waitlist
           </a>

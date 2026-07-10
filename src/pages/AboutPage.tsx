@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { UseCases } from "../components/UseCases";
+import { Roadmap } from "../components/Roadmap";
+import { Team } from "../components/Team";
+import { Footer } from "../components/Footer";
 
 export function AboutPage() {
   return (
@@ -58,13 +62,12 @@ export function AboutPage() {
           </p>
         </div>
 
-        <Link
-          to="/#team"
-          className="mt-10 inline-block rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper hover:bg-pine-dark"
-        >
-          Meet the team
-        </Link>
       </main>
+
+      <UseCases />
+      <Roadmap />
+      <Team />
+      <Footer />
     </div>
   );
 }
