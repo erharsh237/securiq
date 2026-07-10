@@ -32,6 +32,11 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
+                  <Link to="/pricing" className="text-ink/60 hover:text-ink">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
                   <Link to="/faq" className="text-ink/60 hover:text-ink">
                     FAQ
                   </Link>
@@ -63,9 +68,9 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:hello@securiq.co" className="text-ink/60 hover:text-ink">
+                  <Link to="/contact" className="text-ink/60 hover:text-ink">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -88,6 +93,11 @@ export function Footer() {
                 <li>
                   <Link to="/security" className="text-ink/60 hover:text-ink">
                     Security Overview
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/security/disclosure" className="text-ink/60 hover:text-ink">
+                    Responsible Disclosure
                   </Link>
                 </li>
               </ul>

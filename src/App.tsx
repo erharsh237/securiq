@@ -6,6 +6,9 @@ import { AboutPage } from "./pages/AboutPage";
 import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
 import { TermsPage } from "./pages/TermsPage";
 import { SecurityOverviewPage } from "./pages/SecurityOverviewPage";
+import { SecurityDisclosurePage } from "./pages/SecurityDisclosurePage";
+import { PricingPage } from "./pages/PricingPage";
+import { ContactPage } from "./pages/ContactPage";
 import { FaqPage } from "./pages/FaqPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
@@ -20,6 +23,9 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/security" element={<SecurityOverviewPage />} />
+            <Route path="/security/disclosure" element={<SecurityDisclosurePage />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

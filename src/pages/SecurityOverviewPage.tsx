@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LegalLayout } from "../components/LegalLayout";
 
 export function SecurityOverviewPage() {
@@ -50,7 +51,12 @@ export function SecurityOverviewPage() {
         <a href="mailto:hello@securiq.co" className="text-pine underline">
           hello@securiq.co
         </a>{" "}
-        and we're happy to walk through specifics.
+        and we're happy to walk through specifics. If you've found a
+        vulnerability, see our{" "}
+        <Link to="/security/disclosure" className="text-pine underline">
+          responsible disclosure policy
+        </Link>
+        .
       </p>
     </LegalLayout>
   );

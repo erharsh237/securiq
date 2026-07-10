@@ -16,21 +16,18 @@ export function Nav() {
           <img src="/logo.png" alt="Securiq — home" className="h-8 w-auto md:h-9" />
         </Link>
         <nav className="hidden items-center gap-8 text-sm font-medium text-ink/70 md:flex">
-          <a href={sectionHref("#features")} className="hover:text-ink">
-            Features
-          </a>
-          <a href={sectionHref("#how-it-works")} className="hover:text-ink">
-            How it works
-          </a>
-          <a href={sectionHref("#trust")} className="hover:text-ink">
-            Safety
-          </a>
+          <Link to="/" className="hover:text-ink">
+            Home
+          </Link>
+          <Link to="/security" className="hover:text-ink">
+            Security
+          </Link>
+          <Link to="/pricing" className="hover:text-ink">
+            Pricing
+          </Link>
           <Link to="/faq" className="hover:text-ink">
             FAQ
           </Link>
-          <a href={sectionHref("#waitlist")} className="hover:text-ink">
-            Waitlist
-          </a>
         </nav>
         <a
           href={sectionHref("#waitlist")}
