@@ -31,7 +31,7 @@ export function IncidentLifecycleCard() {
   const isApproval = stage.key === "approval";
 
   return (
-    <div className="w-full max-w-sm rounded-2xl border border-ink/10 bg-white/70 p-5 shadow-[0_1px_0_rgba(20,23,28,0.04)] backdrop-blur-sm">
+    <div className="w-full max-w-md rounded-2xl border border-ink/10 bg-white/90 p-5 shadow-[0_8px_30px_-8px_rgba(232,92,58,0.18),0_1px_0_rgba(20,23,28,0.04)] backdrop-blur-sm">
       <div className="flex items-center justify-between">
         <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
           inc_0417
