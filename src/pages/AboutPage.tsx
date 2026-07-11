@@ -1,6 +1,5 @@
 import { UseCases } from "../components/UseCases";
 import { Roadmap } from "../components/Roadmap";
-import { Team } from "../components/Team";
 import { Footer } from "../components/Footer";
 import { Nav } from "../components/Nav";
 
@@ -52,7 +51,6 @@ export function AboutPage() {
 
       <UseCases />
       <Roadmap />
-      <Team />
       <Footer />
     </div>
   );

@@ -1,39 +1,41 @@
 import { Lock, Eye, RotateCcw, KeyRound, Database, BadgeCheck } from "lucide-react";
 
+const spotlight = {
+  icon: Lock,
+  title: "A human always approves",
+  desc: "The model reasons and drafts. It never decides to touch production on its own. Every remediation waits for explicit sign-off — every time, no exceptions.",
+};
+
 const pillars = [
-  {
-    icon: Lock,
-    title: "A human always approves",
-    desc: "The model reasons and drafts. It never decides to touch production on its own. Every remediation waits for explicit sign-off.",
-  },
   {
     icon: Eye,
     title: "Every action is logged",
-    desc: "Detection, reasoning, approval, execution, verification — all timestamped and attributable, so you have a real audit trail.",
+    desc: "Detection, reasoning, approval, execution, verification — all timestamped and attributable.",
   },
   {
     icon: RotateCcw,
     title: "Verified or rolled back",
-    desc: "After a fix is applied, we check that services still work. If anything breaks, the change is reverted automatically.",
+    desc: "After a fix is applied, we check services still work. If anything breaks, it's reverted automatically.",
   },
   {
     icon: KeyRound,
     title: "Least-privilege access",
-    desc: "We connect through scoped IAM roles and a GitHub App with only the permissions each integration needs — not standing admin credentials.",
+    desc: "Scoped IAM roles and a GitHub App with only the permissions each integration needs.",
   },
   {
     icon: Database,
     title: "Read-first by default",
-    desc: "Securiq reads configuration and metadata to detect issues. We don't store secret values or file contents — only what's needed to describe and remediate a finding.",
+    desc: "We don't store secret values or file contents — only what's needed to describe and remediate a finding.",
   },
   {
     icon: BadgeCheck,
     title: "Compliance, as we grow",
-    desc: "We're building with SOC 2 and ISO 27001 readiness in mind from day one, and will pursue formal certification as we move toward general availability.",
+    desc: "Built with SOC 2 and ISO 27001 readiness in mind from day one.",
   },
 ];
 
 export function Trust() {
+  const SpotIcon = spotlight.icon;
   return (
     <section id="trust" className="border-y border-ink/8 bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-6 py-24">
@@ -50,22 +52,40 @@ export function Trust() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-          {pillars.map((p) => {
-            const Icon = p.icon;
-            return (
-              <div key={p.title}>
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-paper/15 bg-paper/5">
-                  <Icon size={19} strokeWidth={2} className="text-paper/90" />
+        <div className="mt-14 grid gap-6 lg:grid-cols-5">
+          {/* Spotlighted pillar — large card on the left */}
+          <div className="relative overflow-hidden rounded-3xl border border-paper/15 bg-paper/5 p-8 lg:col-span-2">
+            <div className="pointer-events-none absolute -left-8 -top-8 h-36 w-36 rounded-full bg-coral/10 blur-2xl" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-coral/30 bg-coral/15 text-coral">
+              <SpotIcon size={21} strokeWidth={2.1} />
+            </div>
+            <h3 className="mt-5 font-display text-xl font-semibold leading-snug">
+              {spotlight.title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-paper/65">
+              {spotlight.desc}
+            </p>
+          </div>
+
+          {/* Remaining pillars — compact stacked rows */}
+          <div className="divide-y divide-paper/10 rounded-3xl border border-paper/15 bg-paper/[0.03] lg:col-span-3">
+            {pillars.map((p) => {
+              const Icon = p.icon;
+              return (
+                <div key={p.title} className="flex items-start gap-4 px-6 py-5">
+                  <div className="mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-paper/15 bg-paper/5">
+                    <Icon size={16} strokeWidth={2} className="text-paper/90" />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-base font-semibold">{p.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-paper/60">{p.desc}</p>
+                  </div>
                 </div>
-                <h3 className="mt-4 font-display text-lg font-semibold">{p.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-paper/60">{p.desc}</p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

@@ -12,7 +12,7 @@ const loopStages = [
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="mb-14 max-w-lg">
+      <div className="mb-16 max-w-lg">
         <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
           How it works
         </span>
@@ -21,39 +21,68 @@ export function HowItWorks() {
         </h2>
       </div>
 
-      <div className="relative">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 md:gap-x-8">
+      {/* Desktop: horizontal connected timeline */}
+      <div className="relative hidden md:block">
+        <div className="absolute left-0 right-0 top-6 h-px bg-gradient-to-r from-transparent via-ink/15 to-transparent" />
+        <div className="grid grid-cols-6 gap-4">
           {loopStages.map((s, i) => {
             const Icon = s.icon;
             const isApprove = s.label === "Approve";
             return (
-              <div key={s.label} className="relative">
+              <div key={s.label} className="relative flex flex-col items-center text-center">
                 <div
-                  className={`flex h-11 w-11 items-center justify-center rounded-xl border ${
+                  className={`relative z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-paper ${
                     isApprove
-                      ? "border-coral/30 bg-coral/10 text-coral"
-                      : "border-pine/25 bg-pine/8 text-pine"
+                      ? "border-coral text-coral"
+                      : "border-pine text-pine"
                   }`}
                 >
-                  <Icon size={19} strokeWidth={2.1} />
+                  <Icon size={19} strokeWidth={2.2} />
                 </div>
-                <h3 className="mt-3.5 font-display text-lg font-semibold text-ink">
+                <span className="mt-3 font-mono text-[11px] text-muted">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-1 font-display text-base font-semibold text-ink">
                   {s.label}
                 </h3>
-                <p className="mt-1 text-sm leading-relaxed text-ink/65">{s.desc}</p>
-                <span className="mt-2 block font-mono text-[11px] text-muted">
-                  {String(i + 1).padStart(2, "0")} / 06
-                </span>
+                <p className="mt-1.5 text-xs leading-relaxed text-ink/60">{s.desc}</p>
               </div>
             );
           })}
         </div>
-
-        <p className="mt-14 border-t border-ink/8 pt-6 text-sm text-ink/60">
-          Verification loops back into detection — every incident that's fixed
-          becomes a check against regressions later.
-        </p>
       </div>
+
+      {/* Mobile: vertical connected timeline */}
+      <div className="relative space-y-8 md:hidden">
+        <div className="absolute bottom-6 left-6 top-6 w-px bg-ink/12" />
+        {loopStages.map((s, i) => {
+          const Icon = s.icon;
+          const isApprove = s.label === "Approve";
+          return (
+            <div key={s.label} className="relative flex gap-4 pl-0">
+              <div
+                className={`relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 bg-paper ${
+                  isApprove ? "border-coral text-coral" : "border-pine text-pine"
+                }`}
+              >
+                <Icon size={19} strokeWidth={2.2} />
+              </div>
+              <div className="pt-1">
+                <span className="font-mono text-[11px] text-muted">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-display text-base font-semibold text-ink">{s.label}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-ink/65">{s.desc}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="mt-14 border-t border-ink/8 pt-6 text-sm text-ink/60">
+        Verification loops back into detection — every incident that's fixed
+        becomes a check against regressions later.
+      </p>
     </section>
   );
 }

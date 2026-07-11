@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { IncidentLifecycleCard } from "./IncidentLifecycleCard";
-import { WaitlistForm } from "./WaitlistForm";
 
 export function Hero() {
   return (
@@ -24,8 +24,14 @@ export function Hero() {
             security hire.
           </p>
 
-          <div className="mt-8" id="waitlist">
-            <WaitlistForm />
+          <div className="mt-8">
+            <a
+              href="#waitlist-full"
+              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-pine-dark"
+            >
+              Join waitlist
+              <ArrowRight size={15} strokeWidth={2.5} />
+            </a>
             <p className="mt-3 text-sm text-ink/60">
               No credit card. We'll email you when your spot opens up.{" "}
               <Link to="/privacy" className="underline hover:text-ink/70">

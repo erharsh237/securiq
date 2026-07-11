@@ -25,12 +25,15 @@ export function Nav() {
           <Link to="/pricing" className="hover:text-ink">
             Pricing
           </Link>
+          <Link to="/team" className="hover:text-ink">
+            Team
+          </Link>
           <Link to="/faq" className="hover:text-ink">
             FAQ
           </Link>
         </nav>
         <a
-          href={sectionHref("#waitlist")}
+          href={sectionHref("#waitlist-full")}
           className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-pine-dark"
         >
           Get early access

@@ -8,6 +8,7 @@ import { TermsPage } from "./pages/TermsPage";
 import { SecurityOverviewPage } from "./pages/SecurityOverviewPage";
 import { SecurityDisclosurePage } from "./pages/SecurityDisclosurePage";
 import { PricingPage } from "./pages/PricingPage";
+import { TeamPage } from "./pages/TeamPage";
 import { ContactPage } from "./pages/ContactPage";
 import { FaqPage } from "./pages/FaqPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/security" element={<SecurityOverviewPage />} />
             <Route path="/security/disclosure" element={<SecurityDisclosurePage />} />
             <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/team" element={<TeamPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="*" element={<NotFoundPage />} />
