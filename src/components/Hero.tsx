@@ -11,7 +11,7 @@ export function Hero() {
             Early access opening soon
           </span>
 
-          <h1 className="mt-5 font-display text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-ink md:text-[3.4rem]">
+          <h1 className="mt-5 font-display text-2xl sm:text-[2.2rem] md:text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-ink lg:text-[3.4rem]">
             The security engineer
             <br />
             you haven't hired yet.

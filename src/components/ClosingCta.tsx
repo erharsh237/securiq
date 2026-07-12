@@ -3,7 +3,7 @@ import { WaitlistFormExpanded } from "./WaitlistFormExpanded";
 export function ClosingCta() {
   return (
     <section id="waitlist-full" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="rounded-3xl border border-ink/10 bg-white/60 px-8 py-14 text-center md:px-16">
+      <div className="rounded-3xl border border-ink/10 bg-white/60 px-4 py-10 text-center sm:px-8 sm:py-14 md:px-16">
         <h2 className="mx-auto max-w-xl font-display text-3xl font-semibold leading-tight text-ink">
           Be first in when we open access.
         </h2>

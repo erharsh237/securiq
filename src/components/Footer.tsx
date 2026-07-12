@@ -1,4 +1,45 @@
 import { Link } from "react-router-dom";
+import { X } from "lucide-react";
+
+// Custom Instagram icon to match lucide style
+function InstagramIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"></path>
+      <circle cx="17.5" cy="6.5" r="1.5"></circle>
+    </svg>
+  );
+}
+
+// Custom LinkedIn icon to match lucide style
+function LinkedinIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6 z"></path>
+      <rect x="2" y="9" width="4" height="12"></rect>
+      <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -13,9 +54,38 @@ export function Footer() {
               Built for teams running real infrastructure without a security
               hire.
             </p>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href="https://x.com#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on X"
+                className="p-2 rounded-lg text-ink/60 hover:text-ink hover:bg-ink/5 transition-colors"
+              >
+                <X size={20} strokeWidth={1.5} />
+              </a>
+              <a
+                href="https://instagram.com#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
+                className="p-2 rounded-lg text-ink/60 hover:text-ink hover:bg-ink/5 transition-colors"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href="https://linkedin.com#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on LinkedIn"
+                className="p-2 rounded-lg text-ink/60 hover:text-ink hover:bg-ink/5 transition-colors"
+              >
+                <LinkedinIcon />
+              </a>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
             <div>
               <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
                 Product

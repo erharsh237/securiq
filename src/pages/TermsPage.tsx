@@ -1,8 +1,15 @@
 import { LegalLayout } from "../components/LegalLayout";
+import { SEO } from "../components/SEO";
 
 export function TermsPage() {
   return (
-    <LegalLayout title="Terms of Service" updated="July 9, 2026">
+    <>
+      <SEO
+        title="Terms of Service"
+        description="Terms of Service for Securiq's website and waitlist during our pre-launch stage, including use of this site, intellectual property, and disclaimers."
+        path="/terms"
+      />
+      <LegalLayout title="Terms of Service" updated="July 9, 2026">
       <p>
         Securiq is currently in a pre-launch, waitlist stage. These terms
         cover use of this website and the waitlist. A full terms of service
@@ -54,5 +61,6 @@ export function TermsPage() {
         .
       </p>
     </LegalLayout>
+    </>
   );
 }

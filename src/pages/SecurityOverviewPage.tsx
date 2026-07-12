@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import { LegalLayout } from "../components/LegalLayout";
+import { SEO } from "../components/SEO";
 
 export function SecurityOverviewPage() {
   return (
-    <LegalLayout title="Security Overview" updated="July 9, 2026">
+    <>
+      <SEO
+        title="Security Overview"
+        description="How Securiq handles access and data: read-first, write-on-approval architecture, least-privilege AWS and GitHub integrations, and what we do and don't store."
+        path="/security"
+      />
+      <LegalLayout title="Security Overview" updated="July 9, 2026">
       <p>
         Securiq is a security product, so how we handle access and data
         matters as much as what we detect. Here's a plain-language summary of
@@ -59,5 +66,6 @@ export function SecurityOverviewPage() {
         .
       </p>
     </LegalLayout>
+    </>
   );
 }

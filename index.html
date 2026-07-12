@@ -6,7 +6,15 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Securiq — The security engineer you haven't hired yet</title>
+    <!--
+      Fallback title/description for crawlers and social scrapers that
+      don't execute JavaScript (e.g. some link-preview bots). Every route
+      overrides these client-side via the <SEO> component in src/components/SEO.tsx,
+      which is the source of truth for indexed pages. Keep this in sync with
+      HomePage's <SEO> props as a baseline, since it's what unrendered
+      crawlers will see.
+    -->
+    <title>Securiq — Autonomous AI Security Engineer</title>
     <meta
       name="description"
       content="Securiq watches your AWS and GitHub for misconfigurations and leaked secrets, drafts the fix, and waits for your sign-off before touching anything. Built for teams running real infrastructure without a security hire."
@@ -17,7 +25,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Securiq" />
     <meta property="og:url" content="https://securiq.co/" />
-    <meta property="og:title" content="Securiq — The security engineer you haven't hired yet" />
+    <meta property="og:title" content="Securiq — Autonomous AI Security Engineer" />
     <meta
       property="og:description"
       content="Autonomous detection and remediation for AWS and GitHub misconfigurations — with a human approval gate before anything changes."
@@ -28,7 +36,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Securiq — The security engineer you haven't hired yet" />
+    <meta name="twitter:title" content="Securiq — Autonomous AI Security Engineer" />
     <meta
       name="twitter:description"
       content="Autonomous detection and remediation for AWS and GitHub misconfigurations — with a human approval gate before anything changes."
@@ -44,10 +52,6 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"Organization","name":"Securiq","url":"https://securiq.co/","logo":"https://securiq.co/logo.png","description":"Securiq watches AWS and GitHub for misconfigurations and leaked secrets, drafts a remediation plan, and waits for human approval before executing any change.","sameAs":[]}
-    </script>
 
     <!--
       Analytics: Google Analytics 4 is loaded dynamically from

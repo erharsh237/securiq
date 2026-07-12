@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { CookieConsent } from "./components/CookieConsent";
 import { HomePage } from "./pages/HomePage";
@@ -15,6 +16,7 @@ import { NotFoundPage } from "./pages/NotFoundPage";
 
 export default function App() {
   return (
+    <HelmetProvider>
     <ErrorBoundary>
       <BrowserRouter>
         <div className="min-h-screen bg-paper">
@@ -35,5 +37,6 @@ export default function App() {
         <CookieConsent />
       </BrowserRouter>
     </ErrorBoundary>
+    </HelmetProvider>
   );
 }

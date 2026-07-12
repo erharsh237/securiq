@@ -1,8 +1,15 @@
 import { LegalLayout } from "../components/LegalLayout";
+import { SEO } from "../components/SEO";
 
 export function PrivacyPolicyPage() {
   return (
-    <LegalLayout title="Privacy Policy" updated="July 9, 2026">
+    <>
+      <SEO
+        title="Privacy Policy"
+        description="Securiq's privacy policy: what information we collect through our website and waitlist, how we use it, and how third-party processors like Formspree and Google Analytics are involved."
+        path="/privacy"
+      />
+      <LegalLayout title="Privacy Policy" updated="July 9, 2026">
       <p>
         This policy explains what information Securiq ("we", "us") collects
         through this website and waitlist, and how we use it. Securiq is
@@ -85,5 +92,6 @@ export function PrivacyPolicyPage() {
         .
       </p>
     </LegalLayout>
+    </>
   );
 }

@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { SEO } from "../components/SEO";
 
 export function NotFoundPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-paper px-6 text-center">
+      <SEO
+        title="Page not found"
+        description="The page you're looking for doesn't exist or may have moved."
+        path="/404"
+        noindex
+      />
       <img src="/logo.png" alt="Securiq" className="h-8 w-auto opacity-80" />
       <span className="mt-8 font-mono text-sm text-muted">404</span>
       <h1 className="mt-2 font-display text-3xl font-semibold text-ink">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { SEO } from "../components/SEO";
 
 interface TeamMember {
   initial: string;
@@ -71,6 +72,11 @@ export function TeamPage() {
 
   return (
     <div className="min-h-screen bg-paper">
+      <SEO
+        title="Team"
+        description="Meet the small team building Securiq: founders working on making security something teams actually want to open, with AI-drafted fixes and human approval as a hard boundary."
+        path="/team"
+      />
       <Nav />
 
       <main className="mx-auto max-w-5xl px-6 py-16">

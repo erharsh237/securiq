@@ -1,6 +1,7 @@
 import { Mail, ShieldAlert, TrendingUp } from "lucide-react";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { SEO } from "../components/SEO";
 
 const channels = [
   {
@@ -26,6 +27,11 @@ const channels = [
 export function ContactPage() {
   return (
     <div className="min-h-screen bg-paper">
+      <SEO
+        title="Contact"
+        description="Get in touch with Securiq for product questions, demos, security disclosures, or investor inquiries. We're a small team — email is the fastest way to reach us."
+        path="/contact"
+      />
       <Nav />
 
       <main className="mx-auto max-w-3xl px-6 py-16">

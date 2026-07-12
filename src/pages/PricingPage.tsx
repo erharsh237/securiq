@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { WaitlistFormExpanded } from "../components/WaitlistFormExpanded";
+import { SEO } from "../components/SEO";
 
 const tiers = [
   {
@@ -32,6 +33,11 @@ const included = [
 export function PricingPage() {
   return (
     <div className="min-h-screen bg-paper">
+      <SEO
+        title="Pricing"
+        description="Securiq pricing for teams of every size — from small teams getting AWS and GitHub visibility for the first time to companies approaching SOC 2 or ISO 27001 audits. Continuous scanning, plain-language incidents, human-approved remediation."
+        path="/pricing"
+      />
       <Nav />
 
       <main className="mx-auto max-w-6xl px-6 py-16">

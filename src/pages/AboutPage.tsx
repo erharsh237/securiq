@@ -2,10 +2,16 @@ import { UseCases } from "../components/UseCases";
 import { Roadmap } from "../components/Roadmap";
 import { Footer } from "../components/Footer";
 import { Nav } from "../components/Nav";
+import { SEO } from "../components/SEO";
 
 export function AboutPage() {
   return (
     <div className="min-h-screen bg-paper">
+      <SEO
+        title="About Securiq"
+        description="Securiq was built for teams running real AWS and GitHub infrastructure without a dedicated security hire. Learn why we're building an approval-gated remediation loop instead of another findings dashboard."
+        path="/about"
+      />
       <Nav />
 
       <main className="mx-auto max-w-3xl px-6 py-16">

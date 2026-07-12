@@ -77,14 +77,14 @@ export function CookieConsent() {
           <button
             type="button"
             onClick={handleDecline}
-            className="rounded-full border border-ink/15 px-4 py-2 text-sm font-medium text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
+            className="rounded-full border border-ink/15 px-4 sm:px-5 py-2.5 sm:py-3 text-sm font-medium text-ink/70 transition-colors hover:bg-ink/5 hover:text-ink"
           >
             Decline
           </button>
           <button
             type="button"
             onClick={handleAccept}
-            className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-pine-dark"
+            className="rounded-full bg-ink px-4 sm:px-5 py-2.5 sm:py-3 text-sm font-semibold text-paper transition-colors hover:bg-ink/90 active:bg-ink/80"
           >
             Accept
           </button>

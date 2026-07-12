@@ -1,8 +1,15 @@
 import { LegalLayout } from "../components/LegalLayout";
+import { SEO } from "../components/SEO";
 
 export function SecurityDisclosurePage() {
   return (
-    <LegalLayout title="Responsible Disclosure" updated="July 10, 2026">
+    <>
+      <SEO
+        title="Responsible Disclosure"
+        description="How to report a security vulnerability in Securiq's website, product, or infrastructure — what to expect after you report, and our ground rules for good-faith testing."
+        path="/security/disclosure"
+      />
+      <LegalLayout title="Responsible Disclosure" updated="July 10, 2026">
       <p>
         As a security product, we expect scrutiny of our own systems and
         welcome it. If you believe you've found a security vulnerability in
@@ -47,5 +54,6 @@ export function SecurityDisclosurePage() {
         product reaches general availability.
       </p>
     </LegalLayout>
+    </>
   );
 }
