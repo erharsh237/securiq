@@ -1,0 +1,967 @@
+))return;for(let e of document.querySelectorAll(
+))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===
+)for(let e of t.addedNodes)e.tagName===
+&&e!=null)throw Error(
+:throw e.reason;default:switch(typeof e.status==
+)&&(e=null);var c=!1;if(e===null)c=!0;else switch(s){case
+)+c)),r.push(o)),1;c=0;var l=a===
+;if(ee(e))for(var u=0;u<e.length;u++)a=e[u],s=l+oe(a,u),c+=ce(a,r,i,s,o);else if(u=m(e),typeof u==
+)for(e=u.call(e),u=0;!(a=e.next()).done;)a=a.value,s=l+oe(a,u++),c+=ce(a,r,i,s,o);else if(s===
+){if(typeof e.then==
+[object Object]
+object with keys {
+). If you meant to render a collection of children, use an array instead.
+&&typeof window.ErrorEvent==
+){var t=new window.ErrorEvent(
+,{bubbles:!0,cancelable:!0,message:typeof e==
+&&e&&typeof e.message==
+?String(e.message):String(e),error:e});if(!window.dispatchEvent(t))return}else if(typeof process==
+&&typeof process.emit==
+React.Children.only expected to receive a single React element child.
+The argument must be a React element, but you passed
+);var r=g({},e.props),i=e.key;if(t!=null)for(a in t.key!==void 0&&(i=
+&&r&&typeof r.then==
+&&typeof performance.now==
+?setTimeout:null,v=typeof clearTimeout==
+?clearTimeout:null,y=typeof setImmediate<
+){d.callback=null,f=d.priorityLevel;var s=o(d.expirationTime<=t);if(t=e.unstable_now(),typeof s==
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+&&a?(a=a.delay,a=typeof a==
++encodeURIComponent(arguments[1]);for(var n=2;n<arguments.length;n++)t+=
+for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+&&(t?(t=t.crossOrigin,t=typeof t==
+&&t&&typeof t.as==
+){var n=t.as,r=c(n,t.crossOrigin),a=typeof t.integrity==
+?t.integrity:void 0,o=typeof t.fetchPriority==
+?t.fetchPriority:void 0;n===
+?i.d.S(e,typeof t.precedence==
+?t.precedence:void 0,{crossOrigin:r,integrity:a,fetchPriority:o}):n===
+&&i.d.X(e,{crossOrigin:r,integrity:a,fetchPriority:o,nonce:typeof t.nonce==
+){var n=c(t.as,t.crossOrigin);i.d.M(e,{crossOrigin:n,integrity:typeof t.integrity==
+?t.integrity:void 0,nonce:typeof t.nonce==
+){var n=t.as,r=c(n,t.crossOrigin);i.d.L(e,n,{crossOrigin:r,integrity:typeof t.integrity==
+?t.nonce:void 0,type:typeof t.type==
+?t.type:void 0,fetchPriority:typeof t.fetchPriority==
+?t.fetchPriority:void 0,referrerPolicy:typeof t.referrerPolicy==
+?t.referrerPolicy:void 0,imageSrcSet:typeof t.imageSrcSet==
+?t.imageSrcSet:void 0,imageSizes:typeof t.imageSizes==
+?t.imageSizes:void 0,media:typeof t.media==
+)if(t){var n=c(t.as,t.crossOrigin);i.d.m(e,{as:typeof t.as==
+?t.as:void 0,crossOrigin:n,integrity:typeof t.integrity==
+||typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE!=
+?e:null)}var ce=Symbol.for(
+;case te:return
+;case ne:return
+;case ie:return
+)switch(e.$$typeof){case v:return
+;case ee:return(e._context.displayName||
+;var i=Object.getOwnPropertyDescriptor(r.DetermineComponentFrameRoot,
+});var a=r.DetermineComponentFrameRoot(),o=a[0],s=a[1];if(o&&s){var c=o.split(
+);)i++;if(r===c.length||i===l.length)for(r=c.length-1,i=l.length-1;1<=r&&0<=i&&c[r]!==l[i];)i--;for(;1<=r&&0<=i;r--,i--)if(c[r]!==l[i]){if(r!==1||i!==1)do if(r--,i--,0>i||c[r]!==l[i]){var u=
+&&We(e),O&&typeof O.setStrictMode==
+:var r=t.toLowerCase().slice(0,5);if(r!==
+&&typeof r.set==
+,o!=null&&typeof o!=
+):Zt(e,o,Vt(n)):Zt(e,o,Vt(t)),i==null&&a!=null&&(e.defaultChecked=!!a),i!=null&&(e.checked=i&&typeof i!=
+),s!=null&&typeof s!=
++Vt(t),s||t===e.value||(e.value=t),e.defaultValue=t}r??=i,r=typeof r!=
+&&!!r,e.checked=s?e.checked:!!r,e.defaultChecked=!!r,o!=null&&typeof o!=
+)===0;n==null||typeof n==
+:r?e.setProperty(t,n):typeof n!=
+)throw Error(i(62));if(e=e.style,n!=null){for(var r in n)!n.hasOwnProperty(r)||t!=null&&t.hasOwnProperty(r)||(r.indexOf(
+:return!1;default:return!0}}var sn=new Map([[
+javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')
+:$t(e,n.value,n.defaultValue);break a;case
+in e?e.movementX:(e!==Fn&&(Fn&&e.type===
+in e?e.clipboardData:window.clipboardData}})),Hn=On(h({},kn,{data:0})),Un={Esc:
+in e?-e.wheelDeltaY:
+in e?-e.wheelDelta:0},deltaZ:0,deltaMode:0})),$n=On(h({},kn,{newState:0,oldState:0})),er=[9,13,27,32],tr=k&&
+in window,nr=null;k&&
+in document&&(nr=document.documentMode);var rr=k&&
+in window&&!nr,ir=k&&(!tr||nr&&8<nr&&11>=nr),ar=
+),0<t.length&&(n=new An(
+in document;if(!Sr){var Cr=document.createElement(
+),Sr=typeof Cr.oninput==
+||!e||typeof t!=
+),0<r.length&&(t=new An(
++t,n}var Gr={animationend:Wr(
+in window||(delete Gr.animationend.animation,delete Gr.animationiteration.animation,delete Gr.animationstart.animation),
+),ni=new Map,ri=
+)vi(e)&&(s=1);else if(typeof e==
+&&e)switch(e.$$typeof){case S:s=10;break a;case ee:s=9;break a;case C:s=11;break a;case re:s=14;break a;case w:s=16,r=null;break a}s=29,n=Error(i(130,e===null?
+,t),en(t,r.value,r.defaultValue,r.children)}n=r.children,typeof n!=
+&&t&&typeof t.then==
+:throw e=t.reason,Ra(e),e;default:if(typeof t.status==
+)t.then(un,un);else{if(e=U,e!==null&&100<e.shellSuspendCounter)throw Error(i(482));e=t,e.status=
+){var n=t;n.status=
+&&e&&typeof e.then==
++t,e.mode,n),t.return=e,t;if(typeof t==
++n,r):null;if(typeof n==
++r,i);if(typeof r==
+&&o&&o.type===y&&o.key===null&&(o=o.props.children),typeof o==
+){d=m.call(_,d,f);break a}d=m;break a;case 3:m.flags=m.flags&-65537|128;case 0:if(m=g.payload,f=typeof m==
+&&e){if(typeof e.then==
+&&n&&typeof n.then==
+&&c&&typeof c.then==
+}else n=Oo++,t=
+&&t.componentWillReceiveProps(n,r),typeof t.UNSAFE_componentWillReceiveProps==
+in t)for(var r in n={},t)r!==
+&&(ou===null?ou=new Set([this]):ou.add(this));var e=r.stack;this.componentDidCatch(r.value,{componentStack:e===null?
+||o!==null&&typeof o.componentDidCatch==
+in r){var o={};for(var s in r)s!==
+&&o?ca(o):hi,a.state=t.memoizedState,o=n.getDerivedStateFromProps,typeof o==
+&&(Js(t,n,o,r),a.state=t.memoizedState),typeof n.getDerivedStateFromProps==
+||typeof a.getSnapshotBeforeUpdate==
+||typeof a.UNSAFE_componentWillMount!=
+&&typeof a.componentWillMount!=
+||(o=a.state,typeof a.componentWillMount==
+&&a.componentWillMount(),typeof a.UNSAFE_componentWillMount==
+&&a.UNSAFE_componentWillMount(),o!==a.state&&Ys.enqueueReplaceState(a,a.state,null),no(t,r,a,i),to(),a.state=t.memoizedState),typeof a.componentDidMount==
+&&(t.flags|=4194308),r=!0}else if(e===null){a=t.stateNode;var s=t.memoizedProps,c=Qs(n,s);a.props=c;var l=a.context,u=n.contextType;o=hi,typeof u==
+&&u&&(o=ca(u));var d=n.getDerivedStateFromProps;u=typeof d==
+,s=t.pendingProps!==s,u||typeof a.UNSAFE_componentWillReceiveProps!=
+&&typeof a.componentWillReceiveProps!=
+||(s||l!==o)&&Zs(t,a,r,o),qa=!1;var f=t.memoizedState;a.state=f,no(t,r,a,i),to(),l=t.memoizedState,s||f!==l||qa?(typeof d==
+&&(Js(t,n,d,r),l=t.memoizedState),(c=qa||Xs(t,n,c,r,f,l,o))?(u||typeof a.UNSAFE_componentWillMount!=
+||(typeof a.componentWillMount==
+&&a.UNSAFE_componentWillMount()),typeof a.componentDidMount==
+&&(t.flags|=4194308)):(typeof a.componentDidMount==
+&&(t.flags|=4194308),t.memoizedProps=r,t.memoizedState=l),a.props=r,a.state=l,a.context=o,r=c):(typeof a.componentDidMount==
+&&(t.flags|=4194308),r=!1)}else{a=t.stateNode,Ya(e,t),o=t.memoizedProps,u=Qs(n,o),a.props=u,d=t.pendingProps,f=a.context,l=n.contextType,c=hi,typeof l==
+&&l&&(c=ca(l)),s=n.getDerivedStateFromProps,(l=typeof s==
+)||typeof a.UNSAFE_componentWillReceiveProps!=
+||(o!==d||f!==c)&&Zs(t,a,r,c),qa=!1,f=t.memoizedState,a.state=f,no(t,r,a,i),to();var p=t.memoizedState;o!==d||f!==p||qa||e!==null&&e.dependencies!==null&&oa(e.dependencies)?(typeof s==
+&&(Js(t,n,s,r),p=t.memoizedState),(u=qa||Xs(t,n,u,r,f,p,c)||e!==null&&e.dependencies!==null&&oa(e.dependencies))?(l||typeof a.UNSAFE_componentWillUpdate!=
+&&typeof a.componentWillUpdate!=
+||(typeof a.componentWillUpdate==
+&&a.componentWillUpdate(r,p,c),typeof a.UNSAFE_componentWillUpdate==
+&&a.UNSAFE_componentWillUpdate(r,p,c)),typeof a.componentDidUpdate==
+&&(t.flags|=4),typeof a.getSnapshotBeforeUpdate==
+&&(t.flags|=1024)):(typeof a.componentDidUpdate!=
+||o===e.memoizedProps&&f===e.memoizedState||(t.flags|=4),typeof a.getSnapshotBeforeUpdate!=
+||o===e.memoizedProps&&f===e.memoizedState||(t.flags|=1024),t.memoizedProps=r,t.memoizedState=p),a.props=r,a.state=p,a.context=c,r=u):(typeof a.componentDidUpdate!=
+:t=e.tail;for(var n=null;t!==null;)t.alternate!==null&&(n=t),t=t.sibling;n===null?e.tail=null:n.sibling=null;break;case
+:o=typeof r.is==
+),r.multiple?o.multiple=!0:r.size&&(o.size=r.size);break;default:o=typeof r.is==
+:r=!!r.autoFocus;break a;case
+)try{r()}catch(n){J(e,t,n)}finally{e.refCleanup=null,e=e.alternate,e!=null&&(e.refCleanup=null)}else if(typeof n==
+:n.autoFocus&&r.focus();break a;case
+?V.ownerDocument.body:V).removeChild(n.stateNode)}catch(e){J(n,t,e)}else try{V.removeChild(n.stateNode)}catch(e){J(n,t,e)}break;case 18:V!==null&&(fl?(e=V,ef(e.nodeType===9?e.body:e.nodeName===
+))),Id(o,r,n),o[gt]=e,kt(o),r=o;break a;case
+));if(s){for(var c=0;c<s.length;c++)if(o=s[c],o.getAttribute(
+)===(n.crossOrigin==null?null:n.crossOrigin)){s.splice(c,1);break b}}o=a.createElement(r),Id(o,r,n),a.head.appendChild(o);break;case
+;else{c=l.stateNode;var f=l.memoizedProps.style,p=f!=null&&f.hasOwnProperty(
+)?f.display:null;c.style.display=p==null||typeof p==
++p).trim()}}catch(e){J(l,l.return,e)}}}else if(t.tag===6){if(n===null){l=t;try{l.stateNode.nodeValue=a?
+||typeof r.componentDidCatch==
+?null:typeof e==
+&&n&&n.stateNode===i){var a=hd((i[_t]||null).action),o=r.submitter;o&&(t=(t=o[_t]||null)?hd(t.formAction):o.getAttribute(
+),t!==null&&(a=t,o=null));var s=new An(
+&&(s.preventDefault(),e=o?gd(i,o):new FormData(i),As(n,{pending:!0,data:e,method:i.method,action:a},a,e))},currentTarget:i}]})}}for(var vd=0;vd<ri.length;vd++){var yd=ri[vd];ii(yd.toLowerCase(),
+change click focusin focusout input keydown keyup selectionchange
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+beforetoggle cancel close invalid load scroll scrollend toggle
+&&(xd.has(t)||Cd(t,!1,e),Cd(t,!0,e))});var t=e.nodeType===9?e:e.ownerDocument;t===null||t[wd]||(t[wd]=!0,Cd(
+:if(Tn(n)===0)break a;case
+:if(n.button===2)break a;case
+:l=Xn;break;case Yr:case Xr:case Zr:l=Bn;break;case ti:l=Zn;break;case
+:l=$n}var d=(t&4)!=0,f=!d&&(e===
+),f=l==null?c:Dt(l),h=u==null?c:Dt(u),c=new d(g,m+
+,l,n,i),c.target=f,c.relatedTarget=h,g=null,Tt(i)===r&&(d=new d(p,m+
+)var v=yr;else if(pr(c))if(br)v=kr;else{v=Dr;var y=Er}else l=c.nodeName,!l||l.toLowerCase()!==
+?r&&on(r.elementType)&&(v=yr):v=Or;if(v&&=v(e,r)){mr(s,v,n,i);break a}y&&y(e,c,r),e===
+:Ur(s,n,i)}var b;if(tr)b:{switch(e){case
+in xn?xn.value:xn.textContent,lr=!0)),y=Od(r,x),0<y.length&&(x=new Hn(x,e,null,n,i),s.push({event:x,listeners:y}),b?x.data=b:(b=cr(n),b!==null&&(x.data=b)))),(b=rr?ur(e,n):dr(e,n))&&(x=Od(r,
+),0<x.length&&(y=new Hn(
+||tn(e,r):(typeof r==
+)){e.removeAttribute(n);break}if(r==null||typeof r==
+);break}else typeof o==
+,a.target,a,null)));if(r==null||typeof r==
+in r))throw Error(i(61));if(n=r.__html,n!=null){if(a.children!=null)throw Error(i(60));e.innerHTML=n}}break;case
+:e.multiple=r&&typeof r!=
+:e.muted=r&&typeof r!=
+:if(r==null||typeof r==
+:r!=null&&typeof r!=
+):!1!==r&&r!=null&&typeof r!=
+:r==null||typeof r==
+:if(r!=null){if(typeof r!=
+?tn(e,r):(typeof r==
+),t=n.slice(2,a?n.length-7:void 0),o=e[_t]||null,o=o==null?null:o[n],typeof o==
+&&e.removeEventListener(t,o,a),typeof r==
+&&o!==null&&(n in e?e[n]=null:e.hasAttribute(n)&&e.removeAttribute(n)),e.addEventListener(t,r,a);break a}n in e?e[n]=r:!0===r?e.setAttribute(n,
+,e);var r=!1,a=!1,o;for(o in n)if(n.hasOwnProperty(o)){var s=n[o];if(s!=null)switch(o){case
+,e);var c=o=s=a=null,l=null,u=null;for(r in n)if(n.hasOwnProperty(r)){var d=n[r];if(d!=null)switch(r){case
+:if(c!=null)throw Error(i(91));break;default:Z(e,t,s,c,n,null)}en(e,r,a,o);return;case
+:for(l in n)if(n.hasOwnProperty(l)&&(r=n[l],r!=null))switch(l){case
+:e.selected=r&&typeof r!=
+:for(u in n)if(n.hasOwnProperty(u)&&(r=n[u],r!=null))switch(u){case
+:var a=null,o=null,s=null,c=null,l=null,u=null,d=null;for(m in n){var f=n[m];if(n.hasOwnProperty(m)&&f!=null)switch(m){case
+:l=f;default:r.hasOwnProperty(m)||Z(e,t,m,null,r,f)}}for(var p in r){var m=r[p];if(f=n[p],r.hasOwnProperty(p)&&(m!=null||f!=null))switch(p){case
+:for(o in m=s=c=p=null,n)if(l=n[o],n.hasOwnProperty(o)&&l!=null)switch(o){case
+:m=l;default:r.hasOwnProperty(o)||Z(e,t,o,null,r,l)}for(a in r)if(o=r[a],l=n[a],r.hasOwnProperty(a)&&(o!=null||l!=null))switch(a){case
+:for(c in m=p=null,n)if(a=n[c],n.hasOwnProperty(c)&&a!=null&&!r.hasOwnProperty(c))switch(c){case
+:break;default:Z(e,t,c,null,r,a)}for(s in r)if(a=r[s],o=n[s],r.hasOwnProperty(s)&&(a!=null||o!=null))switch(s){case
+:for(var h in n)if(p=n[h],n.hasOwnProperty(h)&&p!=null&&!r.hasOwnProperty(h))switch(h){case
+:e.selected=!1;break;default:Z(e,t,h,null,r,p)}for(l in r)if(p=r[l],m=n[l],r.hasOwnProperty(l)&&p!==m&&(p!=null||m!=null))switch(l){case
+:e.selected=p&&typeof p!=
+:for(var g in n)p=n[g],n.hasOwnProperty(g)&&p!=null&&!r.hasOwnProperty(g)&&Z(e,t,g,null,r,p);for(u in r)if(p=r[u],m=n[u],r.hasOwnProperty(u)&&p!==m&&(p!=null||m!=null))switch(u){case
+){for(var e=0,t=0,n=performance.getEntriesByType(
+||typeof t.children==
+||typeof t.dangerouslySetInnerHTML==
+?e===Kd?!1:(Kd=e,!0):(Kd=null,!1)}var Jd=typeof setTimeout==
+?setTimeout:void 0,Yd=typeof clearTimeout==
+?clearTimeout:void 0,Xd=typeof Promise==
+?Promise:void 0,Zd=typeof queueMicrotask==
+){if(r===0){e.removeChild(i),Np(t);return}r--}else if(n===
+)r++;else if(n===
+)hf(e.ownerDocument.documentElement);else if(n===
+){n=e.ownerDocument.head,hf(n);for(var a=n.firstChild;a;){var o=a.nextSibling,s=a.nodeName;a[Ct]||s===
+||n.removeChild(a),a=o}}else n===
+){if(e===0)break;e--}else n!==
+))break}else if(!r)if(t===
+){var a=i.name==null?null:
+?Ms(t):yf.r(e)}var Sf=typeof document>
+&&t){var i=Jt(t);i=
+]`,typeof n==`string`&&(i+=`[crossorigin=
+]`,typeof n.imageSizes==`string`&&(i+=`[imagesizes=
+;var a=i;switch(t){case
+&&n&&n.imageSrcSet?void 0:e,as:t},n),gf.set(a,e),r.querySelector(i)!==null||t===
+;var o=i.get(a);if(!o){var s={loading:0,preload:null};if(o=r.querySelector(Nf(a)))s.loading=5;else{e=h({rel:
+,href:e,"data-precedence":t},n),(n=gf.get(a))&&Bf(e,n);var c=o=r.createElement(
+&&typeof n.href==
+&&typeof n.precedence==
+){e=Mf(n.href);var o=Ot(a).hoistableStyles,s=o.get(e);if(s||(a=a.ownerDocument||a,s={type:
+,href:n.href,crossOrigin:n.crossOrigin,integrity:n.integrity,media:n.media,hrefLang:n.hrefLang,referrerPolicy:n.referrerPolicy},gf.set(e,n),o||Ff(a,e,n,s.state))),t&&r===null)throw Error(i(528,
+&&t&&typeof t!=
+){var o=a.getAttribute(t)||
+:if(typeof t.precedence!=
+||typeof t.href!=
+:if(typeof t.rel!=
+:if(t.async&&typeof t.async!=
+&&typeof t.async!=
+&&!t.onLoad&&!t.onError&&t.src&&typeof t.src==
+&&(typeof r.media!=
+||!1!==matchMedia(r.media).matches)&&!(n.state.loading&4)){if(n.instance===null){var i=Mf(r.href),a=t.querySelector(Nf(i));if(a){t=a._p,typeof t==
+,r),n.instance=a}e.stylesheets===null&&(e.stylesheets=new Map),e.stylesheets.set(n,t),(t=n.state.preload)&&!(n.state.loading&3)&&(e.count++,n=Yf.bind(e),t.addEventListener(
+)o||Mp(n);else if(o){var s=null;if(a&&a.hasAttribute(
+)){if(i=a,o=a[_t]||null)s=o.formAction;else if(pp(i)!==null)continue}else s=o.action;typeof s==
+})}}if(typeof navigation==
+)throw Error(i(527,Lp,
+};if(typeof __REACT_DEVTOOLS_GLOBAL_HOOK__<
+))try{__REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(n)}catch(e){console.error(e)}}n(),t.exports=h()})),_=c(u()),v=g(),y=typeof __SENTRY_DEBUG__>
+);for(let e=n;e<a.length;e++){let n=a[e];n.length>1024&&(n=n.slice(0,1024));let o=fe.test(n)?n.replace(fe,
+Error while instrumenting ${e}
+Error while triggering instrumentation handler.
+Type: ${e}
+Name: ${ve(r)}
+Error:
+[object Exception]
+[object DOMException]
+[object WebAssembly.Exception]
+)return;let i=n(r);typeof i==
+[object has no keys]
+].includes(typeof t)||typeof t==
+;let u=t;if(u&&typeof u.toJSON==
+,u.toJSON(),l-1,r,i)}catch{}let d=Array.isArray(t)?[]:{},f=0,p=Ye(t);for(let e in p){if(!Object.prototype.hasOwnProperty.call(p,e))continue;if(f>=r){d[e]=
+[Function: ${ve(t)}]
+[BigInt: ${String(t)}]
+[object ${ft(t)}]
+**non-serializable** (${e})
+;let n=[];for(let t=0;t<e.length;t++){let r=e[t];ze(r)?n.push(String(r)):r instanceof Error?n.push(r.message?
+),typeof t.started==
+&&(e.started=t.started),e.ignoreDuration)e.duration=void 0;else if(typeof t.duration==
+,init:e.init,started:new Date(e.started*1e3).toISOString(),timestamp:new Date(e.timestamp*1e3).toISOString(),status:e.status,errors:e.errors,did:typeof e.did==
+||typeof e.did==
+in e&&typeof e.deref==
+No client configured on scope - will not capture exception!
+Sentry syntheticException
+No client configured on scope - will not capture message!
+No client configured on scope - will not capture event!
+chained PromiseLike
+&&n===void 0)return;let o=
+};let t=typeof e==
+).map(e=>{let t=e.indexOf(
+?parseFloat(e):e;if(!(typeof t!=
+in e?e.parentSpanId:
+[Sentry] Returning null from `beforeSendSpan` is disallowed. To drop certain spans, configure the respective integrations directly or use `ignoreSpans`.
+||e instanceof RegExp}var ur=Symbol.for(
+?r+e:[Sr(r),e]:r.push(typeof e==
+?Sr(e):e)}for(let e of n){let[t,n]=e;if(i(
+,length:t.length,filename:e.filename,content_type:e.contentType,attachment_type:e.attachmentType},t]}var Er={sessions:
+Event processor "${i.id||
+}" dropped event
+&&typeof e.unref==
+Integration skipped because it was already installed: ${t.name}
+&&(t.setupOnce(),Di.push(t.name)),t.setup&&typeof t.setup==
+&&t.setup(e),typeof t.preprocessEvent==
+){let n=t.preprocessEvent.bind(t);e.on(
+,(t,r)=>n(t,r,e))}if(typeof t.processEvent==
+){let n=t.processEvent.bind(t),r=Object.assign((t,r)=>n(t,r,e),{id:t.name});e.addEventProcessor(r)}[
+[object process]
+||!e.spans?.length||!e.sdkProcessingMetadata?.hasGenAiSpans||t.getOptions().streamGenAiSpans===!1||Pr(t))return;let n=[],r=[];for(let t of e.spans)t.op?.startsWith(
+)?n.push(Ki(t)):r.push(t);if(n.length===0)return;e.spans=r;let i=t.getDataCollectionOptions().userInfo?
+},{version:2,...Ii()&&{ingest_settings:{infer_ip:i,infer_user_agent:i}},items:n}]}var Ji=Symbol.for(
+];if(a)for(let e of a.trim().split(
+,5),o=parseInt(t,10),s=(isNaN(o)?60:o)*1e3;if(!n)i.all=r+s;else for(let e of n.split(
+Dropping client report. Will not send outcomes (reason: ${t}).
+Sentry responded with status code 413. Envelope was discarded due to exceeding size limits.
+),e):(y&&e.statusCode!==void 0&&(e.statusCode<200||e.statusCode>=300)&&E.warn(
+),r=ea(r,e),e),e=>{throw s(
+Encountered error running transport request:
+Skipped sending event because buffer is full.
+${n.type}: ${n.value}
+Not capturing exception because it's already been captured.
+Discarded session because of missing or non-string release
+No DSN provided, client will not send events.
+Recording outcome: "${r}"${n>1?
+),{}}registerCleanup(e){}dispose(){}_setupIntegrations(){let{integrations:e}=this._options;this._integrations=Ai(this,e),ji(this,e)}_updateSessionFromEvent(e,t){let n=t.level===
+,r=!1,i=t.exception?.values;if(i){r=!0,n=!1;for(let e of i)if(e.mechanism?.handled===!1){n=!0;break}}let a=e.status===
+Captured error event \
+),this._processEvent(e,t,n,r).then(e=>e.event_id,e=>{y&&(va(e)?E.log(e.message):_a(e)?E.warn(e.message):E.warn(e))})}_processEvent(e,t,n,r){let i=this.getOptions(),{sampleRate:a}=i,o=Ta(e),s=wa(e),c=
+,l=a===void 0?void 0:Vn(a);if(s&&typeof l==
+Discarding event because it's not included in the random sample (sampling rate = ${a})
+An event processor returned `null`, will not send event.
+,u),o){let t=1+(e.spans||[]).length;this.recordDroppedEvent(
+${c} returned \
+, will not send event.
+}),this.sendEvent(i,t),i}).then(null,e=>{throw va(e)||_a(e)?e:(this.captureException(e,{mechanism:{handled:!1,type:
+);let e=this._clearOutcomes();if(e.length===0){y&&E.log(
+or a valid event.
+${t} rejected with ${e}
+?e.length*2:typeof e==
+)){let n=e.match(/^data:([^;,]+)/),r=n?n[1]:
+;if(t&&a!==-1){let t=e.slice(a+1);o=t.length>10?
+in e?e.attrs?.ip_address===void 0&&(e.attrs={...e.attrs,ip_address:
+}):e.ipAddress===void 0&&(e.ipAddress=
+){let i=(e._metadata=e._metadata||{}).sdk=e._metadata.sdk||{};i.name||(i.name=
+Event dropped due to being matched by \
+option.
+Event: ${Tt(e)}
+Event dropped due to not having an error message, error type or stacktrace.
+Event: ${Tt(e)}
+option.
+Event: ${Tt(e)}.
+Url: ${$a(e)}
+Event dropped due to not being matched by \
+Cannot extract url for event ${Tt(e)}
+in e&&typeof e.__sentry_fetch_url_host__==
+,e=>{let t=hn().getScopeData(),n=gn().getScopeData(),r=t.conversationId||n.conversationId;if(r){let{op:t,data:n,description:i}=qn(e);if(!t?.startsWith(
+)return!0;if(!wo())return!1;if(To(So.fetch))return!0;let e=!1,t=So.document;if(t&&typeof t.createElement==
+)try{let n=t.createElement(
+,{...o}),t.apply(b,n).then(async t=>(e?e(t):we(
+,{...o,endTimestamp:Pt()*1e3,error:e}),Me(e)&&e.stack===void 0&&(e.stack=r.stack,Ke(e,
+,1));let t=k()?.getOptions().enhanceFetchErrorMessages??
+;if(t!==!1&&e instanceof TypeError&&(e.message===
+NetworkError when attempting to fetch resource.
+${e.message} (${n})
+}}let t=e[0];return{url:ko(t),method:F(t,
+Unrecoverable error caught
+:t?t.error&&typeof t.error.message==
+in t){a=Ho(e,t);let i=a.exception?.values?.[0];if(r&&n&&i&&!i.stacktrace){let t=Uo(e,n);t.length&&(i.stacktrace={frames:t},Dt(a,{synthetic:!0}))}}else{let t=i.name||(Fe(i)?
+${t}: ${i.message}
+in i&&(a.tags={...a.tags,"DOMException.code":
+promise rejection
+captured as ${r} with message \
+(type=${e.type}) captured as ${r}
+Object captured as ${r} with keys: ${n}
+?__SENTRY_RELEASE__:I.SENTRY_RELEASE?.id,sendClientReports:!0,parentSpanIsAlwaysRootSpan:!0,...e}}var as=typeof __SENTRY_DEBUG__>
+,e,{capture:!0})}))},us=80,ds={};try{typeof Node<
+).get),typeof Element<
+).get,ds.getAttribute=Element.prototype.getAttribute),typeof HTMLElement<
+;try{let n=e,r=[],i=0,a=0,o,s=Array.isArray(t)?t:t.keyAttrs,c=!Array.isArray(t)&&t.maxStringLength||us;for(;n&&i++<5&&(o=ms(n,s),!(o===
+;if(typeof HTMLElement<
+&&e instanceof HTMLElement){let t=fs(e,
+)});else{let t=fs(e,
+);if(r&&Le(r)){let e=r.split(/\s+/);for(let t of e)n.push(
+)}}for(let t of[
+].forEach(t=>{let n=L[t]?.prototype;n?.hasOwnProperty?.(
+,Ct());let i=n.type===
+,()=>{let e=L.location.href,t=Ts;Ts=e,t!==e&&we(
+)try{let t=r.createElement(
+);t.hidden=!0,r.head.appendChild(t);let i=t.contentWindow;i?.[e]&&(n=i[e]),r.head.removeChild(t)}catch(t){as&&E.warn(
+&&o.match(/sentry_key/)&&(t.__sentry_own_request__=!0);let s=()=>{let e=t[Ms];if(e&&t.readyState===4){try{e.status_code=t.status}catch{}we(
+in t&&typeof t.onreadystatechange==
+,headers:e.headers,keepalive:n<=6e4&&r<15,...e.fetchOptions};try{let n=await t(e.url,o);return{statusCode:n.status,headers:{"x-sentry-rate-limits":n.headers.get(
+)}}}catch(e){throw js(
+,+t,+r)}let r=Ws.exec(e);if(r){if(r[2]?.indexOf(
+)===0){let e=Gs.exec(r[2]);e&&(r[2]=e[1],r[3]=e[2],r[4]=e[3])}let[e,t]=Zs(r[1]||
+)>-1){let e=Ys.exec(t[3]);e&&(t[1]=t[1]||
+)}let e=t[3],n=t[1]||
+;return[n,e]=Zs(n,e),Hs(e,n,t[4]?+t[4]:void 0,t[5]?+t[5]:void 0)}}]),Zs=(e,t)=>{let n=e.indexOf(
+?t.serializeAttribute:void 0,o=typeof t==
+&&typeof t.maxStringLength==
+?t.maxStringLength:void 0;o&&o>Qs&&(zs&&E.warn(
+),o=Qs),typeof a==
+&&(a=[a]);try{let e=n.event,t=sc(e)?e.target:e;r=ps(t,{keyAttrs:a,maxStringLength:o}),i=Po(t)}catch{r=
+}if(r.length===0)return;let s={category:
+))if(t.error){let i={data:t.error,input:t.args,startTimestamp:n,endTimestamp:r},a={category:
+in I&&O(XMLHttpRequest.prototype,
+&&e.removeEventListener(t,n)}var _c=A((e={})=>{let t=e.lifecycle??
+,setupOnce(){if(I.document===void 0){zs&&E.warn("Using the
+,Sc=A(((e={})=>{let t={onerror:!0,onunhandledrejection:!0,...e};return{name:xc,setupOnce(){Error.stackTraceLimit=50},setup(e){t.onerror&&(Cc(e),Oc(
+Non-Error promise rejection captured with value: ${String(e)}
+:e}var jc=A(()=>({name:
+;if(typeof document<
+;if(Is(e)){let t=Rc(e);if(Ic.test(t))return
+,import.meta.url)).href}r=o(t.map(t=>{if(t=Jc(t,n),t=s(t),t in Yc)return;Yc[t]=!0;let r=t.endsWith(
+);for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===
+))return}let i=document.createElement(
+Unable to preload CSS for ${t}
+);n>=0&&(t.hash=e.substring(n),e=e.substring(0,n));let r=e.indexOf(
+;let r=tl(e)?e:B(h.location,e,t);n&&n(r,e),l=u()+1;let d=al(r,l),f=h.createHref(r.mask||r);try{o.pushState(d,
+,f)}catch(e){if(e instanceof DOMException&&e.name===
+;let r=tl(e)?e:B(h.location,e,t);n&&n(r,e),l=u();let i=al(r,l),d=h.createHref(r.mask||r);o.replaceState(i,
+);let i=typeof t==
+,i=!1){let a=(e,a,o=i,s)=>{let c={relativePath:s===void 0?e.path||
+),c.relativePath=c.relativePath.slice(r.length)}let l=Rl([r,c.relativePath]),u=n.concat(c);e.children&&e.children.length>0&&(z(e.index!==!0,
+]:[a];let o=ml(r.join(
+,o=[];for(let e=0;e<r.length;++e){let s=r[e],c=e===r.length-1,l=a===
+Route path "${e}" will be treated as if it were "${e.replace(/\*$/,
+)}" because the \
+character must always follow a \
+in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/,
+),[new RegExp(i,t?void 0:
+field [${JSON.stringify(r)}].  Please separate it out to the \
+field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.
+,i)));let a=e===
+:i.pathname,s;if(o==null)s=n;else{let e=t.length-1;if(!r&&o.startsWith(
+)){let t=o.split(
+}let c=jl(i,s),l=o&&o!==
+),c}var Ll=e=>e.replace(/[\\/]{2,}/g,
+&&typeof e.statusText==
+&&typeof e.internal==
+}var G=typeof window<
+<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.
+];new Set(Ul);var Wl=[
+,...Ul];new Set(Wl);var Gl=[
+;var q=_.createContext(null);q.displayName=
+;var Zl=_.createContext(new Map);Zl.displayName=
+;var Ql=_.createContext(null);Ql.displayName=
+;var $l=_.createContext(null);$l.displayName=
+;var eu=_.createContext(null);eu.displayName=
+;var tu=_.createContext({outlet:null,matches:[],isDataRoute:!1});tu.displayName=
+;var nu=_.createContext(null);nu.displayName=
+))try{let t=JSON.parse(e.slice(28));if(typeof t==
+&&t&&typeof t.status==
+&&typeof t.statusText==
+&&typeof t.location==
+&&typeof t.reloadDocument==
+&&typeof t.replace==
+))try{let t=JSON.parse(e.slice(40));if(typeof t==
+),_.useContext(eu).location}var du=
+){n.go(r);return}let c=Il(r,JSON.parse(a),i,s.relative===
+,l=a&&a.route;{let e=l&&l.path||
+You rendered descendant <Routes> (or called \
+(under <Route path=
+>) but the parent route path has no trailing
+. This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+
+Please change the parent <Route path=
+> to <Route path=
+)}let u=uu(),d;if(t){let e=typeof t==
+<Routes location>\
+useRoutes(routes, location)\
+),d=e}else d=u;let f=d.pathname||
+){let e=c.replace(/^\//,
+)}let m=n&&n.state.matches.length?n.state.matches.map(e=>Object.assign(e,{route:n.manifest[e.route.id]||e.route})):ul(e,{pathname:p});rl(l||m!=null,
+),rl(m==null||m[m.length-1].route.element!==void 0||m[m.length-1].route.Component!==void 0||m[m.length-1].route.lazy!==void 0,
+);let h=wu(m&&m.map(e=>Object.assign({},e,{params:Object.assign({},o,e.params),pathname:Rl([c,r.encodeLocation?r.encodeLocation(e.pathname.replace(/%/g,
+,mask:void 0,...d},navigationType:
+:e instanceof Error?e.message:JSON.stringify(e),n=e instanceof Error?e.stack:null,r=
+💿 Hey developer 👋
+You can provide a way better UX than this when your app throws errors by providing your own
+prop on your route.
+Unexpected Application Error!
+React Router caught the following error during render
+in e&&typeof e.digest==
+in t&&typeof t.digest==
+){let e=ou(t.digest);if(e){let r=xu.get(t);if(r)throw r;let i=K(e.location,n),a=i.absoluteURL||i.to;if(Kl(a))throw Error(
+Could not find a matching route for errors on route IDs: ${Object.keys(a).join(
+No `HydrateFallback` element provided to render during initial hydration
+${e} can only be used on routes that contain a unique "id"
+A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.
+);let s=e.replace(/^\/*/,
+),c=_.useMemo(()=>({basename:s,navigator:i,static:a,useTransitions:o,future:{}}),[s,i,a,o]);typeof n==
+> is not able to match the URL
+[${typeof e.type==
+?e.type:e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+An index route cannot have child routes.
+is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to
+))||Uu,a=new FormData(e)}else if(Gu(e)||qu(e)&&(e.type===
+)){let o=e.form;if(o==null)throw Error(
+);let s=e.getAttribute(
+))||Uu,a=new FormData(o,e),!Xu()){let{name:t,type:n,value:r}=e;if(n===
+)}else t&&a.append(t,r)}}else if(Wu(e))throw Error(
+&&(o=a,a=void 0),{action:r,method:n.toLowerCase(),encType:i,formData:a,body:o}}Object.getOwnPropertyNames(Object.prototype).sort().join(
+?new URL(e,typeof window>
+Error loading route module \
+, reloading page...
+&&typeof e.imageSrcSet==
+&&typeof e.imageSizes==
+:typeof e.rel==
+&&typeof e.href==
+),e}var gd=_.createContext(void 0);gd.displayName=
+),o=!1,s=[];for(let e of t)typeof e.route.shouldRevalidate==
+?e(t):e!=null&&(e.current=t)})}}_.Component;var wd=typeof window<
+&&Zc.test(l),b=K(l,h);l=b.to;let x=cu(l,{relative:r}),ee=uu(),S=null;if(o){let e=Il(o,[],ee.mask?ee.mask.pathname:
+,{...p,...ne,href:(ie?S:void 0)||b.absoluteURL||x,onClick:ie?w:e,ref:Cd(m,te),target:c,"data-discover":!y&&t===
+),S={isActive:x,isPending:ee,isTransitioning:h},C=x?e:void 0,te;te=typeof n==
+);let ne=typeof i==
+;var Od=_.forwardRef(({discover:e=
+,{ref:m,method:y,action:v,onSubmit:r?c:e=>{if(c&&c(e),e.defaultPrevented)return;e.preventDefault();let r=e.nativeEvent.submitter,s=r?.getAttribute(
+:void 0})});Od.displayName=
+)}try{let n=JSON.parse(sessionStorage.getItem(e)||
+)[t||window.history.state.key];typeof n==
+useFormAction must be used inside a RouteContext
+,{relative:t})},o=uu();if(e==null){a.search=o.search;let e=new URLSearchParams(a.search),t=e.getAll(
+,t));let n=e.toString();a.search=n?
+?n:Rl([n,a.pathname])),ol(a)}var Ld=
+){let t=zd(o,s,a,e);Rd[t]=window.scrollY}try{sessionStorage.setItem(t||Ld,JSON.stringify(Rd))}catch(e){rl(!1,
+},[c.state,e,a,o,s,t])),typeof document<
+){window.scrollTo(0,r);return}try{if(o.hash){let e=document.getElementById(decodeURIComponent(o.hash.slice(1)));if(e){e.scrollIntoView();return}}}catch{rl(!1,
+must be used within
+,r=typeof Map==
+,i=typeof Set==
+,a=typeof ArrayBuffer==
+&&typeof t.valueOf==
+&&typeof t.toString==
+. Instead found type
+),!1)).map(t=>t[e]).reverse().reduce((e,n)=>{let i={};n.filter(e=>{let n,a=Object.keys(e);for(let r=0;r<a.length;r+=1){let i=a[r],o=i.toLowerCase();t.indexOf(o)!==-1&&!(n===
+),vf=e=>Object.keys(e).reduce((t,n)=>{let r=e[n]===void 0?
+${i}>${_f(a,r)}</${e}>`:`<${e} ${ef}=
+>${_f(a,r)}</${e}>`},bf=(e,t,n=!0)=>t.reduce((t,r)=>{let i=r,a=Object.keys(i).filter(e=>!(e===`innerHTML`||e===`cssText`)).reduce((e,t)=>{let r=i[t]===void 0?t:`${t}=
+){let e=t.innerHTML||t.cssText;r.dangerouslySetInnerHTML={__html:e}}else r[n]=t[e]}),_.createElement(e,r)}),wf=(e,t,n=!0)=>{switch(e){case
+,i.priority,r)} ${wf(
+,a.priority,r)} ${wf(
+,{title:s,titleAttributes:c},r)}},Df=[],Of=!!(typeof window<
+)n.innerHTML=t.innerHTML;else if(e===
+){let e=t.cssText;n.appendChild(document.createTextNode(e))}else{let r=e,i=t[r]===void 0?
+):[],a=[...i],o=Object.keys(t);for(let e of o){let r=t[e]||
+))},Ff=(e,t)=>{e!==void 0&&document.title!==e&&(document.title=ff(e)),Pf(
+,i),Ff(d,f);let p={baseTag:Nf(
+):[],o=Object.keys(t);for(let e of a)o.includes(e)||n.removeAttribute(e);for(let e of o){let r=t[e];r==null||r===!1?n.removeAttribute(e):r===!0?n.setAttribute(e,
+)):n.removeAttribute(r)},Wf=()=>{let e={},t={};for(let n of Bf){let{htmlAttributes:r,bodyAttributes:i}=n.props;r&&Object.assign(e,Vf(r)),i&&Object.assign(t,Vf(i))}Uf(
+:return{cssText:t};default:throw Error(
+You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information.
+Only elements types ${Zd.join(
+)} are allowed. Helmet does not support rendering <${e.type}> elements. Refer to our API for more information.
+||Array.isArray(t)&&!t.some(e=>typeof e!=
+Helmet expects a string as a child of <${e.type}>. Did you forget to wrap your children in braces? ( <${e.type}>{\
+}</${e.type}> ) Refer to our API for more information.
++r),n.key!==void 0&&(i=
+in n)for(var a in r={},n)a!==
+Securiq marketing site error:
+flex min-h-screen flex-col items-center justify-center bg-paper px-6 text-center
+h-8 w-auto opacity-80
+mt-6 font-display text-2xl font-semibold text-ink
+Something went wrong.
+mt-2 max-w-sm text-ink/60
+We hit an unexpected error. Try refreshing the page — if it keeps happening, let us know.
+mt-6 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper hover:bg-pine-dark
+)return;Xf=!0;let e=document.createElement(
+,new Date),window.gtag(
+));for(let t of e)document.cookie=
+:`Cookie consent`,
+fixed inset-x-0 bottom-0 z-[60] border-t border-ink/10 bg-paper/95 px-6 py-4 backdrop-blur-md
+mx-auto flex max-w-6xl flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between
+max-w-2xl text-sm text-ink/70
+We use cookies to understand how visitors use this site. We only set them if you accept — see our
+underline hover:text-ink
+flex flex-shrink-0 gap-2
+})]})]})})}var rp=(...e)=>e.filter((e,t,n)=>!!e&&e.trim()!==
+},cp=e=>{for(let t in e)if(t.startsWith(
+},...s},[...o.map(([e,t])=>(0,_.createElement)(e,t)),...Array.isArray(a)?a:[a]])}),$=(e,t)=>{let n=(0,_.forwardRef)(({className:n,...r},i)=>(0,_.createElement)(dp,{ref:i,iconNode:t,className:rp(
+M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z
+M10.268 21a2 2 0 0 0 3.464 0
+M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326
+M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4
+M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5
+M17.997 5.125a4 4 0 0 1 2.526 5.77
+M18 18a4 4 0 0 0 2-7.464
+M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517
+M6 18a4 4 0 0 1-2-7.464
+M6.003 5.125a4 4 0 0 0-2.526 5.77
+M20 6 9 17l-5-5
+M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2
+M3 5V19A9 3 0 0 0 21 19V5
+M3 12A9 3 0 0 0 21 12
+M21.54 15H17a2 2 0 0 0-2 2v4.54
+M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17
+M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05
+M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0
+M15 6a9 9 0 0 0-9 9V3
+M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z
+M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z
+M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z
+M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12
+M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17
+M7 11V7a5 5 0 0 1 10 0v4
+m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7
+M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z
+M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z
+M19.07 4.93A10 10 0 0 0 6.99 3.34
+M2.29 9.62A10 10 0 1 0 21.31 8.35
+M16.24 7.76A6 6 0 1 0 8.23 16.67
+M17.99 11.66A6 6 0 0 1 15.77 16.67
+m13.41 10.59 5.66-5.66
+M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5
+M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09
+M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z
+M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05
+M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8
+m21 21-4.34-4.34
+M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z
+m22 7-8.5 8.5-5-5L2 17
+m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3
+M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2
+M2 21a8 8 0 0 1 13.292-6
+M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z
+M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z
+sticky top-0 z-50 border-b border-ink/8 bg-paper/80 backdrop-blur-md
+mx-auto flex max-w-6xl items-center justify-between px-6 py-4
+flex items-center
+h-8 w-auto sm:h-8 md:h-9
+hidden items-center gap-8 text-sm font-medium text-ink/70 md:flex
+hover:text-ink transition-colors
+flex items-center gap-3
+rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-ink/90 active:bg-ink/80 sm:px-5 sm:py-2.5
+Get early access
+md:hidden p-2 hover:bg-ink/5 rounded-lg transition-colors
+border-t border-ink/8 bg-paper/95 backdrop-blur-md md:hidden
+mx-auto max-w-6xl px-6 py-4
+flex flex-col gap-1
+block px-4 py-3 rounded-lg text-sm font-medium text-ink/70 hover:bg-ink/5 hover:text-ink transition-colors active:bg-ink/10
+Gathering context
+Awaiting your approval
+bg-coral/10 text-coral border-coral/30
+bg-pine/10 text-pine border-pine/30
+bg-muted/10 text-muted border-muted/25
+w-full max-w-sm rounded-2xl border border-ink/10 bg-white/70 p-5 shadow-[0_1px_0_rgba(20,23,28,0.04)] backdrop-blur-sm
+flex items-center justify-between
+font-mono text-[11px] uppercase tracking-wider text-muted
+rounded-full bg-coral/10 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-coral
+mt-3 font-display text-[17px] font-medium leading-snug text-ink
+S3 bucket publicly readable
+mt-1 font-mono text-[11px] text-muted
+mt-4 flex items-center gap-2 rounded-lg border px-3 py-2.5 transition-all duration-500 ${Qp[n.tone]}
+text-[13px] font-medium
+ml-auto flex gap-1.5
+rounded-md bg-pine px-2 py-1 font-mono text-[10px] font-semibold text-paper
+rounded-md border border-ink/15 px-2 py-1 font-mono text-[10px] font-semibold text-ink/60
+mt-4 flex gap-1
+h-1 flex-1 rounded-full transition-colors duration-500 ${n<=e?
+mx-auto max-w-6xl px-6 pb-20 pt-16 md:pt-24
+grid items-center gap-14 md:grid-cols-2
+inline-flex items-center rounded-full border border-pine/25 bg-pine/8 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-pine
+Early access opening soon
+mt-5 font-display text-2xl sm:text-[2.2rem] md:text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-ink lg:text-[3.4rem]
+The security engineer
+you haven't hired yet.
+mt-5 max-w-md text-lg leading-relaxed text-ink/70
+inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-pine-dark
+mt-3 text-sm text-ink/60
+No credit card. We'll email you when your spot opens up.
+underline hover:text-ink/70
+flex justify-center md:justify-end
+border-y border-ink/8 bg-white/50
+mx-auto max-w-6xl px-6 py-20
+grid gap-10 md:grid-cols-3
+font-display text-2xl font-semibold leading-snug text-ink
+You have production infrastructure.
+You don't have a security team.
+text-ink/70 leading-relaxed
+So misconfigurations sit unnoticed. A bucket goes public. A key gets committed. A security group opens wider than it should. Not from negligence — just from nobody's job being to catch it.
+Continuous monitoring, not a periodic scan
+Every finding comes with a description of what's wrong in terms a generalist can understand — no jargon-heavy alerts you have to decode yourself.
+Reviewable remediation plans
+Fixes are drafted as a concrete, specific plan you can read line by line before anything is decided on.
+Routed to where you work
+Incidents and plans surface in Slack or email, so you're not the one who has to remember to check a dashboard.
+Two providers, one place
+AWS and GitHub findings live side by side, so you're not context-switching between separate tools for infra and code.
+Prioritized by real impact
+Findings are ranked by exposure and blast radius, not just severity labels, so the riskiest issues surface first.
+Built to extend
+Incidents and plans carry provider and action-type metadata from day one, so new connectors — Kubernetes, GCP, Azure — plug into the same core.
+mx-auto max-w-6xl px-6 py-24
+mt-3 font-display text-3xl font-semibold leading-tight text-ink
+Not just alerts. Fixes, with your sign-off.
+grid gap-5 md:grid-cols-3
+relative overflow-hidden rounded-3xl border border-pine/20 bg-gradient-to-br from-pine/10 via-white to-white p-8 md:row-span-2 md:flex md:flex-col md:justify-between
+pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-pine/10 blur-2xl
+flex h-12 w-12 items-center justify-center rounded-2xl border border-pine/30 bg-pine text-paper
+mt-5 font-display text-2xl font-semibold leading-snug text-ink
+mt-3 text-sm leading-relaxed text-ink/70
+mt-8 inline-flex w-fit items-center gap-1.5 rounded-full border border-pine/25 bg-white/70 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-pine
+})]}),rm.map(e=>{let t=e.icon;return(0,Q.jsxs)(
+rounded-2xl border border-ink/10 bg-white/60 p-6 transition-colors hover:border-ink/20 hover:bg-white
+flex h-10 w-10 items-center justify-center rounded-xl border border-ink/10 bg-ink/5 text-ink/70
+mt-4 font-display text-base font-semibold text-ink
+mt-1.5 text-sm leading-relaxed text-ink/65
+Provider-native findings from Security Hub, Config, secret scanning.
+The model explains what's wrong in plain language.
+A concrete, reviewable remediation is drafted.
+Nothing executes until a human says go.
+The fix is applied to the real resource.
+Services are checked, rolled back if anything breaks.
+One loop, every time. No shortcuts, no silent changes.
+relative hidden md:block
+absolute left-0 right-0 top-6 h-px bg-gradient-to-r from-transparent via-ink/15 to-transparent
+grid grid-cols-6 gap-4
+relative flex flex-col items-center text-center
+relative z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-paper ${e.label===
+border-coral text-coral
+border-pine text-pine
+mt-3 font-mono text-[11px] text-muted
+mt-1 font-display text-base font-semibold text-ink
+mt-1.5 text-xs leading-relaxed text-ink/60
+relative space-y-8 md:hidden
+absolute bottom-6 left-6 top-6 w-px bg-ink/12
+relative flex gap-4 pl-0
+relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 bg-paper ${e.label===
+font-mono text-[11px] text-muted
+font-display text-base font-semibold text-ink
+mt-1 text-sm leading-relaxed text-ink/65
+mt-14 border-t border-ink/8 pt-6 text-sm text-ink/60
+Verification loops back into detection — every incident that's fixed becomes a check against regressions later.
+A human always approves
+The model reasons and drafts. It never decides to touch production on its own. Every remediation waits for explicit sign-off — every time, no exceptions.
+Every action is logged
+Detection, reasoning, approval, execution, verification — all timestamped and attributable.
+Verified or rolled back
+After a fix is applied, we check services still work. If anything breaks, it's reverted automatically.
+Least-privilege access
+Scoped IAM roles and a GitHub App with only the permissions each integration needs.
+Read-first by default
+We don't store secret values or file contents — only what's needed to describe and remediate a finding.
+Compliance, as we grow
+Built with SOC 2 and ISO 27001 readiness in mind from day one.
+border-y border-ink/8 bg-ink text-paper
+font-mono text-[11px] uppercase tracking-wider text-paper/50
+Safety, by design
+mt-3 font-display text-3xl font-semibold leading-tight
+The model never touches your infrastructure alone.
+mt-4 leading-relaxed text-paper/65
+Detection is deterministic. Only reasoning and planning use an LLM — and even then, execution requires your approval every time.
+mt-14 grid gap-6 lg:grid-cols-5
+relative overflow-hidden rounded-3xl border border-paper/15 bg-paper/5 p-8 lg:col-span-2
+pointer-events-none absolute -left-8 -top-8 h-36 w-36 rounded-full bg-coral/10 blur-2xl
+flex h-12 w-12 items-center justify-center rounded-2xl border border-coral/30 bg-coral/15 text-coral
+mt-5 font-display text-xl font-semibold leading-snug
+mt-3 text-sm leading-relaxed text-paper/65
+divide-y divide-paper/10 rounded-3xl border border-paper/15 bg-paper/[0.03] lg:col-span-3
+flex items-start gap-4 px-6 py-5
+mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-paper/15 bg-paper/5
+font-display text-base font-semibold
+mt-1 text-sm leading-relaxed text-paper/60
+);return{status:e,submit:(0,_.useCallback)(async n=>{if(e!==
+);try{let e=await fetch(um,{method:
+)}}},[e])}}var fm=[
+Both AWS + GitHub
+)&&await a({name:e.name,email:e.email,company_size:e.companySize||
+mx-auto flex max-w-md items-center gap-2.5 rounded-full border border-pine/30 bg-pine/10 px-5 py-3 text-pine
+text-sm font-medium
+You're on the list. We'll be in touch.
+grid gap-4 sm:grid-cols-2
+text-xs font-medium text-ink/60
+mt-1 w-full rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-pine
+What do you use today
+Biggest cloud security headache right now?
+mt-1 w-full resize-none rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-pine
+mt-5 flex items-start gap-2.5 text-sm text-ink/60
+I agree to be contacted about Securiq early access and product updates. See our
+text-pine underline
+mt-2 text-sm text-coral
+Something went wrong. Please try again.
+mt-3 text-xs text-ink/60
+We're onboarding a small group of early teams and shaping v1 around their feedback.
+rounded-3xl border border-ink/10 bg-white/60 px-4 py-10 text-center sm:px-8 sm:py-14 md:px-16
+mx-auto max-w-xl font-display text-3xl font-semibold leading-tight text-ink
+Be first in when we open access.
+mx-auto mt-3 max-w-md text-ink/65
+We're onboarding a small group of early teams before general availability, and shaping v1 around what they tell us.
+M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z
+M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6 z
+border-t border-ink/8
+mx-auto max-w-6xl px-6 py-12
+flex flex-col justify-between gap-8 md:flex-row
+h-6 w-auto opacity-90
+mt-3 max-w-xs text-sm text-ink/60
+Built for teams running real infrastructure without a security hire.
+mt-5 flex items-center gap-3
+noopener noreferrer
+p-2 rounded-lg text-ink/60 hover:text-ink hover:bg-ink/5 transition-colors
+Follow us on Instagram
+Follow us on LinkedIn
+grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3
+mt-3 space-y-2 text-sm
+text-ink/60 hover:text-ink
+Investor inquiries
+Terms of Service
+Security Overview
+Responsible Disclosure
+mt-10 border-t border-ink/8 pt-6 text-sm text-ink/60
+© 2026 Securiq. Built for teams without a security team.
+,noindex:r=!1,ogImage:i=xm,structuredData:a}){let o=n===
+noindex, nofollow
+Securiq — Autonomous AI Security Engineer
+Securiq watches AWS and GitHub for misconfigurations and leaked secrets, drafts a remediation plan, and waits for human approval before executing any change.
+Startups without a security hire
+Engineering teams wanting safer automation
+Teams who want misconfigurations fixed quickly, but won't accept a tool that changes infrastructure without a human checking first.
+Founders raising or selling to enterprise
+Teams who need a credible security posture and audit trail to satisfy investor diligence or enterprise customer security reviews.
+Built for teams without a security org.
+grid gap-8 md:grid-cols-3
+rounded-2xl border border-ink/10 bg-paper p-6
+flex h-11 w-11 items-center justify-center rounded-xl bg-sage text-pine-dark
+mt-4 font-display text-lg font-semibold text-ink
+AWS misconfiguration detection
+GitHub secret scanning + remediation
+Kubernetes and Docker connectors
+Cloudflare and IdP connectors
+GCP and Azure support
+Starting focused. Built to extend.
+mt-4 leading-relaxed text-ink/65
+mx-auto max-w-2xl divide-y divide-ink/8 border-y border-ink/8
+flex items-center justify-between gap-4 py-4
+flex flex-shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 font-mono text-[11px] font-semibold uppercase tracking-wider ${t.className}
+min-h-screen bg-paper
+mx-auto max-w-3xl px-6 py-16
+mt-2 font-display text-3xl font-semibold text-ink
+Why we're building Securiq
+prose-legal mt-10 space-y-6 text-ink/75 [&_p]:leading-relaxed
+We're a small team building this in the open, starting narrow — AWS and GitHub — before expanding to the rest of the stack.
+border-b border-ink/8
+mx-auto flex max-w-3xl items-center justify-between px-6 py-5
+flex items-center gap-1.5 text-sm font-medium text-ink/60 hover:text-ink
+prose-legal mt-10 space-y-6 text-ink/75 [&_h2]:mt-10 [&_h2]:font-display [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-ink [&_p]:leading-relaxed
+Securiq's privacy policy: what information we collect through our website and waitlist, how we use it, and how third-party processors like Formspree and Google Analytics are involved.
+What we collect
+We use your email address to notify you about early access, product updates, and launch announcements related to Securiq. We do not sell or rent your email address to third parties.
+Third-party processors
+Cookies and analytics
+. You can withdraw consent at any time by clearing your browser's site data for securiq.co, which will cause the consent banner to reappear on your next visit.
+You can request removal from our waitlist at any time by contacting us. We will delete your email address from our records within a reasonable time of your request.
+Changes to this policy
+Questions about this policy can be sent to
+Terms of Service for Securiq's website and waitlist during our pre-launch stage, including use of this site, intellectual property, and disclaimers.
+Use of this site
+No current service
+Intellectual property
+All content on this site, including the Securiq name, logo, and design, is the property of Securiq and may not be reproduced without permission.
+This site and any information on it are provided "as is" without warranties of any kind, express or implied.
+We may update these terms as the product develops. Continued use of the site after changes constitutes acceptance of the updated terms.
+Questions can be sent to
+How Securiq handles access and data: read-first, write-on-approval architecture, least-privilege AWS and GitHub integrations, and what we do and don't store.
+Read-first, write-on-approval
+Least-privilege integrations
+Compliance direction
+If you're evaluating Securiq for a security review, reach out at
+and we're happy to walk through specifics. If you've found a vulnerability, see our
+responsible disclosure policy
+How to report a security vulnerability in Securiq's website, product, or infrastructure — what to expect after you report, and our ground rules for good-faith testing.
+with a description of the issue, the steps to reproduce it, and any relevant logs, screenshots, or proof-of-concept code. Please avoid including sensitive customer data in your report.
+})]})]})}var Fm=[{name:
+For small teams getting visibility for the first time.
+AWS or GitHub, one workspace
+For teams running both AWS and GitHub with active remediation.
+AWS + GitHub, unlimited repos
+For teams approaching SOC 2 / ISO 27001 with audit needs.
+Custom integrations, audit exports
+Continuous scanning across connected accounts
+Plain-language incident explanations
+Human-approved remediation plans
+Full audit log of every action taken
+mx-auto max-w-6xl px-6 py-16
+mt-2 font-display text-3xl font-semibold text-ink md:text-4xl
+We're still shaping pricing.
+mt-4 max-w-xl text-ink/70
+mt-12 grid gap-6 md:grid-cols-3
+rounded-2xl border px-6 py-8 ${e.highlighted?
+border-ink/10 bg-white/50
+font-display text-xl font-semibold text-ink
+mt-2 text-sm text-ink/65
+mt-4 font-mono text-[11px] uppercase tracking-wider text-muted
+mt-6 text-sm font-medium text-ink/50
+Pricing announced at launch
+mt-16 rounded-2xl border border-ink/10 bg-white/60 px-8 py-10
+font-display text-lg font-semibold text-ink
+What's included at every tier
+mt-5 grid gap-3 sm:grid-cols-2
+flex items-start gap-2.5 text-sm text-ink/75
+mt-0.5 flex-shrink-0 text-pine
+mt-20 rounded-3xl border border-ink/10 bg-white/60 px-8 py-14 text-center md:px-16
+Join the waitlist for early pricing.
+Early teams get input on pricing and a preferred rate at launch.
+,children:(0,Q.jsx)(mm,{})})]})]}),(0,Q.jsx)(vm,{})]})}var Rm=[{initial:
+Security shouldn't be a tab nobody opens.
+Sets the product and company direction, obsessed with making Securiq something teams actually want to open — not another dashboard that gets ignored.
+Co-Founder, CTO
+The model should draft the fix. You should always pull the trigger.
+Designs the AI systems and architecture behind detection, reasoning, and remediation — with human approval as a hard boundary, not a setting.
+Co-Founder, COO
+Every early team we talk to shapes what we build next.
+Runs operations and customer relationships, making sure the roadmap stays grounded in what real early-access teams actually need.
+border-pine/25 bg-pine/8 text-pine
+border-coral/25 bg-coral/8 text-coral
+border-pine/20 bg-sage/40 text-pine-dark
+Meet the small team building Securiq: founders working on making security something teams actually want to open, with AI-drafted fixes and human approval as a hard boundary.
+mx-auto max-w-5xl px-6 py-16
+Who's building this
+We're a small team building Securiq in the open. Here's who's behind it.
+relative overflow-hidden rounded-3xl border border-ink/10 bg-white/70 p-8 md:p-12
+fadeIn 0.35s ease-out
+pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full blur-3xl ${r.glow}
+relative grid gap-8 md:grid-cols-[auto_1fr] md:items-start
+flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-2xl font-display text-4xl font-semibold ring-4 ${r.avatar} ${r.ring}
+flex flex-wrap items-center gap-3
+font-display text-2xl font-semibold text-ink
+inline-flex items-center rounded-full border px-3 py-1 font-mono text-[11px] uppercase tracking-wider ${r.tag}
+mt-5 flex gap-3
+mt-0.5 flex-shrink-0 text-ink/20
+font-display text-lg italic leading-snug text-ink/80
+mt-5 max-w-xl text-sm leading-relaxed text-ink/65
+mt-6 flex items-center justify-between
+flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 bg-white/60 text-ink/60 transition-colors hover:border-ink/30 hover:text-ink
+flex items-center gap-4
+flex h-10 w-10 items-center justify-center rounded-full font-display text-sm font-semibold transition-all ${i?
+bg-ink/5 text-ink/40 group-hover:bg-ink/10
+h-1 w-1 rounded-full transition-colors ${i?
+General & sales
+Questions about the product, waitlist, or a demo.
+Security & disclosure
+Report a vulnerability or ask about our security posture.
+Investor inquiries and partnership conversations.
+Get in touch with Securiq for product questions, demos, security disclosures, or investor inquiries. We're a small team — email is the fastest way to reach us.
+We're a small team, so email is the fastest way to reach us. Pick the right inbox below and we'll get back to you personally.
+mt-10 grid gap-4
+flex items-start gap-4 rounded-2xl border border-ink/10 bg-white/60 px-6 py-5 transition-colors hover:border-ink/20 hover:bg-white
+mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-ink/5
+mt-0.5 text-sm text-ink/60
+mt-1.5 text-sm font-medium text-pine
+Is it safe to let an AI make changes to my infrastructure?
+What if the AI's plan is wrong?
+Do you store our cloud credentials?
+Securiq connects via scoped IAM roles and GitHub App permissions rather than long-lived credentials, so access can be limited to exactly what's needed and revoked at any time from your side.
+Which providers do you support?
+How is this different from tools like Wiz or Orca?
+When can I get access?
+We're onboarding a small group of early teams before general availability. Join the waitlist and we'll reach out as spots open up.
+Things people usually ask.
+mx-auto max-w-3xl divide-y divide-ink/8 border-y border-ink/8
+font-display text-lg font-medium text-ink
+flex-shrink-0 text-muted transition-transform duration-200 ${i?
+grid overflow-hidden transition-all duration-300 ${i?
+grid-rows-[0fr] opacity-0
+min-h-0 max-w-2xl leading-relaxed text-ink/65
+Frequently Asked Questions
+Answers to common questions about how Securiq scans AWS and GitHub, how remediation approval works, what data we access, and how pricing and onboarding work.
+The page you're looking for doesn't exist or may have moved.
+mt-8 font-mono text-sm text-muted
+This page doesn't exist.
+The link might be broken, or the page may have moved.
+mt-7 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper hover:bg-pine-dark

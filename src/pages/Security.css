@@ -1,0 +1,147 @@
+.security-page-wrapper {
+  background-color: var(--bg-default);
+  min-height: 100dvh;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  position: relative;
+  z-index: 1;
+}
+
+.security-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--glass-border-light);
+}
+
+.security-logo {
+  height: 52px;
+}
+
+.security-back-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s var(--ease-smooth);
+}
+
+.security-back-link:hover {
+  color: var(--text-primary);
+}
+
+.security-content {
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.security-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.security-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.security-title {
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.security-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.security-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+
+
+.security-cta-banner {
+  background: linear-gradient(135deg, var(--glass-bg-subtle) 0%, var(--glass-border-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cta-banner-content h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.cta-banner-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cta-banner-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.cta-banner-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .security-bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .glass-card.large {
+    grid-column: span 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .security-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

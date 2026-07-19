@@ -1,0 +1,272 @@
+.team-page {
+  padding-top: calc(var(--nav-height) + 4rem);
+  padding-bottom: 6rem;
+  background-color: var(--bg-default);
+  min-height: 100dvh;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  position: relative;
+  z-index: 1;
+}
+
+.team-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.team-header {
+  margin-bottom: 4rem;
+}
+
+.team-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.team-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.team-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ═══════════════════════════════════════════════
+   CAROUSEL CARD
+   ═══════════════════════════════════════════════ */
+.team-carousel-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  /* The pseudo-element will use --card-glow */
+}
+
+/* Subtle glowing background tied to the active member */
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle at top right, var(--card-glow), transparent 70%);
+  opacity: 0.15;
+  pointer-events: none;
+  transition: background 0.4s ease;
+}
+
+.team-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.team-avatar-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px -8px rgba(0,0,0,0.5);
+  border: 1px solid var(--glass-border);
+  transition: background-color 0.4s ease;
+}
+
+.team-details {
+  flex-grow: 1;
+}
+
+.team-name-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-name-row h2 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.team-role-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 99px;
+  border: 1px solid;
+  transition: all 0.4s ease;
+}
+
+.team-quote {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 4px;
+  opacity: 0.5;
+}
+
+.team-quote p {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.team-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ═══════════════════════════════════════════════
+   CAROUSEL CONTROLS
+   ═══════════════════════════════════════════════ */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.carousel-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: var(--bg-default);
+  border-color: var(--accent);
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.indicator-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.indicator-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.indicator-btn:hover:not(.active) {
+  background-color: var(--glass-bg-light) !important;
+  color: white !important;
+}
+
+.indicator-btn.active {
+  width: 52px;
+  height: 52px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.indicator-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-dot.active {
+  background-color: var(--text-primary);
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .team-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .team-card-inner {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .team-name-row {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .team-quote {
+    flex-direction: column;
+    align-items: center;
+  }
+}
