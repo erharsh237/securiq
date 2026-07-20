@@ -126,11 +126,11 @@ export default function TrustArchitectureSection() {
                     <div className="flow-lines">
                       <div className="flow-line allow-line">
                         <span className="flow-label">Infrastructure Config (VPC, IAM)</span>
-                        <div className="animated-arrow green-arrow">→</div>
+                        <div className="animated-arrow green-arrow"><span>&gt;</span></div>
                       </div>
                       <div className="flow-line deny-line">
                         <span className="flow-label">Customer Application Data</span>
-                        <div className="animated-block red-block">× BLOCKED</div>
+                        <div className="animated-block red-block"><span>× BLOCKED</span></div>
                       </div>
                     </div>
                     <div className="flow-dest">
