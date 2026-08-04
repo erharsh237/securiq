@@ -1,4 +1,9 @@
+# Allow all search engine crawlers to index public pages
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /private
 
+# Sitemap Index URL
 Sitemap: https://securiq.co/sitemap.xml
