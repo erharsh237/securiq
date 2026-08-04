@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { AnimatedGridBackgroundSection } from './components/AnimatedGridBackground';
@@ -39,7 +40,7 @@ const FEATURE_MODAL_DATA = {
     badge: 'MULTI-CLOUD',
     icon: Cloud,
     color: '#0284c7',
-    description: 'SecurIQ provides unified visibility and automated protection across AWS, GitHub, GCP, Azure, and multi-cloud code repositories without agent installation.',
+    description: 'Securiq provides unified visibility and automated protection across AWS, GitHub, GCP, Azure, and multi-cloud code repositories without agent installation.',
     highlights: [
       'Scoped IAM Role & OIDC Token Authentication',
       'GitHub App integration for automated secret scanning',
@@ -56,7 +57,7 @@ const FEATURE_MODAL_DATA = {
     highlights: [
       'Automated regression checks upon deployment',
       'Dry-run plan validation prior to terraform apply',
-      'Zero production downtime guarantees',
+      'Designed to help prevent production downtime',
       'Synthetic API endpoint health & policy probes'
     ]
   },
@@ -65,13 +66,51 @@ const FEATURE_MODAL_DATA = {
     badge: 'AUTOMATED',
     icon: Code2,
     color: '#7c3aed',
-    description: 'SecurIQ automatically generates, formats, and tests precise HCL Terraform code patches to remediate security drifts.',
+    description: 'Securiq automatically generates, formats, and tests precise HCL Terraform code patches to remediate security drifts.',
     highlights: [
       'Context-aware HCL patch generation',
       'Automatic state lock & terraform plan verification',
       'Human-in-the-loop 1-click execution',
       'Automated Git branch creation & Pull Request opening'
     ]
+  }
+};
+
+const ROUTE_SEO_META = {
+  home: {
+    title: "SecuriQ | AI SECURITY ENGINEER",
+    description: "Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat detection, and automated Terraform HCL remediation.",
+    canonical: "https://securiq.co/"
+  },
+  about: {
+    title: "About Us | SecuriQ",
+    description: "Learn about Securiq's mission to revolutionize cloud infrastructure security through autonomous AI engineering and zero standing access posture.",
+    canonical: "https://securiq.co/about"
+  },
+  security: {
+    title: "Radically Transparent Security | SecuriQ",
+    description: "Explore Securiq's zero standing access architecture, short-lived OIDC token authentication, SOC 2 roadmap, and data privacy safeguards.",
+    canonical: "https://securiq.co/security"
+  },
+  pricing: {
+    title: "Transparent Cloud Security Pricing | SecuriQ",
+    description: "Preview Securiq's flexible pricing tiers designed for startups to enterprises with zero hidden usage fees.",
+    canonical: "https://securiq.co/pricing"
+  },
+  team: {
+    title: "Leadership & Security Team | SecuriQ",
+    description: "Meet the founders and security engineers behind Securiq's autonomous cloud security platform.",
+    canonical: "https://securiq.co/team"
+  },
+  faq: {
+    title: "Frequently Asked Questions | SecuriQ",
+    description: "Get answers about Securiq's autonomous remediation, zero standing access, deployment options, and cloud integrations.",
+    canonical: "https://securiq.co/faq"
+  },
+  '404': {
+    title: "404 Page Not Found | SecuriQ",
+    description: "The requested security resource or link does not exist.",
+    canonical: "https://securiq.co/404"
   }
 };
 
@@ -119,137 +158,152 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const seoMeta = ROUTE_SEO_META[currentView] || ROUTE_SEO_META.home;
+
   return (
-    <ErrorBoundary>
-      <div className="app-container">
-        {/* Offline / No Internet Warning Banner */}
-        <NoInternetBanner />
+    <HelmetProvider>
+      <ErrorBoundary>
+        <Helmet>
+          <title>{seoMeta.title}</title>
+          <meta name="description" content={seoMeta.description} />
+          <link rel="canonical" href={seoMeta.canonical} />
+          <meta property="og:title" content={seoMeta.title} />
+          <meta property="og:description" content={seoMeta.description} />
+          <meta property="og:url" content={seoMeta.canonical} />
+          <meta name="twitter:title" content={seoMeta.title} />
+          <meta name="twitter:description" content={seoMeta.description} />
+        </Helmet>
 
-        <Header 
-          onOpenModal={() => setIsModalOpen(true)} 
-          onOpenContactModal={() => setIsContactModalOpen(true)}
-          onOpenSignInModal={() => setIsSignInModalOpen(true)}
-          currentView={currentView}
-          onNavigate={handleNavigate}
-        />
+        <div className="app-container">
+          {/* Offline / No Internet Warning Banner */}
+          <NoInternetBanner />
 
-        <main>
-          {currentView === 'about' ? (
-            <AboutPage 
-              onOpenModal={() => setIsModalOpen(true)}
-              onOpenContactModal={() => setIsContactModalOpen(true)}
-            />
-          ) : currentView === 'pricing' ? (
-            <PricingPage 
-              onOpenModal={() => setIsModalOpen(true)} 
-            />
-          ) : currentView === 'faq' ? (
-            <FaqPage 
-              onOpenModal={() => setIsModalOpen(true)} 
-            />
-          ) : currentView === 'security' ? (
-            <SecurityPage 
-              onOpenModal={() => setIsSecurityTeamModalOpen(true)} 
-            />
-          ) : currentView === 'team' ? (
-            <TeamPage 
-              onOpenContactModal={() => setIsContactModalOpen(true)}
-            />
-          ) : currentView === '404' ? (
-            <NotFound 
-              onGoHome={() => handleNavigate('home')} 
-            />
-          ) : currentView === '500' ? (
-            <ComponentThatThrows />
-          ) : currentView === 'empty' ? (
-            <div style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px', margin: '0 auto' }}>
-              <EmptyState 
-                title="No Active Drift Remediation Logs"
-                description="Your cloud infrastructure is 100% compliant with zero pending policy drifts."
-                actionText="Run Manual Security Scan"
-                onAction={() => alert("Triggered Manual Security Scan")}
+          <Header 
+            onOpenModal={() => setIsModalOpen(true)} 
+            onOpenContactModal={() => setIsContactModalOpen(true)}
+            onOpenSignInModal={() => setIsSignInModalOpen(true)}
+            currentView={currentView}
+            onNavigate={handleNavigate}
+          />
+
+          <main>
+            {currentView === 'about' ? (
+              <AboutPage 
+                onOpenModal={() => setIsModalOpen(true)}
+                onOpenContactModal={() => setIsContactModalOpen(true)}
               />
-            </div>
-          ) : currentView === 'loading' ? (
-            <div style={{ paddingTop: '140px', paddingBottom: '80px', maxWidth: '600px', margin: '0 auto' }}>
-              <SlowNetworkLoading />
-              <div style={{ marginTop: '40px' }}>
-                <LoadingSkeleton lines={4} height={20} />
+            ) : currentView === 'pricing' ? (
+              <PricingPage 
+                onOpenModal={() => setIsModalOpen(true)} 
+              />
+            ) : currentView === 'faq' ? (
+              <FaqPage 
+                onOpenModal={() => setIsModalOpen(true)} 
+              />
+            ) : currentView === 'security' ? (
+              <SecurityPage 
+                onOpenModal={() => setIsSecurityTeamModalOpen(true)} 
+              />
+            ) : currentView === 'team' ? (
+              <TeamPage 
+                onOpenContactModal={() => setIsContactModalOpen(true)}
+              />
+            ) : currentView === '404' ? (
+              <NotFound 
+                onGoHome={() => handleNavigate('home')} 
+              />
+            ) : currentView === '500' ? (
+              <ComponentThatThrows />
+            ) : currentView === 'empty' ? (
+              <div style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px', margin: '0 auto' }}>
+                <EmptyState 
+                  title="No Active Drift Remediation Logs"
+                  description="Your cloud infrastructure is 100% compliant with zero pending policy drifts."
+                  actionText="Run Manual Security Scan"
+                  onAction={() => alert("Triggered Manual Security Scan")}
+                />
               </div>
-            </div>
-          ) : currentView === 'restricted' ? (
-            <div style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px', margin: '0 auto' }}>
-              <PermissionDeniedState 
-                title="Workspace Settings Restricted"
-                description="Administrative IAM role required to modify OIDC secrets or Terraform deployment pipelines."
-              />
-            </div>
-          ) : (
-            <>
-              {/* Full Screen Grid Background with 4-Quadrant Hero Layout */}
-              <AnimatedGridBackgroundSection>
-                <HeroLayout />
-              </AnimatedGridBackgroundSection>
+            ) : currentView === 'loading' ? (
+              <div style={{ paddingTop: '140px', paddingBottom: '80px', maxWidth: '600px', margin: '0 auto' }}>
+                <SlowNetworkLoading />
+                <div style={{ marginTop: '40px' }}>
+                  <LoadingSkeleton lines={4} height={20} />
+                </div>
+              </div>
+            ) : currentView === 'restricted' ? (
+              <div style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px', margin: '0 auto' }}>
+                <PermissionDeniedState 
+                  title="Workspace Settings Restricted"
+                  description="Administrative IAM role required to modify OIDC secrets or Terraform deployment pipelines."
+                />
+              </div>
+            ) : (
+              <>
+                {/* Full Screen Grid Background with 4-Quadrant Hero Layout */}
+                <AnimatedGridBackgroundSection>
+                  <HeroLayout />
+                </AnimatedGridBackgroundSection>
 
-              {/* Value Proposition Section Below Hero */}
-              <ValuePropSection onOpenModal={() => setIsModalOpen(true)} />
+                {/* Value Proposition Section Below Hero */}
+                <ValuePropSection onOpenModal={() => setIsModalOpen(true)} />
 
-              {/* Securiq, Reimagined Pipeline Timeline Section */}
-              <TimelineSection />
+                {/* Securiq, Reimagined Pipeline Timeline Section */}
+                <TimelineSection />
 
-              {/* Features Carousel Section (#f4f4f4 bg) */}
-              <FeaturesSection />
+                {/* Features Carousel Section (#f4f4f4 bg) */}
+                <FeaturesSection />
 
-              {/* 7-Stage Bento Grid Workflow Section (#ffffff bg) */}
-              <WorkflowSection />
-            </>
-          )}
-        </main>
+                {/* 7-Stage Bento Grid Workflow Section (#ffffff bg) */}
+                <WorkflowSection />
+              </>
+            )}
+          </main>
 
-        {/* Global Footer Rendered Across Every Page */}
-        <Footer 
-          onOpenModal={() => setIsModalOpen(true)}
-          onOpenContactModal={() => setIsContactModalOpen(true)}
-          onOpenSecurityModal={() => setIsSecurityTeamModalOpen(true)}
-          onOpenFeatureModal={(key) => setActiveFeatureKey(key)}
-          onOpenSignInModal={() => setIsSignInModalOpen(true)}
-          onNavigate={handleNavigate}
-        />
+          {/* Global Footer Rendered Across Every Page */}
+          <Footer 
+            onOpenModal={() => setIsModalOpen(true)}
+            onOpenContactModal={() => setIsContactModalOpen(true)}
+            onOpenSecurityModal={() => setIsSecurityTeamModalOpen(true)}
+            onOpenFeatureModal={(key) => setActiveFeatureKey(key)}
+            onOpenSignInModal={() => setIsSignInModalOpen(true)}
+            onNavigate={handleNavigate}
+          />
 
-        {/* Early Access Modal Box */}
-        <EarlyAccessModal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-        />
+          {/* Early Access Modal Box */}
+          <EarlyAccessModal
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
 
-        {/* Glassmorphism Contact Us Pop-Up Modal */}
-        <ContactModal
-          isOpen={isContactModalOpen}
-          onClose={() => setIsContactModalOpen(false)}
-        />
+          {/* Glassmorphism Contact Us Pop-Up Modal */}
+          <ContactModal
+            isOpen={isContactModalOpen}
+            onClose={() => setIsContactModalOpen(false)}
+          />
 
-        {/* Glassmorphism Contact Security Team Pop-Up Modal */}
-        <SecurityTeamModal
-          isOpen={isSecurityTeamModalOpen}
-          onClose={() => setIsSecurityTeamModalOpen(false)}
-        />
+          {/* Glassmorphism Contact Security Team Pop-Up Modal */}
+          <SecurityTeamModal
+            isOpen={isSecurityTeamModalOpen}
+            onClose={() => setIsSecurityTeamModalOpen(false)}
+          />
 
-        {/* Glassmorphism Feature Detail Pop-Up Modal */}
-        <FeatureDetailModal
-          isOpen={!!activeFeatureKey}
-          onClose={() => setActiveFeatureKey(null)}
-          featureData={activeFeatureKey ? FEATURE_MODAL_DATA[activeFeatureKey] : null}
-          onOpenEarlyAccess={() => setIsModalOpen(true)}
-        />
+          {/* Glassmorphism Feature Detail Pop-Up Modal */}
+          <FeatureDetailModal
+            isOpen={!!activeFeatureKey}
+            onClose={() => setActiveFeatureKey(null)}
+            featureData={activeFeatureKey ? FEATURE_MODAL_DATA[activeFeatureKey] : null}
+            onOpenEarlyAccess={() => setIsModalOpen(true)}
+          />
 
-        {/* Glassmorphism Sign In Notice Pop-Up Modal */}
-        <SignInNoticeModal
-          isOpen={isSignInModalOpen}
-          onClose={() => setIsSignInModalOpen(false)}
-          onOpenEarlyAccess={() => setIsModalOpen(true)}
-        />
-      </div>
-    </ErrorBoundary>
+          {/* Glassmorphism Sign In Notice Pop-Up Modal */}
+          <SignInNoticeModal
+            isOpen={isSignInModalOpen}
+            onClose={() => setIsSignInModalOpen(false)}
+            onOpenEarlyAccess={() => setIsModalOpen(true)}
+          />
+        </div>
+      </ErrorBoundary>
+    </HelmetProvider>
   );
 }
 

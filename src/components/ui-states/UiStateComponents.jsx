@@ -15,7 +15,7 @@ import {
 import './UiStateComponents.css';
 
 // 1. Loading Spinner
-export function LoadingSpinner({ text = 'Loading SecurIQ...' }) {
+export function LoadingSpinner({ text = 'Loading Securiq...' }) {
   return (
     <div className="ui-loading-wrapper">
       <Loader2 size={36} className="spinner-icon" />

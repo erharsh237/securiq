@@ -113,7 +113,7 @@ export default function ContactModal({ isOpen, onClose }) {
                 <span className="contact-modal-pill">CONTACT US</span>
                 <h2 className="contact-modal-title">Talk to Security Engineering</h2>
                 <p className="contact-modal-subtitle">
-                  Questions about SecurIQ, vendor security reviews, or early access? Send us a message below.
+                  Questions about Securiq, vendor security reviews, or early access? Send us a message below.
                 </p>
               </div>
 

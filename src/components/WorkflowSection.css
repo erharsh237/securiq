@@ -20,7 +20,7 @@
 /* Centered Header */
 .workflow-header {
   text-align: center;
-  max-width: 650px;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,6 +65,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-bottom: 48px;
 }
 
 /* Bento Span Classes */
@@ -118,13 +119,6 @@
   justify-content: center;
 }
 
-.bento-step-num {
-  font-family: monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
 .bento-card-body {
   display: flex;
   flex-direction: column;
@@ -132,7 +126,7 @@
 }
 
 .bento-card-title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: #0f172a;
   margin: 0;
@@ -155,66 +149,37 @@
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Visual Badges (Light Theme) */
-.bento-card-footer {
-  margin-top: 4px;
-}
-
-.bento-visual-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.light-cyan {
-  background: rgba(2, 132, 199, 0.08);
-  border: 1px solid rgba(2, 132, 199, 0.2);
-  color: #0284c7;
-}
-
-.light-purple {
-  background: rgba(124, 58, 237, 0.08);
-  border: 1px solid rgba(124, 58, 237, 0.2);
-  color: #7c3aed;
-}
-
-.light-amber {
-  background: rgba(217, 119, 6, 0.08);
-  border: 1px solid rgba(217, 119, 6, 0.2);
-  color: #d97706;
-}
-
-.light-yellow {
-  background: rgba(202, 138, 4, 0.08);
-  border: 1px solid rgba(202, 138, 4, 0.2);
-  color: #ca8a04;
-}
-
-.light-green {
-  background: rgba(5, 150, 105, 0.08);
-  border: 1px solid rgba(5, 150, 105, 0.2);
-  color: #059669;
-}
-
-.light-rose {
-  background: rgba(225, 29, 72, 0.08);
-  border: 1px solid rgba(225, 29, 72, 0.2);
-  color: #e11d48;
-}
-
-.bento-light-code {
+/* Engine Tech Specs Bar */
+.engine-tech-spec-bar {
+  width: 100%;
   background: #0f172a;
-  border-radius: 10px;
-  padding: 10px 14px;
-  font-family: monospace;
-  font-size: 0.78rem;
+  border-radius: 18px;
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+.tech-spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   color: #38bdf8;
-  white-space: pre-wrap;
+}
+
+.spec-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* Responsive Media Queries */
@@ -225,6 +190,12 @@
   .bento-span-2,
   .bento-span-3 {
     grid-column: span 2;
+  }
+  .engine-tech-spec-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+    gap: 16px;
   }
 }
 

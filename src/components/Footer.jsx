@@ -84,7 +84,7 @@ export default function Footer({
               <li><a href="#home" onClick={(e) => handleNavClick(e, 'home', null)}>Overview</a></li>
               <li><a href="#timeline" onClick={(e) => handleNavClick(e, 'home', '#timeline')}>Remediation Pipeline</a></li>
               <li><a href="#features" onClick={(e) => handleNavClick(e, 'home', '#features')}>Features</a></li>
-              <li><a href="#workflow" onClick={(e) => handleNavClick(e, 'home', '#workflow')}>7-Stage Workflow</a></li>
+              <li><a href="#workflow" onClick={(e) => handleNavClick(e, 'home', '#workflow')}>Engine Architecture</a></li>
               <li><a href="#pricing" onClick={(e) => handleNavClick(e, 'pricing', null)}>Pricing Preview</a></li>
             </ul>
           </div>

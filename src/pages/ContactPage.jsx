@@ -85,7 +85,7 @@ export default function ContactPage() {
           <span className="contact-pill-tag">GET IN TOUCH</span>
           <h1 className="contact-title">Contact Us</h1>
           <p className="contact-subtitle">
-            Have questions about SecurIQ, vendor security reviews, or early access? Our security engineering team is here to help.
+            Have questions about Securiq, vendor security reviews, or early access? Our security engineering team is here to help.
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <CheckCircle2 size={56} className="success-icon" />
                 <h2 className="success-title">Message Sent!</h2>
                 <p className="success-desc">
-                  Thank you for contacting SecurIQ. A member of our security engineering team will review your message and reach out within 2 hours.
+                  Thank you for contacting Securiq. A member of our security engineering team will review your message and reach out within 2 hours.
                 </p>
                 <button 
                   className="btn-contact-reset"

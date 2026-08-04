@@ -101,7 +101,7 @@ export default function SecurityTeamModal({ isOpen, onClose }) {
               <CheckCircle2 size={54} className="success-icon" />
               <h2 className="success-title">Security Inquiry Sent!</h2>
               <p className="success-desc">
-                Thank you for contacting the SecurIQ Security Operations Team. A security engineer will review your request and reach out shortly.
+                Thank you for contacting the Securiq Security Operations Team. A security engineer will review your request and reach out shortly.
               </p>
               <button className="btn-modal-done" onClick={handleClose}>
                 Done

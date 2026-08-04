@@ -37,7 +37,7 @@ export class ErrorBoundary extends React.Component {
             <span className="error-pill-tag">500 APPLICATION CRASH</span>
             <h1 className="error-title">Something Went Wrong</h1>
             <p className="error-desc">
-              SecurIQ encountered an unhandled runtime exception. Don't worry, your data and infrastructure remain 100% secure.
+              Securiq encountered an unhandled runtime exception. Don't worry, your data and infrastructure remain 100% secure.
             </p>
 
             {this.state.error && (

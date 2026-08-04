@@ -32,19 +32,19 @@ const faqItems = [
     id: 'credentials',
     question: 'Do you store our cloud credentials?',
     icon: Key,
-    answer: "No standing credentials are ever stored. SecurIQ operates exclusively using short-lived ephemeral session tokens and OIDC role-assumption. Access tokens expire immediately after execution.",
+    answer: "No standing credentials are ever stored. Securiq operates exclusively using short-lived ephemeral session tokens and OIDC role-assumption. Access tokens expire immediately after execution.",
   },
   {
     id: 'environments',
     question: 'Which environments do you support?',
     icon: Server,
-    answer: "SecurIQ seamlessly integrates across AWS (IAM, S3, EC2, EKS, Lambda), GitHub repositories, Terraform Cloud/OSS, Google Cloud Platform (GCP), and Microsoft Azure.",
+    answer: "Securiq seamlessly integrates across AWS (IAM, S3, EC2, EKS, Lambda), GitHub repositories, Terraform Cloud/OSS, Google Cloud Platform (GCP), and Microsoft Azure.",
   },
   {
     id: 'differentiation',
     question: 'How is this different from tools like Wiz or Orca?',
     icon: Layers,
-    answer: "Traditional scanners like Wiz or Orca flood your security team with endless alerts and zero code fixes. SecurIQ not only detects vulnerabilities, but automatically drafts, simulates, and executes verified 1-click Terraform remediations.",
+    answer: "Traditional scanners like Wiz or Orca flood your security team with endless alerts and zero code fixes. Securiq not only detects vulnerabilities, but automatically drafts, simulates, and executes verified 1-click Terraform remediations.",
   },
   {
     id: 'access-timing',
@@ -74,7 +74,7 @@ export default function FaqPage({ onOpenModal }) {
           <span className="faq-pill-tag">QUESTIONS</span>
           <h1 className="faq-page-title">Things people usually ask.</h1>
           <p className="faq-page-subtitle">
-            Everything you need to know about SecurIQ's autonomous remediation, security safeguards, and deployment options.
+            Everything you need to know about Securiq's autonomous remediation, security safeguards, and deployment options.
           </p>
         </motion.div>
 

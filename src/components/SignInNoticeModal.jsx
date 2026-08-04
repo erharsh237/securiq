@@ -44,7 +44,7 @@ export default function SignInNoticeModal({ isOpen, onClose, onOpenEarlyAccess }
             <h2 className="signin-modal-title">Sign In Not Available Yet</h2>
             
             <p className="signin-modal-desc">
-              The SecurIQ developer console and app dashboard are currently in private beta and will be enabled right after our public launch.
+              The Securiq developer console and app dashboard are currently in private beta and will be enabled right after our public launch.
             </p>
           </div>
 

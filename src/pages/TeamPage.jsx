@@ -11,7 +11,7 @@ const teamMembers = [
     badgeClass: 'badge-dark',
     initials: 'HS',
     gradient: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-    bio: "Leading SecurIQ's vision to revolutionize cloud infrastructure security through autonomous AI engineering and zero standing access posture.",
+    bio: "Leading Securiq's vision to revolutionize cloud infrastructure security through autonomous AI engineering and zero standing access posture.",
     icon: Sparkles,
     color: '#0f172a',
     linkedin: '#',
@@ -75,7 +75,7 @@ export default function TeamPage({ onOpenContactModal }) {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <span className="team-pill-tag">OUR LEADERSHIP & TEAM</span>
-          <h1 className="team-title">Meet the Minds Behind SecurIQ.</h1>
+          <h1 className="team-title">Meet the Minds Behind Securiq.</h1>
           <p className="team-subtitle">
             A team of systems architects, security researchers, and AI developers building the next era of autonomous cloud remediation.
           </p>

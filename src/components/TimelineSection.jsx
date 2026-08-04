@@ -110,7 +110,7 @@ export default function TimelineSection() {
           <h2 className="timeline-main-title">Securiq, Reimagined</h2>
           <p className="timeline-problem-text">
             Traditional scanners flood engineering teams with endless alerts, zero context, and no actionable fixes. 
-            SecurIQ automates the entire remediation lifecycle from instant detection to verified 1-click rollback.
+            Securiq automates the entire remediation lifecycle from instant detection to verified 1-click rollback.
           </p>
         </motion.div>
 

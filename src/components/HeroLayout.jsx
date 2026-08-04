@@ -19,10 +19,10 @@ const TypewriterText = ({ text, speed = 80 }) => {
   }, [text, speed]);
 
   return (
-    <h2 className="typewriter-title">
+    <h1 className="typewriter-title">
       {displayText}
       <span className="typewriter-cursor">|</span>
-    </h2>
+    </h1>
   );
 };
 

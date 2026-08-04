@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, CreditCard, Building2, HelpCircle, Info, Users, Mail, Home } from 'lucide-react';
+import { 
+  Shield, 
+  CreditCard, 
+  Building2, 
+  HelpCircle, 
+  Info, 
+  Users, 
+  Mail, 
+  Home, 
+  Menu, 
+  X,
+  LogIn
+} from 'lucide-react';
 import './Header.css';
 
 export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInModal, currentView = 'home', onNavigate }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isCompanyOpen, setIsCompanyOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -13,7 +26,10 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
   }, []);
 
   const handleNavClick = (e, targetView, selector) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
+    setIsMobileMenuOpen(false);
+    setIsCompanyOpen(false);
+    
     if (onNavigate) {
       onNavigate(targetView);
     }
@@ -37,9 +53,10 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
           onClick={(e) => handleNavClick(e, 'home', null)}
           style={{ cursor: 'pointer' }}
         >
-          <img src="/logo.png" alt="SECURIQ Logo" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
+          <img src="/logo.png" alt="SECURIQ Logo" style={{ height: '44px', width: 'auto', objectFit: 'contain' }} />
         </div>
 
+        {/* Desktop Icon Navigation */}
         <nav className="desktop-nav icons-nav">
           
           {/* Home */}
@@ -56,7 +73,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             </div>
           </div>
 
-          {/* Security -> Dedicated Security View */}
+          {/* Security */}
           <div className="nav-item group relative">
             <button 
               type="button"
@@ -70,7 +87,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             </div>
           </div>
 
-          {/* Pricing -> Dedicated Pricing View */}
+          {/* Pricing */}
           <div className="nav-item group relative">
             <button 
               type="button"
@@ -122,7 +139,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             </div>
           </div>
 
-          {/* FAQ -> Dedicated FAQ View */}
+          {/* FAQ */}
           <div className="nav-item group relative">
             <button 
               type="button"
@@ -138,6 +155,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
 
         </nav>
 
+        {/* Desktop Header Actions */}
         <div className="header-actions">
           <button 
             type="button" 
@@ -150,7 +168,78 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             Sign In
           </button>
         </div>
+
+        {/* Mobile Hamburger Toggle Button */}
+        <button 
+          className="mobile-hamburger-btn"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
       </div>
+
+      {/* Mobile Drawer Overlay */}
+      {isMobileMenuOpen && (
+        <div className="mobile-drawer-overlay">
+          <div className="mobile-drawer-content">
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'home', null)}>
+              <Home size={18} />
+              <span>Home</span>
+            </button>
+
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'security', null)}>
+              <Shield size={18} />
+              <span>Security</span>
+            </button>
+
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'pricing', null)}>
+              <CreditCard size={18} />
+              <span>Pricing</span>
+            </button>
+
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'about', null)}>
+              <Info size={18} />
+              <span>About Us</span>
+            </button>
+
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'team', null)}>
+              <Users size={18} />
+              <span>Our Team</span>
+            </button>
+
+            <button 
+              className="mobile-nav-item" 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                if (onOpenContactModal) onOpenContactModal();
+              }}
+            >
+              <Mail size={18} />
+              <span>Contact Us</span>
+            </button>
+
+            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'faq', null)}>
+              <HelpCircle size={18} />
+              <span>FAQ</span>
+            </button>
+
+            <div className="mobile-drawer-divider" />
+
+            <button 
+              className="mobile-btn-signin"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                if (onOpenSignInModal) onOpenSignInModal();
+              }}
+            >
+              <LogIn size={18} />
+              <span>Sign In</span>
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

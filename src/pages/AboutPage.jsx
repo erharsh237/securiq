@@ -17,14 +17,14 @@ const coreValues = [
   {
     icon: Target,
     title: 'Precision Over Noise',
-    description: 'Legacy scanners flood security teams with thousands of low-impact alerts. SecurIQ prioritizes threats based on true runtime exposure.',
+    description: 'Legacy scanners flood security teams with thousands of low-impact alerts. Securiq prioritizes threats based on true runtime exposure.',
     badge: 'ACCURACY',
     color: '#0284c7',
   },
   {
     icon: Lock,
     title: 'Zero Standing Access',
-    description: 'Security products shouldn’t be a back-door risk. SecurIQ operates with short-lived OIDC tokens and zero persistent write keys.',
+    description: 'Security products shouldn’t be a back-door risk. Securiq operates with short-lived OIDC tokens and zero persistent write keys.',
     badge: 'SECURITY FIRST',
     color: '#7c3aed',
   },
@@ -52,7 +52,7 @@ export default function AboutPage({ onOpenModal, onOpenContactModal }) {
           <span className="about-pill-tag">ABOUT SECURIQ</span>
           <h1 className="about-title">Reimagining Cloud Infrastructure Security.</h1>
           <p className="about-subtitle">
-            SecurIQ was founded to bridge the gap between security detection and developer execution—transforming cloud vulnerabilities into verified, human-approved code fixes.
+            Securiq was founded to bridge the gap between security detection and developer execution—transforming cloud vulnerabilities into verified, human-approved code fixes.
           </p>
         </motion.div>
 
@@ -111,23 +111,24 @@ export default function AboutPage({ onOpenModal, onOpenContactModal }) {
             <div className="story-column">
               <h3 className="story-col-title">The Autonomous Solution</h3>
               <p className="story-text">
-                SecurIQ shifts security from passive reporting to active autonomous remediation. By combining deep contextual AI with strict human-in-the-loop approval, SecurIQ remediates infrastructure drifts in minutes—safely and predictably.
+                Securiq shifts security from passive reporting to active autonomous remediation. By combining deep contextual AI with strict human-in-the-loop approval, Securiq remediates infrastructure drifts in minutes—safely and predictably.
               </p>
             </div>
           </div>
 
           {/* Metric Highlights Row */}
+          {/* TODO: Replace metrics below with real verified benchmark data prior to public release */}
           <div className="about-metrics-row">
             <div className="metric-box">
-              <span className="metric-num">99.4%</span>
-              <span className="metric-label">Alert Noise Reduction</span>
+              <span className="metric-num">High</span>
+              <span className="metric-label">Alert Noise Filtering</span>
             </div>
             <div className="metric-box">
               <span className="metric-num">1-Click</span>
               <span className="metric-label">Human Approval Model</span>
             </div>
             <div className="metric-box">
-              <span className="metric-num">&lt; 2 min</span>
+              <span className="metric-num">Rapid</span>
               <span className="metric-label">Detection to PR Generation</span>
             </div>
           </div>

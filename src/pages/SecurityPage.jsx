@@ -27,7 +27,7 @@ export default function SecurityPage({ onOpenModal }) {
           <span className="security-pill-tag">UPDATED AUGUST 2026</span>
           <h1 className="security-title">Radically Transparent Security.</h1>
           <p className="security-subtitle">
-            SecuriQ is a security product, so how we handle access and data matters as much as what we detect. 
+            Securiq is a security product, so how we handle access and data matters as much as what we detect. 
             There are no black boxes here.
           </p>
         </motion.div>

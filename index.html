@@ -1,23 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Securiq — The security engineer you haven't hired yet." />
-    <title>Securiq | AI Security Engineer</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="theme-color" content="#f4f4f4" />
     
+    <!-- Primary Technical Meta Tags -->
+    <title>SecuriQ | AI SECURITY ENGINEER</title>
+    <meta name="description" content="Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat detection, and automated Terraform HCL remediation." />
+    <meta name="keywords" content="security monitoring, threat detection, AI security engineer, cloud security, terraform remediation, zero standing access, OIDC, HCL" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://securiq.co/" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://securiq.co/" />
+    <meta property="og:title" content="SecuriQ | AI SECURITY ENGINEER" />
+    <meta property="og:description" content="Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat detection, and automated Terraform HCL remediation." />
+    <meta property="og:image" content="https://securiq.co/og-image.png" />
+    <meta property="og:site_name" content="Securiq" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://securiq.co/" />
+    <meta name="twitter:title" content="SecuriQ | AI SECURITY ENGINEER" />
+    <meta name="twitter:description" content="Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat detection, and automated Terraform HCL remediation." />
+    <meta name="twitter:image" content="https://securiq.co/og-image.png" />
+
+    <!-- Favicon & Apple Touch Icons -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Fast Pre-connect & Pre-fetch Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Inlined Critical Base CSS: Prevents FOUC on Slow Connections -->
+    <style>
+      :root {
+        --bg-main: #f4f4f4;
+        --text-primary: #0f172a;
+        --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+      
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+        color: #0f172a;
+        font-family: var(--font-family);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      #root {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .critical-initial-loader {
+        position: fixed;
+        inset: 0;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 99999;
+      }
+
+      .critical-loader-spinner {
+        width: 42px;
+        height: 42px;
+        border: 3px solid rgba(15, 23, 42, 0.1);
+        border-top-color: #0f172a;
+        border-radius: 50%;
+        animation: criticalSpin 0.8s linear infinite;
+      }
+
+      .critical-loader-text {
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #64748b;
+        letter-spacing: 0.05em;
+      }
+
+      @keyframes criticalSpin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Securiq",
+        "url": "https://securiq.co/",
+        "image": "https://securiq.co/logo.png",
+        "description": "Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat detection, and automated Terraform HCL remediation.",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Cloud / Multi-Cloud",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/PreOrder"
+        }
+        /* TODO: Add aggregateRating and real business info (address, reviews) upon public release */
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="critical-initial-loader" id="initial-loader">
+        <div class="critical-loader-spinner"></div>
+        <span class="critical-loader-text">Securing Securiq...</span>
+      </div>
+    </div>
+    
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      window.onerror = function(message, source, lineno, colno, error) {
-        document.body.innerHTML += '<div style="position:fixed;top:0;left:0;right:0;background:red;color:white;padding:20px;z-index:999999;font-size:20px;white-space:pre-wrap;font-family:monospace;">Error: ' + message + '<br>' + (error && error.stack ? error.stack : '') + '</div>';
-      };
-    </script>
   </body>
 </html>
