@@ -1,0 +1,233 @@
+.modern-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all 0.3s ease;
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.modern-header.scrolled {
+  background: rgba(244, 244, 244, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  justify-self: flex-start;
+}
+
+.icons-nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  justify-self: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon-link {
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.nav-icon-link:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Tooltip & Dropdown Styles */
+.tooltip-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  background: #111827;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background: #111827;
+}
+
+.nav-item:hover .tooltip-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Company Dropdown */
+.company-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  background: #111827;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+  min-width: 145px;
+  z-index: 50;
+}
+
+.dropdown-hover-bridge {
+  position: absolute;
+  top: -12px;
+  left: -10px;
+  right: -10px;
+  height: 14px;
+  background: transparent;
+}
+
+.company-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background: #111827;
+}
+
+.nav-item:hover .company-dropdown,
+.company-dropdown.open,
+.company-dropdown:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown-header {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.dropdown-header .tooltip-text {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.btn-solid-dark {
+  padding: 8px 22px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-solid-dark:hover {
+  background: #000000;
+}
+
+/* Mobile Responsiveness for Header */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  .icons-nav {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 14px;
+  }
+  .icons-nav {
+    gap: 10px;
+  }
+  .nav-icon-link {
+    padding: 6px;
+  }
+  .btn-solid-dark {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+}

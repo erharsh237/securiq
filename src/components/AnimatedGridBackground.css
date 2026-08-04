@@ -1,0 +1,83 @@
+:root {
+  --bg-void: #f4f4f4; /* Matches exact website background */
+  --border: rgba(0, 0, 0, 0.06); /* Clean, crisp grid lines */
+  --tile: rgba(0, 0, 0, 0.75); /* Rich dark hover highlight color */
+}
+
+.agb-wrapper {
+  width: 100%;
+  height: calc(100vh - 72px);
+  min-height: calc(100vh - 72px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+.agb-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Pass mouse events to tiles */
+}
+
+.agb-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Linear + Radial Mask to smoothly fade grid out at bottom & edges */
+.agb-mask {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, transparent 65%, var(--bg-void) 98%),
+    radial-gradient(circle at center, transparent 75%, var(--bg-void) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.agb-tiles-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.agb-row {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 1px solid var(--border);
+  width: 68px;
+}
+
+.agb-col {
+  width: 68px;
+  height: 68px;
+  border-right: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  position: relative;
+  cursor: pointer;
+  pointer-events: auto; /* Enable mouse hover on tiles */
+}
+
+@media (min-width: 640px) {
+  .agb-col {
+    width: 68px;
+    height: 68px;
+  }
+  .agb-row {
+    width: 68px;
+  }
+}

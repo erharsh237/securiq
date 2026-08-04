@@ -1,0 +1,117 @@
+.value-prop-section {
+  width: 100%;
+  padding: 60px 24px 70px 24px;
+  background: #090d16; /* Premium deep black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.value-prop-container {
+  max-width: 760px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Headline - Pure Crisp White */
+.value-prop-headline {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.value-prop-highlight {
+  color: #ffffff;
+}
+
+/* Subtext - Light Slate/White */
+.value-prop-subtext {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Zero Standing Access Feature Pill - Glowing Green Accent */
+.zero-access-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #34d399;
+  margin-top: 4px;
+}
+
+.pill-icon {
+  color: #34d399;
+}
+
+/* Materialistic White Button with Dark Text & Glow Shadow */
+.btn-materialistic {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 36px;
+  background: #ffffff;
+  color: #090d16;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 6px;
+}
+
+.btn-materialistic:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 28px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+.btn-materialistic:active {
+  transform: translateY(1px);
+}
+
+.btn-materialistic-arrow {
+  transition: transform 0.25s ease;
+}
+
+.btn-materialistic:hover .btn-materialistic-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 640px) {
+  .value-prop-section {
+    padding: 45px 20px 55px 20px;
+  }
+  .value-prop-headline {
+    font-size: 1.9rem;
+  }
+  .value-prop-subtext {
+    font-size: 0.95rem;
+  }
+}

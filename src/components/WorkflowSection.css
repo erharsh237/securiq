@@ -1,0 +1,246 @@
+/* Workflow Section Container (White Background) */
+.workflow-section-white {
+  width: 100%;
+  padding: 100px 24px 130px 24px;
+  background: #ffffff; /* Pure White Background */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.workflow-container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centered Header */
+.workflow-header {
+  text-align: center;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+
+.workflow-pill-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.workflow-title-dark {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.workflow-subtitle-dark {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Bento Grid Matrix (3-Column Layout) */
+.bento-white-matrix {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Bento Span Classes */
+.bento-span-1 {
+  grid-column: span 1;
+}
+
+.bento-span-2 {
+  grid-column: span 2;
+}
+
+.bento-span-3 {
+  grid-column: span 3;
+}
+
+/* Bento Card Styling (White Theme) */
+.bento-card-white {
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+
+.bento-card-white:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+}
+
+.bento-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bento-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bento-step-num {
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.bento-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bento-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.bento-card-subtitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bento-card-desc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 4px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Visual Badges (Light Theme) */
+.bento-card-footer {
+  margin-top: 4px;
+}
+
+.bento-visual-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.light-cyan {
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  color: #0284c7;
+}
+
+.light-purple {
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  color: #7c3aed;
+}
+
+.light-amber {
+  background: rgba(217, 119, 6, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  color: #d97706;
+}
+
+.light-yellow {
+  background: rgba(202, 138, 4, 0.08);
+  border: 1px solid rgba(202, 138, 4, 0.2);
+  color: #ca8a04;
+}
+
+.light-green {
+  background: rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  color: #059669;
+}
+
+.light-rose {
+  background: rgba(225, 29, 72, 0.08);
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  color: #e11d48;
+}
+
+.bento-light-code {
+  background: #0f172a;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: monospace;
+  font-size: 0.78rem;
+  color: #38bdf8;
+  white-space: pre-wrap;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 960px) {
+  .bento-white-matrix {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bento-span-2,
+  .bento-span-3 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-white-matrix {
+    grid-template-columns: 1fr;
+  }
+  .bento-span-1,
+  .bento-span-2,
+  .bento-span-3 {
+    grid-column: span 1;
+  }
+  .workflow-title-dark {
+    font-size: 2.2rem;
+  }
+  .bento-card-white {
+    padding: 24px 20px;
+  }
+}

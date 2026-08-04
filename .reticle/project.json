@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "kind": "flow_replay",
+      "name": "landing-navigation",
+      "status": "error",
+      "at": 1785855006051,
+      "evidence": {
+        "driftSteps": 0
+      },
+      "durationMs": 2
+    },
+    {
+      "kind": "flow_replay",
+      "name": "landing-navigation",
+      "status": "error",
+      "at": 1785855021819,
+      "evidence": {
+        "driftSteps": 0
+      },
+      "durationMs": 2
+    }
+  ]
+}
