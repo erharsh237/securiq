@@ -11,6 +11,7 @@ import PricingPage from './pages/PricingPage';
 import FaqPage from './pages/FaqPage';
 import SecurityPage from './pages/SecurityPage';
 import TeamPage from './pages/TeamPage';
+import AboutPage from './pages/AboutPage';
 import EarlyAccessModal from './components/EarlyAccessModal';
 import ContactModal from './components/ContactModal';
 import SecurityTeamModal from './components/SecurityTeamModal';
@@ -77,6 +78,7 @@ const FEATURE_MODAL_DATA = {
 function getInitialView() {
   const path = window.location.pathname.toLowerCase().replace(/\/$/, '');
   if (path === '' || path === '/') return 'home';
+  if (path === '/about') return 'about';
   if (path === '/pricing') return 'pricing';
   if (path === '/faq') return 'faq';
   if (path === '/security') return 'security';
@@ -132,7 +134,12 @@ function App() {
         />
 
         <main>
-          {currentView === 'pricing' ? (
+          {currentView === 'about' ? (
+            <AboutPage 
+              onOpenModal={() => setIsModalOpen(true)}
+              onOpenContactModal={() => setIsContactModalOpen(true)}
+            />
+          ) : currentView === 'pricing' ? (
             <PricingPage 
               onOpenModal={() => setIsModalOpen(true)} 
             />

@@ -128,7 +128,7 @@ export default function Footer({
           <div className="footer-nav-col">
             <h3 className="footer-col-heading">Company</h3>
             <ul className="footer-links-list">
-              <li><a href="#about" onClick={(e) => handleNavClick(e, 'home', '#features')}>About Us</a></li>
+              <li><a href="#about" onClick={(e) => handleNavClick(e, 'about', null)}>About Us</a></li>
               <li><button type="button" className="footer-btn-link" onClick={onOpenContactModal}>Contact Us</button></li>
               <li><button type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Security Team</button></li>
               <li>

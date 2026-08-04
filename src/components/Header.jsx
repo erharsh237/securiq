@@ -90,7 +90,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             onMouseEnter={() => setIsCompanyOpen(true)}
             onMouseLeave={() => setIsCompanyOpen(false)}
           >
-            <button className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'team' ? 'active-nav' : ''}`}>
+            <button className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'team' || currentView === 'about' ? 'active-nav' : ''}`}>
               <Building2 size={20} strokeWidth={1.5} />
             </button>
             
@@ -101,7 +101,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
                 <span className="tooltip-text">Company</span>
               </div>
               <div className="dropdown-links">
-                <button type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'home', '#features')}>
+                <button type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'about', null)}>
                   <Info size={14} /> About
                 </button>
                 <button type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'team', null)}>

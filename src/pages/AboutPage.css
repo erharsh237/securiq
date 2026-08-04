@@ -1,0 +1,323 @@
+/* About Page Wrapper (Light Theme) */
+.about-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f4f4;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.about-pill-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Values Grid */
+.about-values-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+}
+
+.about-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.about-card-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.about-card-desc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Philosophy Section */
+.about-story-section {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  margin-bottom: 40px;
+}
+
+.story-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.story-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.story-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.story-col-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+.story-text {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Metric Highlights Row */
+.about-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.metric-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* CTA Bottom Banner */
+.about-cta-banner {
+  width: 100%;
+  background: #0f172a;
+  border-radius: 20px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+}
+
+.banner-about-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.banner-about-desc {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.55;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.banner-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-about-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  background: #ffffff;
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.btn-about-primary:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-about-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 22px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.btn-about-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-metrics-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+  }
+  .about-title {
+    font-size: 2.2rem;
+  }
+  .about-page-container {
+    padding: 0 20px;
+  }
+}
