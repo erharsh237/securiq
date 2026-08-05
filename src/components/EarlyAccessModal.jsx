@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import { X, CheckCircle2 } from 'lucide-react';
 import './EarlyAccessModal.css';
 
-const FREE_EMAIL_DOMAINS = [
-  'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 
-  'aol.com', 'icloud.com', 'proton.me', 'protonmail.com', 
-  'gmx.com', 'zoho.com', 'mail.com', 'live.com', 'yandex.com', 'msn.com'
-];
-
 export default function EarlyAccessModal({ isOpen, onClose }) {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -24,13 +18,10 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
       return false;
     }
 
-    const parts = value.split('@');
-    if (parts.length === 2 && parts[1]) {
-      const domain = parts[1].toLowerCase().trim();
-      if (FREE_EMAIL_DOMAINS.includes(domain)) {
-        setEmailError('Please use your work email (personal domains like Gmail or Yahoo are not allowed).');
-        return false;
-      }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(value.trim())) {
+      setEmailError('Please enter a valid email address.');
+      return false;
     }
 
     setEmailError('');
@@ -40,12 +31,9 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Validate work email before submission
-    const parts = email.split('@');
-    const domain = parts[1] ? parts[1].toLowerCase().trim() : '';
-
-    if (FREE_EMAIL_DOMAINS.includes(domain)) {
-      setEmailError('Please use your work email (personal domains like Gmail or Yahoo are not allowed).');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      setEmailError('Please enter a valid email address.');
       return;
     }
 
@@ -128,7 +116,7 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="email">Work email</label>
+                  <label htmlFor="email">Email Address</label>
                   <input
                     type="email"
                     id="email"

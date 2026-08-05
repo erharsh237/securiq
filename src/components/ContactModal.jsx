@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Send, CheckCircle2, AlertCircle, Mail, Building2 } from 'lucide-react';
+import { X, Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import './ContactModal.css';
-
-const FREE_EMAIL_DOMAINS = [
-  'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 
-  'icloud.com', 'aol.com', 'protonmail.com', 'proton.me', 
-  'zoho.com', 'yandex.com', 'mail.com', 'gmx.com', 'live.com'
-];
 
 export default function ContactModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -23,11 +17,10 @@ export default function ContactModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const validateEmail = (email) => {
-    if (!email) return 'Work email is required.';
-    const domain = email.split('@')[1]?.toLowerCase().trim();
-    if (!domain) return 'Please enter a valid email address.';
-    if (FREE_EMAIL_DOMAINS.includes(domain)) {
-      return 'Please use your work email (personal domains like Gmail or Yahoo are not allowed).';
+    if (!email) return 'Email address is required.';
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      return 'Please enter a valid email address.';
     }
     return '';
   };
@@ -134,7 +127,7 @@ export default function ContactModal({ isOpen, onClose }) {
                 </div>
 
                 <div className="modal-form-group">
-                  <label htmlFor="modal-email">Work Email *</label>
+                  <label htmlFor="modal-email">Email Address *</label>
                   <input
                     type="email"
                     id="modal-email"

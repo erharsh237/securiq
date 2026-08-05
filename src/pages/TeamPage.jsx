@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ShieldCheck, Sparkles, Code2, Cpu, Globe, Share2 } from 'lucide-react';
+import { Mail, ShieldCheck, Sparkles, Code2, Cpu } from 'lucide-react';
 import './TeamPage.css';
 
 const teamMembers = [
@@ -14,9 +14,6 @@ const teamMembers = [
     bio: "Leading Securiq's vision to revolutionize cloud infrastructure security through autonomous AI engineering and zero standing access posture.",
     icon: Sparkles,
     color: '#0f172a',
-    linkedin: '#',
-    github: '#',
-    twitter: '#',
   },
   {
     name: 'Kanishka Sharma',
@@ -28,9 +25,6 @@ const teamMembers = [
     bio: 'Architecting context-aware LLM vulnerability investigation engines and automated Terraform HCL patch synthesis algorithms.',
     icon: Cpu,
     color: '#7c3aed',
-    linkedin: '#',
-    github: '#',
-    twitter: '#',
   },
   {
     name: 'Shruti Sinha',
@@ -42,9 +36,6 @@ const teamMembers = [
     bio: 'Directing global security operations, enterprise compliance roadmaps (SOC 2 / ISO 27001), and strategic partner ecosystems.',
     icon: ShieldCheck,
     color: '#059669',
-    linkedin: '#',
-    github: '#',
-    twitter: '#',
   },
   {
     name: 'Gursimranjit Singh',
@@ -56,9 +47,6 @@ const teamMembers = [
     bio: 'Engineering high-throughput microservices, real-time cloud state scanners, and secure IAM/OIDC token pipelines.',
     icon: Code2,
     color: '#d97706',
-    linkedin: '#',
-    github: '#',
-    twitter: '#',
   },
 ];
 
@@ -122,19 +110,6 @@ export default function TeamPage({ onOpenContactModal }) {
                   <h3 className="member-name">{member.name}</h3>
                   <p className="member-role">{member.role}</p>
                   <p className="member-bio">{member.bio}</p>
-                </div>
-
-                {/* Social Links */}
-                <div className="member-socials">
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="LinkedIn">
-                    <Globe size={16} />
-                  </a>
-                  <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="GitHub">
-                    <Code2 size={16} />
-                  </a>
-                  <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Share">
-                    <Share2 size={16} />
-                  </a>
                 </div>
 
               </motion.div>
