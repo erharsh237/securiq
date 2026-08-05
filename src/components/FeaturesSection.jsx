@@ -24,7 +24,7 @@ const features = [
   {
     id: 'feature-card-ai-investigation',
     icon: Brain,
-    title: 'AI Investigation',
+    title: 'AI Investigation Engine',
     description: 'Context-aware LLM security engines analyze code dependencies, IAM permissions, and blast-radius to eliminate scanner noise.',
     badge: 'INTELLIGENT',
     color: '#8b5cf6',
@@ -48,7 +48,7 @@ const features = [
   {
     id: 'feature-card-rollback-protection',
     icon: RotateCcw,
-    title: 'Rollback Protection',
+    title: 'Rollback Safeguard',
     description: 'Instant 1-click state rollback safeguards your infrastructure with zero data loss if any deployment anomaly occurs.',
     badge: 'SAFEGUARD',
     color: '#ef4444',
@@ -56,7 +56,7 @@ const features = [
   {
     id: 'feature-card-cloud-security',
     icon: Cloud,
-    title: 'Cloud Security',
+    title: 'Cloud Security Matrix',
     description: 'Unified visibility and protection across AWS, GitHub, GCP, Azure, and multi-cloud code repositories with zero standing access.',
     badge: 'MULTI-CLOUD',
     color: '#0284c7',
@@ -158,8 +158,10 @@ export default function FeaturesSection() {
                     </span>
                   </div>
 
-                  <h3 className="card-title">{item.title}</h3>
-                  <p className="card-desc">{item.description}</p>
+                  <div className="card-body">
+                    <h3 className="card-title">{item.title}</h3>
+                    <p className="card-desc">{item.description}</p>
+                  </div>
                 </div>
               );
             })}

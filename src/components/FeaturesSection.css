@@ -116,10 +116,11 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-/* Feature Cards */
+/* Feature Cards (Pixel-Perfect Mathematical Header & Baseline Alignment) */
 .carousel-card {
   min-width: 360px;
   max-width: 360px;
+  min-height: 250px;
   flex: 0 0 auto;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -127,8 +128,9 @@
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
@@ -147,10 +149,14 @@
   z-index: 10;
 }
 
+/* Header Container: Strict 48px Height with Top Alignment */
 .card-header {
+  width: 100%;
+  height: 48px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .feature-icon-badge {
@@ -169,22 +175,37 @@
   letter-spacing: 0.08em;
   padding: 4px 10px;
   border-radius: 12px;
+  margin-top: 2px;
 }
 
+/* Card Body Container */
+.card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+/* Card Title: Strict Top Text Alignment across All Cards */
 .card-title {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #0f172a;
   margin: 0;
+  padding: 0;
   letter-spacing: -0.01em;
+  line-height: 1.25;
+  text-align: left;
 }
 
 .card-desc {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: #475569;
   line-height: 1.65;
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  text-align: left;
 }
 
 /* Responsive */
