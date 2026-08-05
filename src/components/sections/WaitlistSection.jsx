@@ -1,6 +1,7 @@
-import WaitlistForm from '../ui/WaitlistForm';
+import React from 'react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
-export default function WaitlistSection() {
+export default function WaitlistSection({ onOpenEarlyAccess }) {
   return (
     <section className="section-waitlist" id="waitlist">
       <div className="waitlist-card">
@@ -8,7 +9,13 @@ export default function WaitlistSection() {
         <p className="waitlist-subtitle">
           We're onboarding a small group of early teams before general availability, and shaping v1 around what they tell us.
         </p>
-        <WaitlistForm showDetailed={true} buttonText="Get early access" />
+        <button 
+          className="hero-cta" 
+          onClick={onOpenEarlyAccess}
+          style={{ cursor: 'pointer', border: 'none' }}
+        >
+          Get early access <span>→</span>
+        </button>
       </div>
     </section>
   );

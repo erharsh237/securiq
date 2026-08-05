@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import { Check } from 'lucide-react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
-import WaitlistForm from '../components/ui/WaitlistForm';
 import gsap from 'gsap';
 import './Pricing.css';
 
@@ -94,11 +93,17 @@ export default function Pricing() {
           </div>
         </div>
 
-        {/* Waitlist Form */}
+        {/* Early Access CTA */}
         <div className="pricing-waitlist">
-          <h2>Join the waitlist for early pricing.</h2>
+          <h2>Apply for early access pricing.</h2>
           <p className="waitlist-subtitle">Early teams get input on pricing and a preferred rate at launch.</p>
-          <WaitlistForm showDetailed={true} buttonText="Join waitlist" />
+          <button 
+            className="btn-primary" 
+            onClick={onOpenEarlyAccess}
+            style={{ cursor: 'pointer', padding: '14px 28px', fontSize: '1rem', fontWeight: '700', borderRadius: '12px' }}
+          >
+            Get Early Access
+          </button>
         </div>
 
         </div>
