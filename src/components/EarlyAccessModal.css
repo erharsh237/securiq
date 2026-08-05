@@ -3,9 +3,9 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(15, 23, 42, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,20 +18,17 @@
   to { opacity: 1; }
 }
 
-/* Light Theme Glassmorphism Container */
+/* Opaque Solid White Container (Zero Transparency Bleed) */
 .modal-glass-box {
   width: 100%;
   max-width: 620px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 20px;
   padding: 36px 40px;
   position: relative;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.12), 
-              0 0 0 1px rgba(0, 0, 0, 0.04),
-              0 10px 30px rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25), 
+              0 0 0 1px rgba(0, 0, 0, 0.05);
   animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   max-height: 90vh;
   overflow-y: auto;
@@ -53,7 +50,7 @@
   top: 20px;
   right: 20px;
   background: rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   color: #64748b;
   width: 34px;
   height: 34px;
@@ -128,8 +125,8 @@
 .form-group textarea {
   width: 100%;
   padding: 11px 14px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 8px;
   font-size: 0.9rem;
   color: #0f172a;
