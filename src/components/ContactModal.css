@@ -46,12 +46,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  padding: 0;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .contact-modal-close:hover {
   background: #0f172a;
   color: #ffffff;
+  transform: rotate(90deg);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
 }
 
 /* Header */

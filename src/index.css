@@ -151,9 +151,24 @@ button {
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-button:hover svg {
+/* Arrow micro-interaction for CTA buttons (excludes close buttons and icon badges) */
+button.has-arrow:hover svg,
+.btn-primary:hover svg,
+.btn-modal-submit:hover svg,
+.btn-sec-submit:hover svg,
+.btn-join-cta:hover svg {
   transform: translateX(3px);
   transition: transform 0.2s ease;
+}
+
+/* Keep modal close button icons perfectly centered on hover */
+.contact-modal-close svg,
+.security-modal-close svg,
+.modal-close-btn svg,
+.signin-modal-close svg,
+.feature-modal-close svg,
+.social-btn svg {
+  transform: none !important;
 }
 
 /* 5. Glowing Spec Items & Bento Cards */

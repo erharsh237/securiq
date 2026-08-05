@@ -45,26 +45,31 @@
   }
 }
 
+/* Close Button */
 .modal-close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  color: #64748b;
   width: 34px;
   height: 34px;
   border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #0f172a;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  padding: 0;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10;
 }
 
 .modal-close-btn:hover {
-  background: rgba(0, 0, 0, 0.08);
-  color: #0f172a;
+  background: #0f172a;
+  color: #ffffff;
+  transform: rotate(90deg);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
 }
 
 .modal-header {
