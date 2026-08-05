@@ -50,7 +50,7 @@ export default function About() {
                   Startups hit a wall between 10 and 200 people. Real AWS infra. Real GitHub secrets. Zero security engineers.
                 </p>
                 <p className="manifesto-subtext">
-                  Not because of negligence. You're just busy shipping. And enterprise tools built for 50-person security teams don't work when you're already wearing three hats.
+                  Not because of negligence. You're just busy shipping. And enterprise tools built for 50 person security teams don't work when you're already wearing three hats.
                 </p>
               </div>
               

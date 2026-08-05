@@ -17,21 +17,21 @@ const coreValues = [
   {
     icon: Target,
     title: 'Precision Over Noise',
-    description: 'Legacy scanners flood security teams with thousands of low-impact alerts. Securiq prioritizes threats based on true runtime exposure.',
+    description: 'Legacy scanners flood security teams with thousands of low impact alerts. Securiq prioritizes threats based on true runtime exposure.',
     badge: 'ACCURACY',
     color: '#0284c7',
   },
   {
     icon: Lock,
     title: 'Zero Standing Access',
-    description: 'Security products shouldn’t be a back-door risk. Securiq operates with short-lived OIDC tokens and zero persistent write keys.',
+    description: 'Security products shouldn’t be a backdoor risk. Securiq operates with short lived OIDC tokens and zero persistent write keys.',
     badge: 'SECURITY FIRST',
     color: '#7c3aed',
   },
   {
     icon: Code2,
-    title: 'Code-Native Fixes',
-    description: 'We don’t just report problems—we write clean, formatted HCL Terraform pull requests ready for 1-click developer approval.',
+    title: 'Code Native Fixes',
+    description: 'We don’t just report problems, we write clean, formatted HCL Terraform pull requests ready for 1 click developer approval.',
     badge: 'AUTOMATED',
     color: '#059669',
   },
@@ -52,11 +52,11 @@ export default function AboutPage({ onOpenModal, onOpenContactModal }) {
           <span className="about-pill-tag">ABOUT SECURIQ</span>
           <h1 className="about-title">Reimagining Cloud Infrastructure Security.</h1>
           <p className="about-subtitle">
-            Securiq was founded to bridge the gap between security detection and developer execution—transforming cloud vulnerabilities into verified, human-approved code fixes.
+            Securiq was founded to bridge the gap between security detection and developer execution, transforming cloud vulnerabilities into verified, human-approved code fixes.
           </p>
         </motion.div>
 
-        {/* 3-Column Values Bento Grid */}
+        {/* 3 Column Values Bento Grid */}
         <div className="about-values-grid">
           {coreValues.map((item, index) => {
             const IconComponent = item.icon;
@@ -111,7 +111,7 @@ export default function AboutPage({ onOpenModal, onOpenContactModal }) {
             <div className="story-column">
               <h3 className="story-col-title">The Autonomous Solution</h3>
               <p className="story-text">
-                Securiq shifts security from passive reporting to active autonomous remediation. By combining deep contextual AI with strict human-in-the-loop approval, Securiq remediates infrastructure drifts in minutes—safely and predictably.
+                Securiq shifts security from passive reporting to active autonomous remediation. By combining deep contextual AI with strict human in the loop approval, Securiq remediates infrastructure drifts in minutes, safely and predictably.
               </p>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function AboutPage({ onOpenModal, onOpenContactModal }) {
               <span className="metric-label">Alert Noise Filtering</span>
             </div>
             <div className="metric-box">
-              <span className="metric-num">1-Click</span>
+              <span className="metric-num">1 Click</span>
               <span className="metric-label">Human Approval Model</span>
             </div>
             <div className="metric-box">

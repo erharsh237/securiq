@@ -40,12 +40,12 @@ const FEATURE_MODAL_DATA = {
     badge: 'MULTI-CLOUD',
     icon: Cloud,
     color: '#0284c7',
-    description: 'Securiq provides unified visibility and automated protection across AWS, GitHub, GCP, Azure, and multi-cloud code repositories without agent installation.',
+    description: 'Securiq provides unified visibility and automated protection across AWS, GitHub, GCP, Azure, and multi cloud code repositories without agent installation.',
     highlights: [
       'Scoped IAM Role & OIDC Token Authentication',
       'GitHub App integration for automated secret scanning',
       'Zero agent installation required in your codebase',
-      'Real-time multi-cloud asset & vulnerability discovery'
+      'Real time multi cloud asset & vulnerability discovery'
     ]
   },
   'synthetic-verification': {
@@ -53,7 +53,7 @@ const FEATURE_MODAL_DATA = {
     badge: 'VERIFIED',
     icon: ShieldCheck,
     color: '#10b981',
-    description: 'Automated post-fix health checks that verify vulnerabilities are patched in production without causing service disruptions.',
+    description: 'Automated postfix health checks that verify vulnerabilities are patched in production without causing service disruptions.',
     highlights: [
       'Automated regression checks upon deployment',
       'Dry-run plan validation prior to terraform apply',
@@ -68,9 +68,9 @@ const FEATURE_MODAL_DATA = {
     color: '#7c3aed',
     description: 'Securiq automatically generates, formats, and tests precise HCL Terraform code patches to remediate security drifts.',
     highlights: [
-      'Context-aware HCL patch generation',
+      'Context aware HCL patch generation',
       'Automatic state lock & terraform plan verification',
-      'Human-in-the-loop 1-click execution',
+      'Human in the loop 1 click execution',
       'Automated Git branch creation & Pull Request opening'
     ]
   }
@@ -89,7 +89,7 @@ const ROUTE_SEO_META = {
   },
   security: {
     title: "Radically Transparent Security | SecuriQ",
-    description: "Explore Securiq's zero standing access architecture, short-lived OIDC token authentication, SOC 2 roadmap, and data privacy safeguards.",
+    description: "Explore Securiq's zero standing access architecture, short lived OIDC token authentication, SOC 2 roadmap, and data privacy safeguards.",
     canonical: "https://securiq.co/security"
   },
   pricing: {
@@ -239,7 +239,7 @@ function App() {
               </div>
             ) : (
               <>
-                {/* Full Screen Grid Background with 4-Quadrant Hero Layout */}
+                {/* Full Screen Grid Background with 4 Quadrant Hero Layout */}
                 <AnimatedGridBackgroundSection>
                   <HeroLayout />
                 </AnimatedGridBackgroundSection>
@@ -253,7 +253,7 @@ function App() {
                 {/* Features Carousel Section (#f4f4f4 bg) */}
                 <FeaturesSection />
 
-                {/* 7-Stage Bento Grid Workflow Section (#ffffff bg) */}
+                {/* 7 Stage Bento Grid Workflow Section (#ffffff bg) */}
                 <WorkflowSection />
               </>
             )}

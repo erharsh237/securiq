@@ -26,13 +26,13 @@ const faqItems = [
     id: 'wrong-plan',
     question: "What if the AI's plan is wrong?",
     icon: Sparkles,
-    answer: "Every generated Infrastructure-as-Code fix undergoes dry-run simulation testing in isolated shadow environments. If a regression occurs or if you reject the plan, you can modify the HCL code or trigger a 1-click state rollback instantly.",
+    answer: "Every generated Infrastructure as Code fix undergoes dry-run simulation testing in isolated shadow environments. If a regression occurs or if you reject the plan, you can modify the HCL code or trigger a 1 click state rollback instantly.",
   },
   {
     id: 'credentials',
     question: 'Do you store our cloud credentials?',
     icon: Key,
-    answer: "No standing credentials are ever stored. Securiq operates exclusively using short-lived ephemeral session tokens and OIDC role-assumption. Access tokens expire immediately after execution.",
+    answer: "No standing credentials are ever stored. Securiq operates exclusively using short lived ephemeral session tokens and OIDC role-assumption. Access tokens expire immediately after execution.",
   },
   {
     id: 'environments',
@@ -44,7 +44,7 @@ const faqItems = [
     id: 'differentiation',
     question: 'How is this different from tools like Wiz or Orca?',
     icon: Layers,
-    answer: "Traditional scanners like Wiz or Orca flood your security team with endless alerts and zero code fixes. Securiq not only detects vulnerabilities, but automatically drafts, simulates, and executes verified 1-click Terraform remediations.",
+    answer: "Traditional scanners like Wiz or Orca flood your security team with endless alerts and zero code fixes. Securiq not only detects vulnerabilities, but automatically drafts, simulates, and executes verified 1 click Terraform remediations.",
   },
   {
     id: 'access-timing',

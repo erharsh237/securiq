@@ -12,18 +12,18 @@ const plans = [
     features: [
       'Up to 5 Cloud Accounts & Repositories',
       'Continuous Vulnerability & Drift Detection',
-      '1-Click Terraform Remediation Drafts',
+      '1 Click Terraform Remediation Drafts',
       'Standard Slack & Email Support',
     ],
   },
   {
     name: 'Growth',
-    tagline: 'For fast-growing engineering orgs requiring automated multi-cloud defense.',
+    tagline: 'For fast growing engineering orgs requiring automated multi cloud defense.',
     badge: 'MOST POPULAR',
     isPopular: true,
     features: [
       'Up to 25 Cloud Accounts & Repositories',
-      'AI Investigation & Blast-Radius Engine',
+      'AI Investigation & Blast Radius Engine',
       'Shadow Sandbox Simulation & Verification',
       'Priority 24/7 Security Support',
     ],

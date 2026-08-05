@@ -17,9 +17,9 @@ import './WorkflowSection.css';
 const enginePillars = [
   {
     id: 'qwen-model',
-    title: 'Fine-Tuned Qwen 2.5B Coder',
+    title: 'Fine Tuned Qwen 2.5B Coder',
     subtitle: 'Specialized AI Code Model',
-    description: 'Powered by a fine-tuned Qwen 2.5B-Coder-Instruct model trained on cloud security standards for precise HCL patch generation.',
+    description: 'Powered by a fine tuned Qwen 2.5B-Coder-Instruct model trained on cloud security standards for precise HCL patch generation.',
     icon: Cpu,
     color: '#2563eb',
     gridClass: 'bento-span-2',
@@ -27,7 +27,7 @@ const enginePillars = [
   },
   {
     id: 'reasoning-engine',
-    title: 'Chain-of-Thought Reasoning',
+    title: 'Chain of Thought Reasoning',
     subtitle: 'Deep Analysis Before Fixes',
     description: 'Performs multi-step reasoning before generating code, evaluating blast radius and dependency safety prior to patch execution.',
     icon: BrainCircuit,
@@ -39,7 +39,7 @@ const enginePillars = [
     id: 'approval-states',
     title: 'Autonomous & Semi-Autonomous',
     subtitle: 'Flexible Approval Governance',
-    description: 'Supports full auto-remediation for low-risk drifts or semi-autonomous human-in-the-loop 1-click approvals for critical assets.',
+    description: 'Supports full auto-remediation for low risk drifts or semi-autonomous human in the loop 1 click approvals for critical assets.',
     icon: Zap,
     color: '#059669',
     gridClass: 'bento-span-1',
@@ -48,7 +48,7 @@ const enginePillars = [
   {
     id: 'topology',
     title: 'Agentless Cloud Topology',
-    subtitle: 'Multi-Cloud Asset Discovery',
+    subtitle: 'Multi Cloud Asset Discovery',
     description: 'Discovers, inventories, and maps relationships across AWS, GCP, Azure, and GitHub without installing server agents.',
     icon: Cloud,
     color: '#0284c7',
@@ -58,7 +58,7 @@ const enginePillars = [
   {
     id: 'zsa',
     title: 'Zero Standing Access',
-    subtitle: 'Short-Lived OIDC Tokens',
+    subtitle: 'Short Lived OIDC Tokens',
     description: 'Replaces dangerous persistent root keys with temporary, scoped session credentials generated dynamically per approval.',
     icon: Lock,
     color: '#d97706',
@@ -93,7 +93,7 @@ export default function WorkflowSection() {
           <span className="workflow-pill-tag">ENGINE ARCHITECTURE</span>
           <h2 className="workflow-title-dark">Built for Modern Cloud Defense</h2>
           <p className="workflow-subtitle-dark">
-            Securiq combines a fine-tuned Qwen 2.5B Coder, deep chain-of-thought reasoning, and flexible autonomous/semi-autonomous approval states.
+            Securiq combines a fine tuned Qwen 2.5B Coder, deep chain of thought reasoning, and flexible autonomous/semi-autonomous approval states.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ export default function WorkflowSection() {
         <div className="engine-tech-spec-bar">
           <div className="tech-spec-item">
             <span className="spec-label">AI CODE MODEL</span>
-            <span className="spec-value">Fine-Tuned Qwen 2.5B-Coder-Instruct</span>
+            <span className="spec-value">Fine Tuned Qwen 2.5B-Coder-Instruct</span>
           </div>
           <div className="tech-spec-item">
             <span className="spec-label">APPROVAL MODES</span>
@@ -142,7 +142,7 @@ export default function WorkflowSection() {
           </div>
           <div className="tech-spec-item">
             <span className="spec-label">REASONING ENGINE</span>
-            <span className="spec-value">Chain-of-Thought Before Fix</span>
+            <span className="spec-value">Chain of Thought Before Fix</span>
           </div>
           <div className="tech-spec-item">
             <span className="spec-label">IAC ENGINE</span>

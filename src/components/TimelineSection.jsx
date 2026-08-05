@@ -22,8 +22,8 @@ const steps = [
     number: '01',
     title: 'Detect',
     tag: 'CONTINUOUS SCANNING',
-    subtitle: 'Real-time Drift Detection',
-    description: 'Continuous monitoring across AWS, GitHub, and multi-cloud accounts to catch active drifts and misconfigurations instantly.',
+    subtitle: 'Real time Drift Detection',
+    description: 'Continuous monitoring across AWS, GitHub, and multi cloud accounts to catch active drifts and misconfigurations instantly.',
     snippetHeader: 'detect.log',
     snippetCode: 'CRITICAL: s3-bucket-public-read in production-us-east-1',
     icon: Search,
@@ -34,7 +34,7 @@ const steps = [
     number: '02',
     title: 'Understand',
     tag: 'AI CONTEXT ENGINE',
-    subtitle: 'Blast-Radius Analysis',
+    subtitle: 'Blast Radius Analysis',
     description: 'AI contextualizes vulnerability severity, code dependencies, and IAM permissions to eliminate scanner noise.',
     snippetHeader: 'analysis.json',
     snippetCode: '{ "blastRadius": "High", "falsePositive": false, "impact": "Public Data" }',
@@ -47,7 +47,7 @@ const steps = [
     title: 'Plan',
     tag: 'TERRAFORM SYNTHESIS',
     subtitle: 'Automated IaC Fixes',
-    description: 'Generates ready-to-merge, production-safe Infrastructure-as-Code (Terraform) remediations aligned with your repository rules.',
+    description: 'Generates ready-to-merge, production-safe Infrastructure as Code (Terraform) remediations aligned with your repository rules.',
     snippetHeader: 'remediation.tf',
     snippetCode: 'resource "aws_s3_bucket_public_access_block" "fix" {\n  block_public_acls = true\n}',
     icon: Code2,
@@ -58,8 +58,8 @@ const steps = [
     number: '04',
     title: 'Execute',
     tag: 'EPHEMERAL EXECUTION',
-    subtitle: '1-Click Zero Standing Access',
-    description: 'Executes the approved patch securely using short-lived credentials, eliminating permanent admin access.',
+    subtitle: '1 Click Zero Standing Access',
+    description: 'Executes the approved patch securely using short lived credentials, eliminating permanent admin access.',
     snippetHeader: 'execution.sh',
     snippetCode: 'SUCCESS: Applied 1 IaC change via ephemeral session token',
     icon: Zap,
@@ -85,7 +85,7 @@ const steps = [
     subtitle: 'Instant State Recovery',
     description: 'One-click state rollback safeguards your production infrastructure with zero data loss if any anomaly is detected.',
     snippetHeader: 'rollback.lock',
-    snippetCode: 'READY: 1-click snapshot rollback locked & available',
+    snippetCode: 'READY: 1 click snapshot rollback locked & available',
     icon: RotateCcw,
     color: '#f43f5e',
   },
@@ -110,7 +110,7 @@ export default function TimelineSection() {
           <h2 className="timeline-main-title">Securiq, Reimagined</h2>
           <p className="timeline-problem-text">
             Traditional scanners flood engineering teams with endless alerts, zero context, and no actionable fixes. 
-            Securiq automates the entire remediation lifecycle from instant detection to verified 1-click rollback.
+            Securiq automates the entire remediation lifecycle from instant detection to verified 1 click rollback.
           </p>
         </motion.div>
 

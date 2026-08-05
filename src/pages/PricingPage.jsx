@@ -14,7 +14,7 @@ const plans = [
     features: [
       'Up to 5 Cloud Accounts & Repositories',
       'Continuous Vulnerability & Drift Detection',
-      '1-Click Terraform Remediation Drafts',
+      '1 Click Terraform Remediation Drafts',
       'Standard Slack & Email Support',
       'Weekly Automated Security Audits',
     ],
@@ -22,7 +22,7 @@ const plans = [
   {
     name: 'Growth',
     icon: ShieldCheck,
-    tagline: 'For fast-growing engineering orgs requiring automated multi-cloud defense.',
+    tagline: 'For fast growing engineering orgs requiring automated multi cloud defense.',
     badge: 'MOST POPULAR',
     isPopular: true,
     color: '#7c3aed',
