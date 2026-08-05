@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ShieldCheck, Sparkles, Code2, Cpu } from 'lucide-react';
+import { ShieldCheck, Sparkles, Code2, Cpu } from 'lucide-react';
 import './TeamPage.css';
 
 const teamMembers = [
@@ -50,7 +50,7 @@ const teamMembers = [
   },
 ];
 
-export default function TeamPage({ onOpenContactModal }) {
+export default function TeamPage() {
   return (
     <div className="team-page-wrapper">
       <div className="team-page-container">
@@ -116,26 +116,6 @@ export default function TeamPage({ onOpenContactModal }) {
             );
           })}
         </div>
-
-        {/* Join Us Bottom Banner */}
-        <motion.div 
-          className="team-join-banner"
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-        >
-          <div className="banner-join-content">
-            <h2 className="banner-join-title">Want to build the next era of AI security?</h2>
-            <p className="banner-join-desc">
-              We're always looking for brilliant cloud security engineers, systems architects, and AI researchers. Reach out to our founding team today.
-            </p>
-          </div>
-
-          <button className="btn-join-cta" onClick={onOpenContactModal}>
-            <Mail size={18} />
-            <span>Contact Us</span>
-          </button>
-        </motion.div>
 
       </div>
     </div>
