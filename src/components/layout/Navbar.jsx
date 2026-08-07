@@ -35,7 +35,7 @@ export default function Navbar() {
             onMouseEnter={() => setCompanyDropdownOpen(true)}
             onMouseLeave={() => setCompanyDropdownOpen(false)}
           >
-            <button 
+            <button aria-label="Action button" 
               className="nav-link dropdown-trigger" 
               aria-haspopup="true" 
               aria-expanded={companyDropdownOpen}

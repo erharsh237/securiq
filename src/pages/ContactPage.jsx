@@ -88,7 +88,7 @@ import './ContactPage.css';
                 <p className="success-desc">
                   Thank you for contacting Securiq. A member of our security engineering team will review your message and reach out within 2 hours.
                 </p>
-                <button 
+                <button aria-label="Action button" 
                   className="btn-contact-reset"
                   onClick={() => setStatus({ submitting: false, success: false, error: null })}
                 >
@@ -166,7 +166,7 @@ import './ContactPage.css';
                   </div>
                 )}
 
-                <button 
+                <button aria-label="Action button" 
                   type="submit" 
                   className="btn-contact-submit"
                   disabled={status.submitting || !!emailError}

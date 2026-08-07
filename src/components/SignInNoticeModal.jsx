@@ -50,11 +50,11 @@ export default function SignInNoticeModal({ isOpen, onClose, onOpenEarlyAccess }
 
           {/* Footer CTA Buttons */}
           <div className="signin-modal-footer">
-            <button className="btn-signin-cancel" onClick={onClose}>
+            <button aria-label="Close" className="btn-signin-cancel" onClick={onClose}>
               Dismiss
             </button>
 
-            <button 
+            <button aria-label="Action button" 
               className="btn-signin-primary"
               onClick={() => {
                 onClose();

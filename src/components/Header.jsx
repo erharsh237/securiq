@@ -69,7 +69,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
           
           {/* Home */}
           <div className="nav-item group relative">
-            <button 
+            <button aria-label="Action button" 
               type="button"
               className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'home' ? 'active-nav' : ''}`}
               onClick={(e) => handleNavClick(e, 'home', null)}
@@ -83,7 +83,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
 
           {/* Security */}
           <div className="nav-item group relative">
-            <button 
+            <button aria-label="Action button" 
               type="button"
               className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'security' ? 'active-nav' : ''}`}
               onClick={(e) => handleNavClick(e, 'security', null)}
@@ -97,7 +97,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
 
           {/* Pricing */}
           <div className="nav-item group relative">
-            <button 
+            <button aria-label="Action button" 
               type="button"
               className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'pricing' ? 'active-nav' : ''}`}
               onClick={(e) => handleNavClick(e, 'pricing', null)}
@@ -115,7 +115,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
             onMouseEnter={() => setIsCompanyOpen(true)}
             onMouseLeave={() => setIsCompanyOpen(false)}
           >
-            <button className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'team' || currentView === 'about' ? 'active-nav' : ''}`}>
+            <button aria-label="Navigation link" className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'team' || currentView === 'about' ? 'active-nav' : ''}`}>
               <Building2 size={20} strokeWidth={1.5} />
             </button>
             
@@ -126,13 +126,13 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
                 <span className="tooltip-text">Company</span>
               </div>
               <div className="dropdown-links">
-                <button type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'about', null)}>
+                <button aria-label="Navigation link" type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'about', null)}>
                   <Info size={14} /> About
                 </button>
-                <button type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'team', null)}>
+                <button aria-label="Navigation link" type="button" className="dropdown-link border-none bg-transparent w-full cursor-pointer" onClick={(e) => handleNavClick(e, 'team', null)}>
                   <Users size={14} /> Team
                 </button>
-                <button 
+                <button aria-label="Action button" 
                   type="button" 
                   className="dropdown-link border-none bg-transparent w-full cursor-pointer" 
                   onClick={(e) => {
@@ -149,7 +149,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
 
           {/* FAQ */}
           <div className="nav-item group relative">
-            <button 
+            <button aria-label="Action button" 
               type="button"
               className={`nav-icon-link border-none bg-transparent cursor-pointer ${currentView === 'faq' ? 'active-nav' : ''}`}
               onClick={(e) => handleNavClick(e, 'faq', null)}
@@ -165,7 +165,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
 
         {/* Desktop Header Actions */}
         <div className="header-actions">
-          <button 
+          <button aria-label="Action button" 
             type="button" 
             className="btn-solid-dark"
             onClick={(e) => {
@@ -178,7 +178,7 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
         </div>
 
         {/* Mobile Hamburger Toggle Button */}
-        <button 
+        <button aria-label="Action button" 
           className="mobile-hamburger-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle navigation menu"
@@ -192,32 +192,32 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
       {isMobileMenuOpen && (
         <div className="mobile-drawer-overlay">
           <div className="mobile-drawer-content">
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'home', null)}>
+            <button aria-label="Securiq Home" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'home', null)}>
               <Home size={18} />
               <span>Home</span>
             </button>
 
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'security', null)}>
+            <button aria-label="Navigation link" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'security', null)}>
               <Shield size={18} />
               <span>Security</span>
             </button>
 
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'pricing', null)}>
+            <button aria-label="Navigation link" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'pricing', null)}>
               <CreditCard size={18} />
               <span>Pricing</span>
             </button>
 
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'about', null)}>
+            <button aria-label="Navigation link" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'about', null)}>
               <Info size={18} />
               <span>About Us</span>
             </button>
 
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'team', null)}>
+            <button aria-label="Navigation link" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'team', null)}>
               <Users size={18} />
               <span>Our Team</span>
             </button>
 
-            <button 
+            <button aria-label="Action button" 
               className="mobile-nav-item" 
               onClick={() => {
                 setIsMobileMenuOpen(false);
@@ -228,14 +228,14 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
               <span>Contact Us</span>
             </button>
 
-            <button className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'faq', null)}>
+            <button aria-label="Navigation link" className="mobile-nav-item" onClick={(e) => handleNavClick(e, 'faq', null)}>
               <HelpCircle size={18} />
               <span>FAQ</span>
             </button>
 
             <div className="mobile-drawer-divider" />
 
-            <button 
+            <button aria-label="Action button" 
               className="mobile-btn-signin"
               onClick={() => {
                 setIsMobileMenuOpen(false);

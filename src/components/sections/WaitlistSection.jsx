@@ -9,7 +9,7 @@ export default function WaitlistSection({ onOpenEarlyAccess }) {
         <p className="waitlist-subtitle">
           We're onboarding a small group of early teams before general availability, and shaping v1 around what they tell us.
         </p>
-        <button 
+        <button aria-label="Action button" 
           className="hero-cta" 
           onClick={onOpenEarlyAccess}
           style={{ cursor: 'pointer', border: 'none' }}

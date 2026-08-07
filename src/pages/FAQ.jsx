@@ -99,7 +99,7 @@ export default function FAQ() {
               {faqs.map((faq, index) => {
                 const isActive = activeIndex === index;
                 return (
-                  <button 
+                  <button aria-label="Action button" 
                     key={faq.id} 
                     className={`faq-question-item ${isActive ? 'active' : ''}`}
                     onClick={() => setActiveIndex(index)}

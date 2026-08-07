@@ -208,7 +208,7 @@ export default function TimelineSection() {
 
                     {/* Stepper Navigation */}
                     <div className="showcase-footer-nav">
-                      <button 
+                      <button aria-label="Action button" 
                         disabled={activeStep === 0} 
                         onClick={() => setActiveStep(prev => Math.max(0, prev - 1))}
                         className="btn-step-nav"
@@ -227,7 +227,7 @@ export default function TimelineSection() {
                         ))}
                       </div>
 
-                      <button 
+                      <button aria-label="Action button" 
                         disabled={activeStep === steps.length - 1} 
                         onClick={() => setActiveStep(prev => Math.min(steps.length - 1, prev + 1))}
                         className="btn-step-nav"

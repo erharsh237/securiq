@@ -108,7 +108,7 @@ export default function PricingPage({ onOpenModal }) {
                   ))}
                 </ul>
 
-                <button className={`btn-plan-cta ${plan.isPopular ? 'btn-popular' : ''}`} onClick={onOpenModal}>
+                <button aria-label="Get Early Access" className={`btn-plan-cta ${plan.isPopular ? 'btn-popular' : ''}`} onClick={onOpenModal}>
                   <span>Get Early Access</span>
                   <ArrowRight size={16} />
                 </button>

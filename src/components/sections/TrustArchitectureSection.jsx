@@ -56,7 +56,7 @@ export default function TrustArchitectureSection() {
           <div className="trust-tabs-scroll">
             <div className="trust-tabs-list">
               {tabs.map((tab) => (
-                <button
+                <button aria-label="Action button"
                   key={tab.id}
                   className={`trust-tab-card ${activeTab === tab.id ? 'active' : ''}`}
                   onClick={() => setActiveTab(tab.id)}
@@ -169,7 +169,7 @@ export default function TrustArchitectureSection() {
                       <div className="log-line"><span>[AI]</span> Generating remediation plan...</div>
                       <div className="log-line warning"><span>[REQ]</span> Human approval required for execution</div>
                     </div>
-                    <button className="auth-button">
+                    <button aria-label="Action button" className="auth-button">
                       <Fingerprint size={24} className="auth-icon" />
                       Approve Remediation
                       <div className="auth-scanner"></div>

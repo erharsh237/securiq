@@ -123,7 +123,7 @@ export default function FeaturesSection() {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Left Arrow Button */}
-          <button 
+          <button aria-label="Action button" 
             type="button"
             className="btn-carousel-nav nav-left" 
             onClick={(e) => {
@@ -168,7 +168,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Right Arrow Button */}
-          <button 
+          <button aria-label="Action button" 
             type="button"
             className="btn-carousel-nav nav-right" 
             onClick={(e) => {

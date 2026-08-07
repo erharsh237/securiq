@@ -97,7 +97,7 @@ export default function Footer({
               <li><a href="#zsa" onClick={(e) => handleNavClick(e, 'security', '#zsa')}>Zero Standing Access</a></li>
               <li><a href="#iam-oidc" onClick={(e) => handleNavClick(e, 'security', '#iam-oidc')}>IAM & OIDC Tokens</a></li>
               <li><a href="#compliance-roadmap" onClick={(e) => handleNavClick(e, 'security', '#compliance-roadmap')}>SOC 2 Roadmap</a></li>
-              <li><button type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Report Vulnerability</button></li>
+              <li><button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Report Vulnerability</button></li>
             </ul>
           </div>
 
@@ -107,17 +107,17 @@ export default function Footer({
             <ul className="footer-links-list">
               <li><a href="#faq" onClick={(e) => handleNavClick(e, 'faq', null)}>FAQ</a></li>
               <li>
-                <button type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('cloud-integrations')}>
+                <button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('cloud-integrations')}>
                   Cloud Integrations
                 </button>
               </li>
               <li>
-                <button type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('terraform-engine')}>
+                <button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('terraform-engine')}>
                   Terraform Fix Engine
                 </button>
               </li>
               <li>
-                <button type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('synthetic-verification')}>
+                <button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={() => onOpenFeatureModal && onOpenFeatureModal('synthetic-verification')}>
                   Synthetic Verification
                 </button>
               </li>
@@ -129,10 +129,10 @@ export default function Footer({
             <h3 className="footer-col-heading">Company</h3>
             <ul className="footer-links-list">
               <li><a href="#about" onClick={(e) => handleNavClick(e, 'about', null)}>About Us</a></li>
-              <li><button type="button" className="footer-btn-link" onClick={onOpenContactModal}>Contact Us</button></li>
-              <li><button type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Security Team</button></li>
+              <li><button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={onOpenContactModal}>Contact Us</button></li>
+              <li><button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Security Team</button></li>
               <li>
-                <button 
+                <button aria-label="Action button" 
                   type="button" 
                   className="footer-btn-link highlight-link border-none bg-transparent cursor-pointer"
                   onClick={onOpenSignInModal}
@@ -158,7 +158,7 @@ export default function Footer({
             <span className="dot-divider">•</span>
             <a href="#terms" onClick={(e) => handleNavClick(e, 'security', '#zsa')}>Terms of Service</a>
             <span className="dot-divider">•</span>
-            <button type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Responsible Disclosure</button>
+            <button aria-label="Navigation link" type="button" className="footer-btn-link" onClick={onOpenSecurityModal}>Responsible Disclosure</button>
           </div>
         </div>
       </div>

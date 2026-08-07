@@ -47,12 +47,12 @@ export class ErrorBoundary extends React.Component {
             )}
 
             <div className="error-actions-row">
-              <button className="btn-error-reload" onClick={this.handleReload}>
+              <button aria-label="Action button" className="btn-error-reload" onClick={this.handleReload}>
                 <RefreshCw size={16} />
                 <span>Reload App</span>
               </button>
 
-              <button className="btn-error-home" onClick={this.handleGoHome}>
+              <button aria-label="Securiq Home" className="btn-error-home" onClick={this.handleGoHome}>
                 <Home size={16} />
                 <span>Go to Home</span>
               </button>

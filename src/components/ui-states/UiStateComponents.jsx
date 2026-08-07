@@ -78,7 +78,7 @@ export function EmptyState({
       <h3 className="empty-title">{title}</h3>
       <p className="empty-desc">{description}</p>
       {actionText && onAction && (
-        <button className="btn-empty-action" onClick={onAction}>
+        <button aria-label="Action button" className="btn-empty-action" onClick={onAction}>
           {actionText}
         </button>
       )}
@@ -138,7 +138,7 @@ export function ToastNotification({ toast, onDismiss }) {
         {icons[toast.type || 'info']}
       </div>
       <span className="toast-msg">{toast.message}</span>
-      <button className="toast-close" onClick={() => onDismiss(toast.id)}>
+      <button aria-label="Close" className="toast-close" onClick={() => onDismiss(toast.id)}>
         <X size={14} />
       </button>
     </motion.div>

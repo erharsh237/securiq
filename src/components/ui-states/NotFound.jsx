@@ -22,7 +22,7 @@ export default function NotFound({ onGoHome }) {
           The security resource or link you were looking for doesn't exist or has been moved.
         </p>
 
-        <button className="btn-not-found-home" onClick={onGoHome}>
+        <button aria-label="Securiq Home" className="btn-not-found-home" onClick={onGoHome}>
           <ArrowLeft size={16} />
           <span>Back to Home</span>
         </button>

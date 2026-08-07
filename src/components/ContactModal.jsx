@@ -95,7 +95,7 @@ export default function ContactModal({ isOpen, onClose }) {
               <p className="success-desc">
                 Thank you for reaching out. Our security engineering team will review your message and get back to you within 2 hours.
               </p>
-              <button className="btn-modal-done" onClick={handleClose}>
+              <button aria-label="Close" className="btn-modal-done" onClick={handleClose}>
                 Done
               </button>
             </div>
@@ -177,7 +177,7 @@ export default function ContactModal({ isOpen, onClose }) {
                   </div>
                 )}
 
-                <button 
+                <button aria-label="Action button" 
                   type="submit" 
                   className="btn-modal-submit"
                   disabled={status.submitting || !!emailError}

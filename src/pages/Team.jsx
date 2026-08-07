@@ -137,7 +137,7 @@ export default function Team() {
                   const isActive = index === currentIndex;
                   return (
                     <div key={member.id} className="indicator-group">
-                      <button
+                      <button aria-label="Action button"
                         className={`indicator-btn ${isActive ? 'active' : ''}`}
                         onClick={() => setCurrentIndex(index)}
                         style={{

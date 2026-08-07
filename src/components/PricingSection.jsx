@@ -105,7 +105,7 @@ export default function PricingSection({ onOpenModal }) {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.35 }}
         >
-          <button className="btn-pricing-view" onClick={onOpenModal}>
+          <button aria-label="Action button" className="btn-pricing-view" onClick={onOpenModal}>
             <span>View Pricing</span>
             <ArrowRight size={18} />
           </button>

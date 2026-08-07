@@ -158,7 +158,7 @@ export default function SecurityPage({ onOpenModal }) {
               We will investigate all legitimate reports and do our best to quickly fix the problem.
             </p>
 
-            <button className="security-text-link" onClick={onOpenModal}>
+            <button aria-label="Close" className="security-text-link" onClick={onOpenModal}>
               <span>Report a vulnerability</span>
               <ArrowRight size={16} />
             </button>
@@ -181,7 +181,7 @@ export default function SecurityPage({ onOpenModal }) {
             </p>
           </div>
 
-          <button className="btn-vendor-cta" onClick={onOpenModal}>
+          <button aria-label="Get Early Access" className="btn-vendor-cta" onClick={onOpenModal}>
             <Mail size={18} />
             <span>Contact Security Team</span>
           </button>

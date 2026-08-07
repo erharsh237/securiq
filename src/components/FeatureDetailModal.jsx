@@ -76,12 +76,12 @@ export default function FeatureDetailModal({ isOpen, onClose, featureData, onOpe
 
           {/* Action Footer */}
           <div className="feature-modal-footer">
-            <button className="btn-feature-close" onClick={onClose}>
+            <button aria-label="Close" className="btn-feature-close" onClick={onClose}>
               Close
             </button>
 
             {onOpenEarlyAccess && (
-              <button 
+              <button aria-label="Action button" 
                 className="btn-feature-cta"
                 onClick={() => {
                   onClose();

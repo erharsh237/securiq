@@ -89,7 +89,7 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
             <p className="success-subtitle">
               Thank you for applying for Securiq early access. We'll be in touch with your invite shortly.
             </p>
-            <button className="btn-solid-dark" onClick={handleClose}>
+            <button aria-label="Close" className="btn-solid-dark" onClick={handleClose}>
               Done
             </button>
           </div>
@@ -183,7 +183,7 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
 
               {errorMessage && <div className="form-error-msg">{errorMessage}</div>}
 
-              <button type="submit" className="btn-modal-submit" disabled={isSubmitting || !!emailError}>
+              <button aria-label="Submit form" type="submit" className="btn-modal-submit" disabled={isSubmitting || !!emailError}>
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </button>
             </form>

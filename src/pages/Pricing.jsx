@@ -97,7 +97,7 @@ export default function Pricing() {
         <div className="pricing-waitlist">
           <h2>Apply for early access pricing.</h2>
           <p className="waitlist-subtitle">Early teams get input on pricing and a preferred rate at launch.</p>
-          <button 
+          <button aria-label="Action button" 
             className="btn-primary" 
             onClick={onOpenEarlyAccess}
             style={{ cursor: 'pointer', padding: '14px 28px', fontSize: '1rem', fontWeight: '700', borderRadius: '12px' }}

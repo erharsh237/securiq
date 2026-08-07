@@ -96,7 +96,7 @@ export default function SecurityTeamModal({ isOpen, onClose }) {
               <p className="success-desc">
                 Thank you for contacting the Securiq Security Operations Team. A security engineer will review your request and reach out shortly.
               </p>
-              <button className="btn-modal-done" onClick={handleClose}>
+              <button aria-label="Close" className="btn-modal-done" onClick={handleClose}>
                 Done
               </button>
             </div>
@@ -193,7 +193,7 @@ export default function SecurityTeamModal({ isOpen, onClose }) {
                   </div>
                 )}
 
-                <button 
+                <button aria-label="Action button" 
                   type="submit" 
                   className="btn-sec-submit"
                   disabled={status.submitting || !!emailError}
