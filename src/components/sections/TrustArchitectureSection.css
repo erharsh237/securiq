@@ -581,7 +581,7 @@
   content: '';
   position: absolute;
   top: 0; left: -2px; right: -2px; bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: #ffffff;
   animation: barrierScan 1s infinite linear;
 }
 
