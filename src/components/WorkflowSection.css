@@ -53,7 +53,7 @@
 .workflow-subtitle-dark {
   font-size: 1.05rem;
   font-weight: 500;
-  color: #64748b;
+  color: #475569;
   line-height: 1.6;
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -136,7 +136,7 @@
 .bento-card-subtitle {
   font-size: 0.78rem;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }

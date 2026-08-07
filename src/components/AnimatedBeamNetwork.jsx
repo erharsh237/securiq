@@ -79,7 +79,7 @@ export default function AnimatedBeamNetwork() {
       {/* Center Node: Square-S (Securiq) */}
       <div className="network-node node-center" style={{ left: '50%', top: '50%' }}>
         <div className="node-circle center-circle">
-          <img src="/logo.png" alt="Square-S" className="node-logo-img" />
+          <img src="/logo.png" alt="Securiq" width="40" height="40" loading="lazy" decoding="async" className="node-logo-img" />
         </div>
       </div>
 

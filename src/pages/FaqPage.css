@@ -55,7 +55,7 @@
 .faq-page-subtitle {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #64748b;
+  color: #475569;
   line-height: 1.6;
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -117,7 +117,7 @@
 }
 
 .question-icon-indicator {
-  color: #64748b;
+  color: #475569;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,27 @@
+# Securiq | AI Security Engineer (Full Specification)
+
+> Complete technical documentation, security model, and API specs for Securiq — Autonomous Cloud Remediation Platform.
+
+## System Architecture
+
+Securiq functions as an AI Security Engineer for cloud infrastructure estates across AWS, GCP, Azure, and GitHub. The engine combines fine-tuned large language models (LLMs) with static analysis and dry-run infrastructure simulation to detect, investigate, and repair cloud security drifts without human manual intervention.
+
+### 1. Ingestion & Threat Detection
+Securiq ingests native telemetry from AWS Security Hub, CloudTrail, AWS Config, and code repository scanners. Findings are prioritized by runtime blast-radius and true threat exposure rather than raw alert volume.
+
+### 2. Context-Aware Investigation
+Securiq maps findings back to the exact Infrastructure-as-Code (Terraform HCL) lines responsible for the misconfiguration.
+
+### 3. Automated Patch Synthesis
+Securiq generates syntactically valid, formatted HCL Terraform pull requests ready for review.
+
+### 4. Zero Standing Access & Security Posture
+- Ephemeral OIDC authentication with zero standing credentials stored.
+- Strictly read-only access to infrastructure configuration metadata.
+- Zero access to customer data plane, S3 bucket contents, or database records.
+- Human-in-the-loop requirement for all production executions.
+
+## Contact Information
+- Website: https://securiq.co
+- Early Access Application: https://securiq.co/#waitlist
+- Security Operations: https://securiq.co/security

@@ -53,7 +53,15 @@ export default function Header({ onOpenModal, onOpenContactModal, onOpenSignInMo
           onClick={(e) => handleNavClick(e, 'home', null)}
           style={{ cursor: 'pointer' }}
         >
-          <img src="/logo.png" alt="SECURIQ Logo" style={{ height: '44px', width: 'auto', objectFit: 'contain' }} />
+          <img 
+            src="/logo.png" 
+            alt="SECURIQ Logo" 
+            width="44" 
+            height="44" 
+            decoding="async" 
+            fetchPriority="high" 
+            style={{ height: '44px', width: '44px', objectFit: 'contain' }} 
+          />
         </div>
 
         {/* Desktop Icon Navigation */}

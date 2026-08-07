@@ -21,7 +21,7 @@
 .loading-text {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #64748b;
+  color: #475569;
 }
 
 .slow-network-hint {
@@ -86,7 +86,7 @@
 
 .empty-desc {
   font-size: 0.9rem;
-  color: #64748b;
+  color: #475569;
   margin: 0;
   max-width: 360px;
 }
@@ -145,7 +145,7 @@
 
 .permission-desc {
   font-size: 0.9rem;
-  color: #64748b;
+  color: #475569;
   margin: 0;
   max-width: 380px;
 }

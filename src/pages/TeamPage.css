@@ -55,7 +55,7 @@
 .team-subtitle {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #64748b;
+  color: #475569;
   line-height: 1.65;
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -165,7 +165,7 @@
 .member-role {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.06em;

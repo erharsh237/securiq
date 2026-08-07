@@ -34,10 +34,14 @@
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="apple-touch-icon" href="/logo.png" />
 
-    <!-- Fast Pre-connect & Pre-fetch Fonts -->
+    <!-- Fast Non-Render-Blocking Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Inlined Critical Base CSS: Prevents FOUC on Slow Connections -->
     <style>
@@ -93,7 +97,7 @@
       .critical-loader-text {
         font-size: 0.88rem;
         font-weight: 600;
-        color: #64748b;
+        color: #475569;
         letter-spacing: 0.05em;
       }
 

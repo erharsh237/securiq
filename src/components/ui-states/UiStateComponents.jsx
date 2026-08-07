@@ -73,7 +73,7 @@ export function EmptyState({
   return (
     <div className="ui-empty-wrapper">
       <div className="empty-icon-badge">
-        <Icon size={32} color="#64748b" />
+        <Icon size={32} color="#475569" />
       </div>
       <h3 className="empty-title">{title}</h3>
       <p className="empty-desc">{description}</p>

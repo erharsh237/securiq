@@ -1,0 +1,23 @@
+# Securiq | AI Security Engineer
+
+> Securiq is an autonomous AI Security Engineer providing continuous cloud security monitoring, threat investigation, and human-approved Terraform HCL patch synthesis with zero standing access.
+
+## Core Capabilities
+
+- [Overview](https://securiq.co/#hero): Autonomous AI security engineer for AWS, GCP, and Azure cloud infrastructure.
+- [Workflow](https://securiq.co/#workflow): 6-step detection, investigation, Terraform HCL patch synthesis, and human approval flow.
+- [Security & Trust Architecture](https://securiq.co/security): Read-only configuration analysis, ephemeral RAM execution, OIDC role assumption, and SOC 2 audit readiness.
+- [Pricing & Plans](https://securiq.co/pricing): Flexible pricing tiers for startups and enterprise cloud engineering organizations.
+- [Team & Leadership](https://securiq.co/team): Founders, AI researchers, and cloud systems architects building Securiq.
+- [Contact Security Team](https://securiq.co/security#vendor-review): Direct channel for SOC 2 documentation, vendor security questionnaires, and vulnerability disclosure.
+
+## Technical Specifications
+
+- **Integration Mode**: Agentless cloud-native connection via AWS IAM / OIDC role assumption.
+- **Data Plane Guarantee**: Zero access to customer application databases, object stores, or sensitive data payloads.
+- **Remediation Method**: Formatted Terraform HCL pull requests requiring explicit human click-approval.
+- **Execution Lifecycle**: Short-lived ephemeral session tokens that expire immediately upon task completion.
+
+## Optional Resources
+
+- [Full LLM Specification Document](https://securiq.co/llms-full.txt): Comprehensive technical specifications and architectural details for AI agents and web crawlers.

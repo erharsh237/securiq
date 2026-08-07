@@ -70,7 +70,7 @@ export default function Footer({
           {/* Brand Column */}
           <div className="footer-brand-col">
             <div className="footer-logo-box" onClick={(e) => handleNavClick(e, 'home', null)}>
-              <img src="/footer-logo.png" alt="SECURIQ Logo" className="footer-logo" />
+              <img src="/footer-logo.png" alt="SECURIQ Logo" width="40" height="40" loading="lazy" decoding="async" className="footer-logo" />
             </div>
             <p className="footer-brand-desc">
               Your AI Security Engineer. Autonomous vulnerability detection, contextual analysis, and Terraform remediation for modern cloud infrastructure.

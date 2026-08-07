@@ -55,7 +55,7 @@
 .about-subtitle {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #64748b;
+  color: #475569;
   line-height: 1.65;
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -217,7 +217,7 @@
 .metric-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #64748b;
+  color: #475569;
 }
 
 /* CTA Bottom Banner */

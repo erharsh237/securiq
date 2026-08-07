@@ -140,7 +140,7 @@ export default function TimelineSection() {
                       background: isActive ? `${step.color}1a` : '#0d1322'
                     }}
                   >
-                    <IconComponent size={20} color={isActive ? step.color : '#64748b'} />
+                    <IconComponent size={20} color={isActive ? step.color : '#475569'} />
                   </div>
 
                   <div className="step-text-wrapper">
