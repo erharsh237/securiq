@@ -31,6 +31,25 @@
   overflow-y: auto;
 }
 
+/* Custom Sleek Scrollbar to Preserve Top-Right & Bottom-Right Rounded Corners */
+.security-modal-glass::-webkit-scrollbar {
+  width: 6px;
+}
+
+.security-modal-glass::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 16px 0;
+}
+
+.security-modal-glass::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15);
+  border-radius: 10px;
+}
+
+.security-modal-glass::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.35);
+}
+
 /* Close Button */
 .security-modal-close {
   position: absolute;

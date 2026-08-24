@@ -105,7 +105,7 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
             <form onSubmit={handleSubmit} className="modal-form">
               <div className="form-grid-2">
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">Name *</label>
                   <input
                     type="text"
                     id="name"
@@ -116,7 +116,7 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="email">Email Address</label>
+                  <label htmlFor="email">Email Address *</label>
                   <input
                     type="email"
                     id="email"
@@ -133,7 +133,18 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
 
               <div className="form-grid-2">
                 <div className="form-group">
-                  <label htmlFor="companySize">Company size</label>
+                  <label htmlFor="company">Company Name *</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    required
+                    placeholder="Acme Corp"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="companySize">Company size *</label>
                   <select id="companySize" name="companySize" required defaultValue="">
                     <option value="" disabled>Select...</option>
                     <option value="1-10">1 - 10 employees</option>
@@ -143,18 +154,18 @@ export default function EarlyAccessModal({ isOpen, onClose }) {
                     <option value="500+">500+ employees</option>
                   </select>
                 </div>
+              </div>
 
-                <div className="form-group">
-                  <label htmlFor="toolsUsed">What do you use today?</label>
-                  <select id="toolsUsed" name="toolsUsed" required defaultValue="">
-                    <option value="" disabled>Select...</option>
-                    <option value="Terraform">Terraform</option>
-                    <option value="AWS Native Tools">AWS Native Tools</option>
-                    <option value="Cloud Custodian / CSPM">Cloud Custodian / CSPM</option>
-                    <option value="Manual Audits">Manual Audits</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
+              <div className="form-group">
+                <label htmlFor="toolsUsed">What do you use today? *</label>
+                <select id="toolsUsed" name="toolsUsed" required defaultValue="">
+                  <option value="" disabled>Select...</option>
+                  <option value="Terraform">Terraform</option>
+                  <option value="AWS Native Tools">AWS Native Tools</option>
+                  <option value="Cloud Custodian / CSPM">Cloud Custodian / CSPM</option>
+                  <option value="Manual Audits">Manual Audits</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
 
               <div className="form-group">

@@ -18,13 +18,13 @@
   to { opacity: 1; }
 }
 
-/* Opaque Solid White Container (Zero Transparency Bleed) */
+/* Opaque Solid White Container with Perfect 24px Rounded Corners */
 .modal-glass-box {
   width: 100%;
   max-width: 620px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 36px 40px;
   position: relative;
   box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25), 
@@ -32,6 +32,25 @@
   animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   max-height: 90vh;
   overflow-y: auto;
+}
+
+/* Custom Sleek Scrollbar to Preserve Top-Right & Bottom-Right Rounded Corners */
+.modal-glass-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-glass-box::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 16px 0;
+}
+
+.modal-glass-box::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15);
+  border-radius: 10px;
+}
+
+.modal-glass-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.35);
 }
 
 @keyframes scaleUp {
@@ -73,7 +92,7 @@
 }
 
 .modal-header {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   text-align: left;
 }
 
@@ -89,7 +108,7 @@
 
 .modal-subtitle {
   font-size: 0.95rem;
-  color: #475569;
+  color: #334155;
   line-height: 1.55;
   margin: 0;
 }
@@ -97,7 +116,7 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .form-grid-2 {
@@ -132,7 +151,7 @@
   padding: 11px 14px;
   background: #f8fafc;
   border: 1px solid rgba(0, 0, 0, 0.14);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.9rem;
   color: #0f172a;
   outline: none;
@@ -154,7 +173,7 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 0.8rem;
-  color: #475569;
+  color: #334155;
   text-align: left;
   line-height: 1.4;
   margin-top: 4px;
@@ -177,7 +196,7 @@
   background: #0f172a;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
@@ -234,7 +253,7 @@
 
 .success-subtitle {
   font-size: 0.95rem;
-  color: #475569;
+  color: #334155;
   max-width: 400px;
   margin: 0;
   line-height: 1.5;
@@ -246,6 +265,7 @@
   }
   .modal-glass-box {
     padding: 28px 20px;
+    border-radius: 20px;
   }
   .modal-title {
     font-size: 1.7rem;
